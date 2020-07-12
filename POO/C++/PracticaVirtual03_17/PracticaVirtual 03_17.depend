@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1584469887 source:c:\caleb\programacion\practicavirtual 03_17\main.cpp
+	<iostream>
+	"Poligono.h"
+	"Cuadrado.h"
+
+1584469900 c:\caleb\programacion\practicavirtual 03_17\poligono.h
+	<iostream>
+	<sstream>
+
+1584469887 c:\caleb\programacion\practicavirtual 03_17\cuadrado.h
+	"Poligono.h"
+
+1584469908 source:c:\caleb\programacion\practicavirtual 03_17\cuadrado.cpp
+	"Cuadrado.h"
+
+1584470335 source:c:\caleb\programacion\practicavirtual 03_17\poligono.cpp
+	"Poligono.h"
+

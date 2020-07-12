@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1581948519 source:c:\users\user\desktop\caleb\practica 2\practica2\main.cpp
+	<iostream>
+	"Vehiculo.h"
+
+1581948906 source:c:\users\user\desktop\caleb\practica 2\practica2\vehiculo.cpp
+	"Vehiculo.h"
+	<iostream>
+	<sstream>
+
+1581945176 c:\users\user\desktop\caleb\practica 2\practica2\vehiculo.h
+	<iostream>
+
+1581934764 source:c:\caleb\proyectos codeblocks\practica2\main.cpp
+	<iostream>
+	"Vehiculo.h"
+
+1581934764 c:\caleb\proyectos codeblocks\practica2\vehiculo.h
+	<iostream>
+
+1581934764 source:c:\caleb\proyectos codeblocks\practica2\vehiculo.cpp
+	"Vehiculo.h"
+	<iostream>
+	<sstream>
+
+1581934764 source:c:\caleb\fiuna\poo\proyectos codeblocks\practica2\main.cpp
+	<iostream>
+	"Vehiculo.h"
+
+1581934764 c:\caleb\fiuna\poo\proyectos codeblocks\practica2\vehiculo.h
+	<iostream>
+
+1581934764 source:c:\caleb\fiuna\poo\proyectos codeblocks\practica2\vehiculo.cpp
+	"Vehiculo.h"
+	<iostream>
+	<sstream>
+

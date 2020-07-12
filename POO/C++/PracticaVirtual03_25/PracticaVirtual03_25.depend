@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1585163704 source:c:\caleb\programacion\practicavirtual03_25\main.cpp
+	<iostream>
+	"Persona.h"
+	"Empleado.h"
+	"EmpHora.h"
+	"Jefe.h"
+
+1585163808 c:\caleb\programacion\practicavirtual03_25\persona.h
+	<sstream>
+
+1585160868 source:c:\caleb\programacion\practicavirtual03_25\empleado.cpp
+	"Empleado.h"
+	<sstream>
+
+1585161076 c:\caleb\programacion\practicavirtual03_25\empleado.h
+	<iostream>
+	"Persona.h"
+
+1585161763 source:c:\caleb\programacion\practicavirtual03_25\jefe.cpp
+	"Jefe.h"
+	<sstream>
+
+1585163689 c:\caleb\programacion\practicavirtual03_25\jefe.h
+	"Empleado.h"
+
+1585162768 source:c:\caleb\programacion\practicavirtual03_25\emphora.cpp
+	"EmpHora.h"
+
+1585162240 c:\caleb\programacion\practicavirtual03_25\emphora.h
+	"Empleado.h"
+	<sstream>
+	<iostream>
+
