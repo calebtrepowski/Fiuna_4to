@@ -17,7 +17,7 @@ function [X] = gauss_jordan(A,b)
 		error('El determinante es cero.')
  	end
 	
-	n = length(A);
+	[m n] = length(A);
 	ampliada = [A b];
 	
 	for i=1:n-1

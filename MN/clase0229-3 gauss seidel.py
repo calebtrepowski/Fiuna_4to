@@ -27,7 +27,9 @@ for i in range(0,iter_max):
     if la.norm(aux-X) < epsilon: ###condicion de parada
         print('Se alcanzo la tolerancia')
         break #para salir del for interno
-        '''no hace falta actualizar la solucion porque X va siendo igual a P'''
+        
+        #no hace falta actualizar la solucion porque X va
+        #siendo igual a P
     print(X)
     
 '''
