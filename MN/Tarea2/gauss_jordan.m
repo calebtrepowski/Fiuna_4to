@@ -9,58 +9,46 @@
 % ecuaciones lineales de N×N por el metodo de Gauss-Jordan
 
 function [X] = gauss_jordan(A,b)
-	% A debe ser una matriz NxN
-	% b debe ser un vector columna de N elementos
 	
-	epsilon = 0.01;
-	if abs(det(A)) < epsilon
-		error('El determinante es cero.')
- 	end
+	epsilon = 1e-5;
+	%consideramos arbitrariamente que cualquier numero menor a epsilon es 0
+	amp = [A b];
+	[m n] = size(amp);
 	
-	[m n] = length(A);
-	ampliada = [A b];
+	cortar = false;
 	
-	for i=1:n-1
-		if ampliada(i,i) == 0
-			for j=i+1:n
-				if ampliada(j,i) ~= 0
-					temp = ampliada(i,:);
-					ampliada(i,:) = ampliada(j,:);
-					ampliada(j,:) = temp;
-				else
-					error('El determinante es cero.')
-				end
-   		end
-		else
-			if i==1 
-				ampliada(i,:) = ampliada(i,:)/ampliada(i,i);
-			end
-			for j=i+1:n
-				%mult = ampliada(j,i)/ampliada(i,i);
-				mult = ampliada(j,i);
-				ampliada(j,:) = ampliada(j,:) - mult.*ampliada(i,:);
-				if j>i+1
-					continue	
-    		end
-				ampliada(j,:) = ampliada(j,:)/ampliada(j,j);
-				for k=1:j-1
-					mult = ampliada(k,j);
-					ampliada(k,:) = ampliada(k,:) - mult.*ampliada(j,:);
-				end
+	%i fila actual de pivoteamiento, iteramos por cada fila
+	for i=1:m
+		
+		if amp(i,i) == 0 %vemos si el actual pivot es nulo
+			[mayor, pos] = max(abs(amp(i:m,i)));
+			%buscamos un valor no nulo en la columna i para que sea el pivot.
+			%en este caso, buscamos el de mayor valor absoluto
+			
+			if mayor < epsilon %si todos los numeros son menores al epsilon,cortamos
+				cortar = true;
+				break
+			else
+				amp([i pos-1+i],i:n) = amp([pos-1+i i],i:n);
+				%intercambio de filas
 			end
 		end
+		if cortar == false
+			amp(i,i:n) = amp(i,i:n)/amp(i,i);
+			%dividimos la fila del pivot por el valor de este, asi el multiplicador
+			%para cada fila pasa a ser el elemento i en cada fila directamente
+			
+			eliminar = [1:i-1,i+1:m];
+			%filas a escalonar, las primeras para la parte superior
+			%y las segundas para la parte inferior
+			
+			amp(eliminar,i:n) = amp(eliminar,i:n) - amp(eliminar,i).*amp(i,i:n);
+			%escalonamos las filas con el pivot
+		end
  	end
-	
-	%%%%%%%%%%%%%%%%%%%%%
-##	for i=n:-1:2
-##		if ampliada(i,i) ~= 0
-##			for j=i-1:-1:1
-##				mult = ampliada(j,i)/ampliada(i,i);
-##				ampliada(j,:) = ampliada(j,:) - mult.*ampliada(i,:);
-##   			end
-##			ampliada(i,:) = (1/ampliada(i,i)).*ampliada(i,:);
-##		end
-## 	end
-	X = ampliada(:,n+1);
+	if cortar
+		error('La matriz no es invertible');
+	else
+		X = amp(:,n);	
+	end
 end
-
