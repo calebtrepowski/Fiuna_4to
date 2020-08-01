@@ -12,7 +12,7 @@ Y = lambda x: np.exp(x)
 
 ### Grafica en el intervalo [a,b]
 a = 0
-b = 20
+b = 5
 x = np.linspace(a,b,50) #X es un array de 50 elementos desde 0 hasta 2
 
 Y1 = P1(x)

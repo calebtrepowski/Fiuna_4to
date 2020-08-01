@@ -28,7 +28,7 @@ for j in range(0,N):        #para la sumatoria
       # en matlab convolve --> conv
       L = np.convolve( L,np.array([1,-X[k]])/(X[j]-X[k]) )
   
-  pol = pol + L*Y[j]
+  pol += Y[j]*L
 
 
 verif = np.polyval(pol,X) #para verificar la solucion
