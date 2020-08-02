@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1596400076 source:c:\caleb\fiuna\4to semestre\poo\c++\estudio\guia de trabajo 1\persona.cpp
+	"Persona.h"
+
+1596399643 c:\caleb\fiuna\4to semestre\poo\c++\estudio\guia de trabajo 1\persona.h
+	<iostream>
+	<sstream>
+
+1596400635 source:c:\caleb\fiuna\4to semestre\poo\c++\estudio\guia de trabajo 1\main.cpp
+	<iostream>
+	"Persona.h"
+
