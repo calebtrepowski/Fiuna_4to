@@ -54,3 +54,10 @@ class HerramientaCorteyGolpe(HerramientaCorte,\
   def toString(self):
     return HerramientaCorte.toString(self) + '\nTipo de Golpe: '\
       + self.tipoGolpe
+
+lista = []
+for i in range(5):
+  c = HerramientaCorte("taladro",12,"tipoA")
+  lista.append(c)
+
+print(lista)
