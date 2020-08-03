@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1596459457 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial1\main.cpp
+	<iostream>
+	"Animal.h"
+	"Bovino.h"
+
+1596459472 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial1\animal.cpp
+	"Animal.h"
+
+1596457858 c:\caleb\fiuna\4to semestre\poo\c++\parcial1\animal.h
+	<iostream>
+	<sstream>
+
+1596459457 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial1\bovino.cpp
+	"Bovino.h"
+
+1596457858 c:\caleb\fiuna\4to semestre\poo\c++\parcial1\bovino.h
+	"Animal.h"
+
