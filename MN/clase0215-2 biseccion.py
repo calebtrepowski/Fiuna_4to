@@ -1,14 +1,14 @@
 #METODO DE BISECCION
 
 ### LIBRERIAS
-from numpy import *
+import numpy as np
 
 ### DATOS
-f = lambda x: x*sin(x)-1
+f = lambda x: x*np.sin(x)-1
 a=0
 b=2
 epsilon=float(input('Precision= '))
-bisecciones=int(ceil((log(b-a)-log(epsilon))/log(2)))
+bisecciones=int(np.ceil((np.log(b-a)-np.log(epsilon))/np.log(2)))
 
 ### VERIFICAR EL TEOREMA DE BOLZANO EN EL INTERVALO [a,b]
 if f(a)*f(b)>0:

@@ -1,12 +1,11 @@
-#import matplotlib.pyplot as plt
-#import numpy as np
-from matplotlib.pyplot import *
-from numpy import *
+import matplotlib.pyplot as plt
+import numpy as np
 
-f = lambda x:x*sin(x)-1
 
-x = linspace(0,2,50)
+f = lambda x:x*np.sin(x)-1
+
+x = np.linspace(0,2,50)
 y = f(x)
 plt.plot(x,y)
-show()
-grid()
+plt.grid()
+plt.show()

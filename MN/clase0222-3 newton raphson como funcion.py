@@ -1,4 +1,5 @@
-''' NEWTON RAPHSON COMO FUCION '''
+''' NEWTON RAPHSON COMO FUNCION '''
+import numpy as np
 
 def newton_raphson(f,df,p0,iter_max,epsilon):
     p = np.array([p0])
@@ -11,4 +12,3 @@ def newton_raphson(f,df,p0,iter_max,epsilon):
             break
         
     return p
-    

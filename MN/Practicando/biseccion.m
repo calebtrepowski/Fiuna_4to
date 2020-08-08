@@ -5,7 +5,7 @@ b = 2;
 epsilon = 1e-5;
 n = round( (log(b-a) - log(epsilon))/log(2) );
 
-if f(a)*f(b)<0
+if f(a)*f(b)>0
 	error('La funcion no cumple el teorema de Bolzano en el intervalo dado')
 end
 

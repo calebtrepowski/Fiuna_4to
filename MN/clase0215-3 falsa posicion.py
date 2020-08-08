@@ -1,13 +1,13 @@
 #METODO DE FALSA POSICION
 
 ### LIBRERIAS
-from numpy import *
+import numpy as np
 
 ### DATOS
-f = lambda x: x*sin(x)-1
+f = lambda x: x*np.sin(x)-1
 a=0
 b=2
-c = array([])
+c = np.array([])
 epsilon=float(input('Precision: '))
 iteracion_max=int(input('Cantidad maxima de iteraciones: '))
 
@@ -17,10 +17,10 @@ if f(a)*f(b)>0:
 
 for i in range(iteracion_max):
     #b-(f(b)*(b-a))/(f(b)-f(a))
-    c=append(c,b-(f(b)*(b-a))/(f(b)-f(a)))
+    c=np.append(c,b-(f(b)*(b-a))/(f(b)-f(a)))
     if i>=1:
         if abs(f(c[i]))<epsilon and abs((c[i]-c[i-1])/c[i])<epsilon:
-            print('Precision alcanzada')
+            print('Precision alcanzada, numero de iteraciones: ',i)
             break
         
         if f(c[i])==0:
