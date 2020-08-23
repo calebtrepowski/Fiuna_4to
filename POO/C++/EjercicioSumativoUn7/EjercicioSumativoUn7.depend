@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1597631321 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun7\main.cpp
+	<iostream>
+	"Auto.h"
+	"Camion.h"
+
+1597631320 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun7\vehiculo.h
+	<iostream>
+	<sstream>
+	<cstdlib>
+
+1597410974 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun7\vehiculo.cpp
+	"Vehiculo.h"
+
+1597631165 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun7\auto.cpp
+	"Auto.h"
+
+1597411758 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun7\auto.h
+	"Vehiculo.h"
+
+1597631193 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun7\camion.cpp
+	"Camion.h"
+
+1597411847 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun7\camion.h
+	"Vehiculo.h"
+
