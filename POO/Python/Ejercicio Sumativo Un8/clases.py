@@ -2,6 +2,8 @@ class Electrodomestico():
     def __init__(self,precio,nombre):
       if type(precio) != int and type(nombre) != str:
         raise TypeError
+      elif precio < 0:
+        raise ValueError("El precio no puede ser negativo")
       else:
         self.precio = precio
         self.nombre = nombre
