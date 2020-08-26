@@ -23,28 +23,29 @@ I = [8.2277 7.2428 5.9908 4.5260 2.9122];
 % E(1,3) y E(1,4)
 % En el mismo codigo realizado anteriormente, compare su respuesta
 % con la que se obtiene sabiendo que la expresion de I(t) es
-% I(t) = 10e^(?t/10)*sen(2t).
+% I(t) = 10e^(-t/10)*sen(2t).
 
 dI = [];
 h = 0.1;
-f = @(x) I(find (t==x));
+
 for i = 1:length(t)
 	if i == 1
-		dI(i) = ( -3*f(t(i))+4*I(i+1)-I(i+2) )/( 2*h );
-	elseif i == length(t)	
-		dI(i) = ( +3*I(i)-4*I(i-1)+I((i)-2) )/( 2*h );
+		dI(i) = ( -3*I(i)+4*I(i+1)-I(i+2) )/( 2*h );
+	elseif i == length(t)
+		dI(i) = ( +3*I(i)-4*I(i-1)+I(i-2) )/( 2*h );
 	else
-		dI(i) = ( I(i+1) - I(i-1) )/( 2*h );	
- 		
+		dI(i) = ( I(i+1) - I(i-1) )/( 2*h );
 	end
 end
 display('Valores aproximados de E(t) para los valores del vector t dado')
-E = L*dI + R*I;
-display(E);
+E = L.*dI + R.*I;
+disp(E);
 
-II = @(t) 10*exp(-t./10).*sin(2.*t);
+III = @(t) 10*exp(-t./10).*sin(2.*t);
+%Hallamos la derivada de esta funcion
+II = @(t) -exp(-t./10).*(sin(2.*t)-20.*cos(2.*t));
 display('Valores reales de E(t) para los valores del vector t dado');
-EE = L.*II(t) + R.*I;
-display(EE);
+EE = L.*II(t) + R.*III(t);
+disp(EE);
 display('Error absoluto en cada punto');
 display(abs(EE-E));
