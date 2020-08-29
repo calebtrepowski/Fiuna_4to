@@ -1,0 +1,1111 @@
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 1
+
+
+   1              		.file	"Persona.cpp"
+   2              		.section	.text$_ZNKSt5ctypeIcE8do_widenEc,"x"
+   3              		.linkonce discard
+   4              		.align 2
+   5              		.p2align 4,,15
+   6              		.globl	__ZNKSt5ctypeIcE8do_widenEc
+   8              	__ZNKSt5ctypeIcE8do_widenEc:
+   9 0000 0FB64424 		movzbl	4(%esp), %eax
+   9      04
+  10 0005 C20400   		ret	$4
+  11 0008 90909090 		.text
+  11      90909090 
+  12              		.align 2
+  13              		.p2align 4,,15
+  14              		.globl	__ZN7PersonaD2Ev
+  16              	__ZN7PersonaD2Ev:
+  17 0000 53       		pushl	%ebx
+  18 0001 8D5128   		leal	40(%ecx), %edx
+  19 0004 89CB     		movl	%ecx, %ebx
+  20 0006 83EC18   		subl	$24, %esp
+  21 0009 8B4120   		movl	32(%ecx), %eax
+  22 000c C7010800 		movl	$__ZTV7Persona+8, (%ecx)
+  22      0000
+  23 0012 39D0     		cmpl	%edx, %eax
+  24 0014 7408     		je	L3
+  25 0016 890424   		movl	%eax, (%esp)
+  26 0019 E8000000 		call	__ZdlPv
+  26      00
+  27              	L3:
+  28 001e 8B4308   		movl	8(%ebx), %eax
+  29 0021 83C310   		addl	$16, %ebx
+  30 0024 39D8     		cmpl	%ebx, %eax
+  31 0026 7408     		je	L2
+  32 0028 890424   		movl	%eax, (%esp)
+  33 002b E8000000 		call	__ZdlPv
+  33      00
+  34              	L2:
+  35 0030 83C418   		addl	$24, %esp
+  36 0033 5B       		popl	%ebx
+  37 0034 C3       		ret
+  38              		.globl	__ZN7PersonaD1Ev
+  40              		.set	__ZN7PersonaD1Ev,__ZN7PersonaD2Ev
+  41 0035 90       		.align 2
+  42 0036 8D76008D 		.p2align 4,,15
+  42      BC270000 
+  42      0000
+  43              		.globl	__ZN7PersonaD0Ev
+  45              	__ZN7PersonaD0Ev:
+  46 0040 53       		pushl	%ebx
+  47 0041 89CB     		movl	%ecx, %ebx
+  48 0043 83EC18   		subl	$24, %esp
+  49 0046 E8B5FFFF 		call	__ZN7PersonaD1Ev
+  49      FF
+  50 004b 891C24   		movl	%ebx, (%esp)
+  51 004e E8000000 		call	__ZdlPv
+  51      00
+  52 0053 83C418   		addl	$24, %esp
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 2
+
+
+  53 0056 5B       		popl	%ebx
+  54 0057 C3       		ret
+  55 0058 908DB426 		.p2align 4,,15
+  55      00000000 
+  57              	___tcf_0:
+  58 0060 B9000000 		movl	$__ZStL8__ioinit, %ecx
+  58      00
+  59 0065 E9000000 		jmp	__ZNSt8ios_base4InitD1Ev
+  59      00
+  60              		.section .rdata,"dr"
+  61              		.align 4
+  62              	LC0:
+  63 0000 62617369 		.ascii "basic_string::_M_construct null not valid\0"
+  63      635F7374 
+  63      72696E67 
+  63      3A3A5F4D 
+  63      5F636F6E 
+  64              		.text
+  65              		.align 2
+  66 006a 8DB60000 		.p2align 4,,15
+  66      0000
+  68              	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator
+  69 0070 57       		pushl	%edi
+  70 0071 56       		pushl	%esi
+  71 0072 89CE     		movl	%ecx, %esi
+  72 0074 53       		pushl	%ebx
+  73 0075 83EC20   		subl	$32, %esp
+  74 0078 8B7C2430 		movl	48(%esp), %edi
+  75 007c 8B5C2434 		movl	52(%esp), %ebx
+  76 0080 85FF     		testl	%edi, %edi
+  77 0082 7510     		jne	L13
+  78 0084 85DB     		testl	%ebx, %ebx
+  79 0086 740C     		je	L13
+  80 0088 C7042400 		movl	$LC0, (%esp)
+  80      000000
+  81 008f E8000000 		call	__ZSt19__throw_logic_errorPKc
+  81      00
+  82              		.p2align 4,,10
+  83              	L13:
+  84 0094 29FB     		subl	%edi, %ebx
+  85 0096 83FB0F   		cmpl	$15, %ebx
+  86 0099 895C241C 		movl	%ebx, 28(%esp)
+  87 009d 7711     		ja	L25
+  88 009f 83FB01   		cmpl	$1, %ebx
+  89 00a2 8B06     		movl	(%esi), %eax
+  90 00a4 752C     		jne	L14
+  91 00a6 0FB617   		movzbl	(%edi), %edx
+  92 00a9 8810     		movb	%dl, (%eax)
+  93 00ab EB35     		jmp	L15
+  94 00ad 8D7600   		.p2align 4,,10
+  95              	L25:
+  96 00b0 8D44241C 		leal	28(%esp), %eax
+  97 00b4 C7442404 		movl	$0, 4(%esp)
+  97      00000000 
+  98 00bc 89F1     		movl	%esi, %ecx
+  99 00be 890424   		movl	%eax, (%esp)
+ 100 00c1 E8000000 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERjj
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 3
+
+
+ 100      00
+ 101 00c6 83EC08   		subl	$8, %esp
+ 102 00c9 8906     		movl	%eax, (%esi)
+ 103 00cb 8B54241C 		movl	28(%esp), %edx
+ 104 00cf 895608   		movl	%edx, 8(%esi)
+ 105              	L14:
+ 106 00d2 895C2408 		movl	%ebx, 8(%esp)
+ 107 00d6 897C2404 		movl	%edi, 4(%esp)
+ 108 00da 890424   		movl	%eax, (%esp)
+ 109 00dd E8000000 		call	_memcpy
+ 109      00
+ 110              	L15:
+ 111 00e2 8B44241C 		movl	28(%esp), %eax
+ 112 00e6 8B16     		movl	(%esi), %edx
+ 113 00e8 894604   		movl	%eax, 4(%esi)
+ 114 00eb C6040200 		movb	$0, (%edx,%eax)
+ 115 00ef 83C420   		addl	$32, %esp
+ 116 00f2 5B       		popl	%ebx
+ 117 00f3 5E       		popl	%esi
+ 118 00f4 5F       		popl	%edi
+ 119 00f5 C20800   		ret	$8
+ 120              		.section .rdata,"dr"
+ 121              	LC1:
+ 122 002a 0A09436F 		.ascii "\12\11Comiendo: \0"
+ 122      6D69656E 
+ 122      646F3A20 
+ 122      00
+ 123              	LC2:
+ 124 0037 2063616E 		.ascii " cant: \0"
+ 124      743A2000 
+ 125              		.text
+ 126              		.align 2
+ 127 00f8 908DB426 		.p2align 4,,15
+ 127      00000000 
+ 128              		.globl	__ZN7Persona5comerENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEf
+ 130              	__ZN7Persona5comerENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEf:
+ 131 0100 56       		pushl	%esi
+ 132 0101 53       		pushl	%ebx
+ 133 0102 83EC14   		subl	$20, %esp
+ 134 0105 8B5C2420 		movl	32(%esp), %ebx
+ 135 0109 C7442408 		movl	$12, 8(%esp)
+ 135      0C000000 
+ 136 0111 C7442404 		movl	$LC1, 4(%esp)
+ 136      2A000000 
+ 137 0119 C7042400 		movl	$__ZSt4cout, (%esp)
+ 137      000000
+ 138 0120 E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+ 138      00
+ 139 0125 8B4304   		movl	4(%ebx), %eax
+ 140 0128 89442408 		movl	%eax, 8(%esp)
+ 141 012c 8B03     		movl	(%ebx), %eax
+ 142 012e C7042400 		movl	$__ZSt4cout, (%esp)
+ 142      000000
+ 143 0135 89442404 		movl	%eax, 4(%esp)
+ 144 0139 E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+ 144      00
+ 145 013e C7442408 		movl	$7, 8(%esp)
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 4
+
+
+ 145      07000000 
+ 146 0146 C7442404 		movl	$LC2, 4(%esp)
+ 146      37000000 
+ 147 014e 89C3     		movl	%eax, %ebx
+ 148 0150 890424   		movl	%eax, (%esp)
+ 149 0153 E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+ 149      00
+ 150 0158 D9442424 		flds	36(%esp)
+ 151 015c 89D9     		movl	%ebx, %ecx
+ 152 015e DD1C24   		fstpl	(%esp)
+ 153 0161 E8000000 		call	__ZNSo9_M_insertIdEERSoT_
+ 153      00
+ 154 0166 89C6     		movl	%eax, %esi
+ 155 0168 8B00     		movl	(%eax), %eax
+ 156 016a 83EC08   		subl	$8, %esp
+ 157 016d 8B40F4   		movl	-12(%eax), %eax
+ 158 0170 8B5C067C 		movl	124(%esi,%eax), %ebx
+ 159 0174 85DB     		testl	%ebx, %ebx
+ 160 0176 7454     		je	L33
+ 161 0178 807B1C00 		cmpb	$0, 28(%ebx)
+ 162 017c 7422     		je	L28
+ 163 017e 0FBE4327 		movsbl	39(%ebx), %eax
+ 164              	L29:
+ 165 0182 89F1     		movl	%esi, %ecx
+ 166 0184 890424   		movl	%eax, (%esp)
+ 167 0187 E8000000 		call	__ZNSo3putEc
+ 167      00
+ 168 018c 83EC04   		subl	$4, %esp
+ 169 018f 89C1     		movl	%eax, %ecx
+ 170 0191 E8000000 		call	__ZNSo5flushEv
+ 170      00
+ 171 0196 83C414   		addl	$20, %esp
+ 172 0199 5B       		popl	%ebx
+ 173 019a 5E       		popl	%esi
+ 174 019b C20800   		ret	$8
+ 175 019e 6690     		.p2align 4,,10
+ 176              	L28:
+ 177 01a0 89D9     		movl	%ebx, %ecx
+ 178 01a2 E8000000 		call	__ZNKSt5ctypeIcE13_M_widen_initEv
+ 178      00
+ 179 01a7 8B03     		movl	(%ebx), %eax
+ 180 01a9 8B5018   		movl	24(%eax), %edx
+ 181 01ac B80A0000 		movl	$10, %eax
+ 181      00
+ 182 01b1 81FA0000 		cmpl	$__ZNKSt5ctypeIcE8do_widenEc, %edx
+ 182      0000
+ 183 01b7 74C9     		je	L29
+ 184 01b9 C704240A 		movl	$10, (%esp)
+ 184      000000
+ 185 01c0 89D9     		movl	%ebx, %ecx
+ 186 01c2 FFD2     		call	*%edx
+ 187 01c4 83EC04   		subl	$4, %esp
+ 188 01c7 0FBEC0   		movsbl	%al, %eax
+ 189 01ca EBB6     		jmp	L29
+ 190              	L33:
+ 191 01cc E8000000 		call	__ZSt16__throw_bad_castv
+ 191      00
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 5
+
+
+ 192              		.section .rdata,"dr"
+ 193              	LC4:
+ 194 003f 43656475 		.ascii "Cedula: \0"
+ 194      6C613A20 
+ 194      00
+ 195              	LC5:
+ 196 0048 204E6F6D 		.ascii " Nombre: \0"
+ 196      6272653A 
+ 196      2000
+ 197              	LC6:
+ 198 0052 20417065 		.ascii " Apellido: \0"
+ 198      6C6C6964 
+ 198      6F3A2000 
+ 202              		.text
+ 203 01d1 90       		.align 2
+ 204 01d2 8DB42600 		.p2align 4,,15
+ 204      0000008D 
+ 204      BC270000 
+ 204      0000
+ 205              		.globl	__ZN7Persona8toStringB5cxx11Ev
+ 207              	__ZN7Persona8toStringB5cxx11Ev:
+ 208 01e0 55       		pushl	%ebp
+ 209 01e1 89E5     		movl	%esp, %ebp
+ 210 01e3 81EC5801 		subl	$344, %esp
+ 210      0000
+ 211 01e9 8D45F8   		leal	-8(%ebp), %eax
+ 212 01ec 898DC0FE 		movl	%ecx, -320(%ebp)
+ 212      FFFF
+ 213 01f2 C785DCFE 		movl	$___gxx_personality_sj0, -292(%ebp)
+ 213      FFFF0000 
+ 213      0000
+ 214 01fc C785E0FE 		movl	$LLSDA1099, -288(%ebp)
+ 214      FFFF0000 
+ 214      0000
+ 215 0206 C785E8FE 		movl	$L52, -280(%ebp)
+ 215      FFFFF605 
+ 215      0000
+ 216 0210 8985E4FE 		movl	%eax, -284(%ebp)
+ 216      FFFF
+ 217 0216 8D85C4FE 		leal	-316(%ebp), %eax
+ 217      FFFF
+ 218 021c 89A5ECFE 		movl	%esp, -276(%ebp)
+ 218      FFFF
+ 219 0222 890424   		movl	%eax, (%esp)
+ 220 0225 E8000000 		call	__Unwind_SjLj_Register
+ 220      00
+ 221 022a 8D8D70FF 		leal	-144(%ebp), %ecx
+ 221      FFFF
+ 222 0230 E8000000 		call	__ZNSt8ios_baseC2Ev
+ 222      00
+ 223 0235 A1040000 		movl	__ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+4, %eax
+ 223      00
+ 224 023a C645E400 		movb	$0, -28(%ebp)
+ 225 023e 8D8D30FF 		leal	-208(%ebp), %ecx
+ 225      FFFF
+ 226 0244 C78570FF 		movl	$__ZTVSt9basic_iosIcSt11char_traitsIcEE+8, -144(%ebp)
+ 226      FFFF0800 
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 6
+
+
+ 226      0000
+ 227 024e C745E000 		movl	$0, -32(%ebp)
+ 227      000000
+ 228 0255 C645E500 		movb	$0, -27(%ebp)
+ 229 0259 C745E800 		movl	$0, -24(%ebp)
+ 229      000000
+ 230 0260 0348F4   		addl	-12(%eax), %ecx
+ 231 0263 898530FF 		movl	%eax, -208(%ebp)
+ 231      FFFF
+ 232 0269 A1080000 		movl	__ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+8, %eax
+ 232      00
+ 233 026e C745EC00 		movl	$0, -20(%ebp)
+ 233      000000
+ 234 0275 C745F000 		movl	$0, -16(%ebp)
+ 234      000000
+ 235 027c C745F400 		movl	$0, -12(%ebp)
+ 235      000000
+ 236 0283 8901     		movl	%eax, (%ecx)
+ 237 0285 C7042400 		movl	$0, (%esp)
+ 237      000000
+ 238 028c C785C8FE 		movl	$2, -312(%ebp)
+ 238      FFFF0200 
+ 238      0000
+ 239 0296 E8000000 		call	__ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E
+ 239      00
+ 240 029b 8D8D50FF 		leal	-176(%ebp), %ecx
+ 240      FFFF
+ 241 02a1 83EC04   		subl	$4, %esp
+ 242 02a4 C78570FF 		movl	$__ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+32, -144(%ebp)
+ 242      FFFF2000 
+ 242      0000
+ 243 02ae C78534FF 		movl	$__ZTVSt15basic_streambufIcSt11char_traitsIcEE+8, -204(%ebp)
+ 243      FFFF0800 
+ 243      0000
+ 244 02b8 C78538FF 		movl	$0, -200(%ebp)
+ 244      FFFF0000 
+ 244      0000
+ 245 02c2 C7853CFF 		movl	$0, -196(%ebp)
+ 245      FFFF0000 
+ 245      0000
+ 246 02cc C78540FF 		movl	$0, -192(%ebp)
+ 246      FFFF0000 
+ 246      0000
+ 247 02d6 C78544FF 		movl	$0, -188(%ebp)
+ 247      FFFF0000 
+ 247      0000
+ 248 02e0 C78548FF 		movl	$0, -184(%ebp)
+ 248      FFFF0000 
+ 248      0000
+ 249 02ea C7854CFF 		movl	$0, -180(%ebp)
+ 249      FFFF0000 
+ 249      0000
+ 250 02f4 C78530FF 		movl	$__ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+12, -208(%ebp)
+ 250      FFFF0C00 
+ 250      0000
+ 251 02fe E8000000 		call	__ZNSt6localeC1Ev
+ 251      00
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 7
+
+
+ 252 0303 8D8560FF 		leal	-160(%ebp), %eax
+ 252      FFFF
+ 253 0309 8D8D70FF 		leal	-144(%ebp), %ecx
+ 253      FFFF
+ 254 030f C78534FF 		movl	$__ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE+8, -204(%ebp)
+ 254      FFFF0800 
+ 254      0000
+ 255 0319 C78554FF 		movl	$16, -172(%ebp)
+ 255      FFFF1000 
+ 255      0000
+ 256 0323 C7855CFF 		movl	$0, -164(%ebp)
+ 256      FFFF0000 
+ 256      0000
+ 257 032d 898558FF 		movl	%eax, -168(%ebp)
+ 257      FFFF
+ 258 0333 8D8534FF 		leal	-204(%ebp), %eax
+ 258      FFFF
+ 259 0339 C68560FF 		movb	$0, -160(%ebp)
+ 259      FFFF00
+ 260 0340 890424   		movl	%eax, (%esp)
+ 261 0343 C785C8FE 		movl	$3, -312(%ebp)
+ 261      FFFF0300 
+ 261      0000
+ 262 034d E8000000 		call	__ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E
+ 262      00
+ 263 0352 8B4508   		movl	8(%ebp), %eax
+ 264 0355 83EC04   		subl	$4, %esp
+ 265 0358 8B4004   		movl	4(%eax), %eax
+ 266 035b 8985BCFE 		movl	%eax, -324(%ebp)
+ 266      FFFF
+ 267 0361 8D8530FF 		leal	-208(%ebp), %eax
+ 267      FFFF
+ 268 0367 C7442408 		movl	$8, 8(%esp)
+ 268      08000000 
+ 269 036f C7442404 		movl	$LC4, 4(%esp)
+ 269      3F000000 
+ 270 0377 890424   		movl	%eax, (%esp)
+ 271 037a C785C8FE 		movl	$1, -312(%ebp)
+ 271      FFFF0100 
+ 271      0000
+ 272 0384 E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+ 272      00
+ 273 0389 8B85BCFE 		movl	-324(%ebp), %eax
+ 273      FFFF
+ 274 038f 8D8D30FF 		leal	-208(%ebp), %ecx
+ 274      FFFF
+ 275 0395 890424   		movl	%eax, (%esp)
+ 276 0398 E8000000 		call	__ZNSolsEi
+ 276      00
+ 277 039d 83EC04   		subl	$4, %esp
+ 278 03a0 C7442408 		movl	$9, 8(%esp)
+ 278      09000000 
+ 279 03a8 C7442404 		movl	$LC5, 4(%esp)
+ 279      48000000 
+ 280 03b0 8985BCFE 		movl	%eax, -324(%ebp)
+ 280      FFFF
+ 281 03b6 890424   		movl	%eax, (%esp)
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 8
+
+
+ 282 03b9 E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+ 282      00
+ 283 03be 8B5508   		movl	8(%ebp), %edx
+ 284 03c1 8B420C   		movl	12(%edx), %eax
+ 285 03c4 89442408 		movl	%eax, 8(%esp)
+ 286 03c8 8B5508   		movl	8(%ebp), %edx
+ 287 03cb 8B4208   		movl	8(%edx), %eax
+ 288 03ce 89442404 		movl	%eax, 4(%esp)
+ 289 03d2 8B85BCFE 		movl	-324(%ebp), %eax
+ 289      FFFF
+ 290 03d8 890424   		movl	%eax, (%esp)
+ 291 03db E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+ 291      00
+ 292 03e0 C7442408 		movl	$11, 8(%esp)
+ 292      0B000000 
+ 293 03e8 C7442404 		movl	$LC6, 4(%esp)
+ 293      52000000 
+ 294 03f0 8985BCFE 		movl	%eax, -324(%ebp)
+ 294      FFFF
+ 295 03f6 890424   		movl	%eax, (%esp)
+ 296 03f9 E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+ 296      00
+ 297 03fe 8B5508   		movl	8(%ebp), %edx
+ 298 0401 8B4224   		movl	36(%edx), %eax
+ 299 0404 89442408 		movl	%eax, 8(%esp)
+ 300 0408 8B5508   		movl	8(%ebp), %edx
+ 301 040b 8B4220   		movl	32(%edx), %eax
+ 302 040e 89442404 		movl	%eax, 4(%esp)
+ 303 0412 8B85BCFE 		movl	-324(%ebp), %eax
+ 303      FFFF
+ 304 0418 890424   		movl	%eax, (%esp)
+ 305 041b E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+ 305      00
+ 306 0420 8B85C0FE 		movl	-320(%ebp), %eax
+ 306      FFFF
+ 307 0426 8D5008   		leal	8(%eax), %edx
+ 308 0429 C7400400 		movl	$0, 4(%eax)
+ 308      000000
+ 309 0430 C6400800 		movb	$0, 8(%eax)
+ 310 0434 8910     		movl	%edx, (%eax)
+ 311 0436 8B8548FF 		movl	-184(%ebp), %eax
+ 311      FFFF
+ 312 043c 8995B8FE 		movl	%edx, -328(%ebp)
+ 312      FFFF
+ 313 0442 85C0     		testl	%eax, %eax
+ 314 0444 0F848601 		je	L39
+ 314      0000
+ 315 044a 8B9540FF 		movl	-192(%ebp), %edx
+ 315      FFFF
+ 316 0450 39D0     		cmpl	%edx, %eax
+ 317 0452 0F870801 		ja	L67
+ 317      0000
+ 318 0458 8B8544FF 		movl	-188(%ebp), %eax
+ 318      FFFF
+ 319 045e 8D8D08FF 		leal	-248(%ebp), %ecx
+ 319      FFFF
+ 320 0464 898D00FF 		movl	%ecx, -256(%ebp)
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 9
+
+
+ 320      FFFF
+ 321 046a 8D8D00FF 		leal	-256(%ebp), %ecx
+ 321      FFFF
+ 322 0470 89542404 		movl	%edx, 4(%esp)
+ 323 0474 890424   		movl	%eax, (%esp)
+ 324 0477 C785C8FE 		movl	$4, -312(%ebp)
+ 324      FFFF0400 
+ 324      0000
+ 325 0481 E8EAFBFF 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_it
+ 325      FF
+ 326 0486 8D8500FF 		leal	-256(%ebp), %eax
+ 326      FFFF
+ 327 048c 83EC08   		subl	$8, %esp
+ 328 048f 890424   		movl	%eax, (%esp)
+ 329 0492 8B8DC0FE 		movl	-320(%ebp), %ecx
+ 329      FFFF
+ 330 0498 C785C8FE 		movl	$5, -312(%ebp)
+ 330      FFFF0500 
+ 330      0000
+ 331 04a2 E8000000 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+ 331      00
+ 332 04a7 8B8500FF 		movl	-256(%ebp), %eax
+ 332      FFFF
+ 333 04ad 8D9508FF 		leal	-248(%ebp), %edx
+ 333      FFFF
+ 334 04b3 83EC04   		subl	$4, %esp
+ 335 04b6 39D0     		cmpl	%edx, %eax
+ 336 04b8 7408     		je	L42
+ 337              	L65:
+ 338 04ba 890424   		movl	%eax, (%esp)
+ 339 04bd E8000000 		call	__ZdlPv
+ 339      00
+ 340              	L42:
+ 341 04c2 8B8558FF 		movl	-168(%ebp), %eax
+ 341      FFFF
+ 342 04c8 8D9560FF 		leal	-160(%ebp), %edx
+ 342      FFFF
+ 343 04ce C78530FF 		movl	$__ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+12, -208(%ebp)
+ 343      FFFF0C00 
+ 343      0000
+ 344 04d8 C78570FF 		movl	$__ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+32, -144(%ebp)
+ 344      FFFF2000 
+ 344      0000
+ 345 04e2 C78534FF 		movl	$__ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE+8, -204(%ebp)
+ 345      FFFF0800 
+ 345      0000
+ 346 04ec 39D0     		cmpl	%edx, %eax
+ 347 04ee 7408     		je	L51
+ 348 04f0 890424   		movl	%eax, (%esp)
+ 349 04f3 E8000000 		call	__ZdlPv
+ 349      00
+ 350              	L51:
+ 351 04f8 8D8D50FF 		leal	-176(%ebp), %ecx
+ 351      FFFF
+ 352 04fe C78534FF 		movl	$__ZTVSt15basic_streambufIcSt11char_traitsIcEE+8, -204(%ebp)
+ 352      FFFF0800 
+ 352      0000
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 10
+
+
+ 353 0508 E8000000 		call	__ZNSt6localeD1Ev
+ 353      00
+ 354 050d A1040000 		movl	__ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+4, %eax
+ 354      00
+ 355 0512 8B150800 		movl	__ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+8, %edx
+ 355      0000
+ 356 0518 8D8D70FF 		leal	-144(%ebp), %ecx
+ 356      FFFF
+ 357 051e 8B40F4   		movl	-12(%eax), %eax
+ 358 0521 89940530 		movl	%edx, -208(%ebp,%eax)
+ 358      FFFFFF
+ 359 0528 C78570FF 		movl	$__ZTVSt9basic_iosIcSt11char_traitsIcEE+8, -144(%ebp)
+ 359      FFFF0800 
+ 359      0000
+ 360 0532 C785C8FE 		movl	$-1, -312(%ebp)
+ 360      FFFFFFFF 
+ 360      FFFF
+ 361 053c E8000000 		call	__ZNSt8ios_baseD2Ev
+ 361      00
+ 362 0541 8D85C4FE 		leal	-316(%ebp), %eax
+ 362      FFFF
+ 363 0547 890424   		movl	%eax, (%esp)
+ 364 054a E8000000 		call	__Unwind_SjLj_Unregister
+ 364      00
+ 365 054f 8B85C0FE 		movl	-320(%ebp), %eax
+ 365      FFFF
+ 366 0555 C9       		leave
+ 367 0556 C20400   		ret	$4
+ 368 0559 8DB42600 		.p2align 4,,10
+ 368      000000
+ 369              	L67:
+ 370 0560 8B9544FF 		movl	-188(%ebp), %edx
+ 370      FFFF
+ 371 0566 8D8D20FF 		leal	-224(%ebp), %ecx
+ 371      FFFF
+ 372 056c 898D18FF 		movl	%ecx, -232(%ebp)
+ 372      FFFF
+ 373 0572 89442404 		movl	%eax, 4(%esp)
+ 374 0576 891424   		movl	%edx, (%esp)
+ 375 0579 8D9518FF 		leal	-232(%ebp), %edx
+ 375      FFFF
+ 376 057f C785C8FE 		movl	$4, -312(%ebp)
+ 376      FFFF0400 
+ 376      0000
+ 377 0589 89D1     		movl	%edx, %ecx
+ 378 058b E8E0FAFF 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_it
+ 378      FF
+ 379 0590 8D9518FF 		leal	-232(%ebp), %edx
+ 379      FFFF
+ 380 0596 83EC08   		subl	$8, %esp
+ 381 0599 891424   		movl	%edx, (%esp)
+ 382 059c 8B8DC0FE 		movl	-320(%ebp), %ecx
+ 382      FFFF
+ 383 05a2 C785C8FE 		movl	$6, -312(%ebp)
+ 383      FFFF0600 
+ 383      0000
+ 384 05ac E8000000 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 11
+
+
+ 384      00
+ 385 05b1 8B8518FF 		movl	-232(%ebp), %eax
+ 385      FFFF
+ 386 05b7 8D9520FF 		leal	-224(%ebp), %edx
+ 386      FFFF
+ 387 05bd 83EC04   		subl	$4, %esp
+ 388 05c0 39D0     		cmpl	%edx, %eax
+ 389 05c2 0F85F2FE 		jne	L65
+ 389      FFFF
+ 390 05c8 E9F5FEFF 		jmp	L42
+ 390      FF
+ 391 05cd 8D7600   		.p2align 4,,10
+ 392              	L39:
+ 393 05d0 8D8558FF 		leal	-168(%ebp), %eax
+ 393      FFFF
+ 394 05d6 890424   		movl	%eax, (%esp)
+ 395 05d9 8B8DC0FE 		movl	-320(%ebp), %ecx
+ 395      FFFF
+ 396 05df C785C8FE 		movl	$4, -312(%ebp)
+ 396      FFFF0400 
+ 396      0000
+ 397 05e9 E8000000 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+ 397      00
+ 398 05ee 83EC04   		subl	$4, %esp
+ 399 05f1 E9CCFEFF 		jmp	L42
+ 399      FF
+ 400              	L52:
+ 401 05f6 83C508   		addl	$8, %ebp
+ 402 05f9 83BDC8FE 		cmpl	$5, -312(%ebp)
+ 402      FFFF05
+ 403 0600 8B85CCFE 		movl	-308(%ebp), %eax
+ 403      FFFF
+ 404 0606 8985BCFE 		movl	%eax, -324(%ebp)
+ 404      FFFF
+ 405 060c 770D     		ja	L59
+ 406 060e 8B85C8FE 		movl	-312(%ebp), %eax
+ 406      FFFF
+ 407 0614 FF248560 		jmp	*L60(,%eax,4)
+ 407      000000
+ 408              		.section .rdata,"dr"
+ 409 005e 0000     		.align 4
+ 410              	L60:
+ 411 0060 4D060000 		.long	L50
+ 412 0064 C6060000 		.long	L38
+ 413 0068 7A060000 		.long	L55
+ 414 006c 35060000 		.long	L46
+ 415 0070 1D060000 		.long	L57
+ 416 0074 FD060000 		.long	L58
+ 417              		.text
+ 418              	L59:
+ 419 061b 0F0B     		ud2
+ 420              	L57:
+ 421 061d 8B8500FF 		movl	-256(%ebp), %eax
+ 421      FFFF
+ 422 0623 8D9508FF 		leal	-248(%ebp), %edx
+ 422      FFFF
+ 423 0629 39D0     		cmpl	%edx, %eax
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 12
+
+
+ 424 062b 7408     		je	L46
+ 425              	L64:
+ 426 062d 890424   		movl	%eax, (%esp)
+ 427 0630 E8000000 		call	__ZdlPv
+ 427      00
+ 428              	L46:
+ 429 0635 8B85C0FE 		movl	-320(%ebp), %eax
+ 429      FFFF
+ 430 063b 8B00     		movl	(%eax), %eax
+ 431 063d 3985B8FE 		cmpl	%eax, -328(%ebp)
+ 431      FFFF
+ 432 0643 7408     		je	L50
+ 433 0645 890424   		movl	%eax, (%esp)
+ 434 0648 E8000000 		call	__ZdlPv
+ 434      00
+ 435              	L50:
+ 436 064d 8D8D30FF 		leal	-208(%ebp), %ecx
+ 436      FFFF
+ 437 0653 C785C8FE 		movl	$0, -312(%ebp)
+ 437      FFFF0000 
+ 437      0000
+ 438 065d E8000000 		call	__ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev
+ 438      00
+ 439 0662 8B85BCFE 		movl	-324(%ebp), %eax
+ 439      FFFF
+ 440 0668 890424   		movl	%eax, (%esp)
+ 441 066b C785C8FE 		movl	$-1, -312(%ebp)
+ 441      FFFFFFFF 
+ 441      FFFF
+ 442 0675 E8000000 		call	__Unwind_SjLj_Resume
+ 442      00
+ 443              	L55:
+ 444 067a 8B8558FF 		movl	-168(%ebp), %eax
+ 444      FFFF
+ 445 0680 8D9560FF 		leal	-160(%ebp), %edx
+ 445      FFFF
+ 446 0686 C78534FF 		movl	$__ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE+8, -204(%ebp)
+ 446      FFFF0800 
+ 446      0000
+ 447 0690 39D0     		cmpl	%edx, %eax
+ 448 0692 7408     		je	L37
+ 449 0694 890424   		movl	%eax, (%esp)
+ 450 0697 E8000000 		call	__ZdlPv
+ 450      00
+ 451              	L37:
+ 452 069c 8D8D50FF 		leal	-176(%ebp), %ecx
+ 452      FFFF
+ 453 06a2 C78534FF 		movl	$__ZTVSt15basic_streambufIcSt11char_traitsIcEE+8, -204(%ebp)
+ 453      FFFF0800 
+ 453      0000
+ 454 06ac E8000000 		call	__ZNSt6localeD1Ev
+ 454      00
+ 455 06b1 A1040000 		movl	__ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+4, %eax
+ 455      00
+ 456 06b6 8B150800 		movl	__ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+8, %edx
+ 456      0000
+ 457 06bc 8B40F4   		movl	-12(%eax), %eax
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 13
+
+
+ 458 06bf 89940530 		movl	%edx, -208(%ebp,%eax)
+ 458      FFFFFF
+ 459              	L38:
+ 460 06c6 8D8D70FF 		leal	-144(%ebp), %ecx
+ 460      FFFF
+ 461 06cc C78570FF 		movl	$__ZTVSt9basic_iosIcSt11char_traitsIcEE+8, -144(%ebp)
+ 461      FFFF0800 
+ 461      0000
+ 462 06d6 C785C8FE 		movl	$0, -312(%ebp)
+ 462      FFFF0000 
+ 462      0000
+ 463 06e0 E8000000 		call	__ZNSt8ios_baseD2Ev
+ 463      00
+ 464 06e5 8B85BCFE 		movl	-324(%ebp), %eax
+ 464      FFFF
+ 465 06eb 890424   		movl	%eax, (%esp)
+ 466 06ee C785C8FE 		movl	$-1, -312(%ebp)
+ 466      FFFFFFFF 
+ 466      FFFF
+ 467 06f8 E8000000 		call	__Unwind_SjLj_Resume
+ 467      00
+ 468              	L58:
+ 469 06fd 8B8518FF 		movl	-232(%ebp), %eax
+ 469      FFFF
+ 470 0703 8D9520FF 		leal	-224(%ebp), %edx
+ 470      FFFF
+ 471 0709 39D0     		cmpl	%edx, %eax
+ 472 070b 0F851CFF 		jne	L64
+ 472      FFFF
+ 473 0711 E91FFFFF 		jmp	L46
+ 473      FF
+ 474              		.section	.gcc_except_table,"w"
+ 475              	LLSDA1099:
+ 476 0000 FF       		.byte	0xff
+ 477 0001 FF       		.byte	0xff
+ 478 0002 01       		.byte	0x1
+ 479 0003 0C       		.uleb128 LLSDACSE1099-LLSDACSB1099
+ 480              	LLSDACSB1099:
+ 481 0004 00       		.uleb128 0
+ 482 0005 00       		.uleb128 0
+ 483 0006 01       		.uleb128 0x1
+ 484 0007 00       		.uleb128 0
+ 485 0008 02       		.uleb128 0x2
+ 486 0009 00       		.uleb128 0
+ 487 000a 03       		.uleb128 0x3
+ 488 000b 00       		.uleb128 0
+ 489 000c 04       		.uleb128 0x4
+ 490 000d 00       		.uleb128 0
+ 491 000e 05       		.uleb128 0x5
+ 492 000f 00       		.uleb128 0
+ 493              	LLSDACSE1099:
+ 494              		.text
+ 495              		.section .rdata,"dr"
+ 496              	LC7:
+ 497 0078 00       		.ascii "\0"
+ 498 0079 000000   		.text
+ 499              		.align 2
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 14
+
+
+ 500 0716 8D76008D 		.p2align 4,,15
+ 500      BC270000 
+ 500      0000
+ 501              		.globl	__ZN7PersonaC2Ev
+ 503              	__ZN7PersonaC2Ev:
+ 504 0720 55       		pushl	%ebp
+ 505 0721 89E5     		movl	%esp, %ebp
+ 506 0723 83EC68   		subl	$104, %esp
+ 507 0726 8D55F8   		leal	-8(%ebp), %edx
+ 508 0729 894DC0   		movl	%ecx, -64(%ebp)
+ 509 072c C745DC00 		movl	$___gxx_personality_sj0, -36(%ebp)
+ 509      000000
+ 510 0733 C745E010 		movl	$LLSDA1090, -32(%ebp)
+ 510      000000
+ 511 073a C745E8F4 		movl	$L72, -24(%ebp)
+ 511      070000
+ 512 0741 8955E4   		movl	%edx, -28(%ebp)
+ 513 0744 8D55C4   		leal	-60(%ebp), %edx
+ 514 0747 8965EC   		movl	%esp, -20(%ebp)
+ 515 074a 891424   		movl	%edx, (%esp)
+ 516 074d E8000000 		call	__Unwind_SjLj_Register
+ 516      00
+ 517 0752 8B45C0   		movl	-64(%ebp), %eax
+ 518 0755 8D5010   		leal	16(%eax), %edx
+ 519 0758 8D4808   		leal	8(%eax), %ecx
+ 520 075b C7000800 		movl	$__ZTV7Persona+8, (%eax)
+ 520      0000
+ 521 0761 C7400C00 		movl	$0, 12(%eax)
+ 521      000000
+ 522 0768 C6401000 		movb	$0, 16(%eax)
+ 523 076c 895008   		movl	%edx, 8(%eax)
+ 524 076f 8955BC   		movl	%edx, -68(%ebp)
+ 525 0772 8D5028   		leal	40(%eax), %edx
+ 526 0775 C7402400 		movl	$0, 36(%eax)
+ 526      000000
+ 527 077c C6402800 		movb	$0, 40(%eax)
+ 528 0780 895020   		movl	%edx, 32(%eax)
+ 529 0783 C7400400 		movl	$0, 4(%eax)
+ 529      000000
+ 530 078a 8955B8   		movl	%edx, -72(%ebp)
+ 531 078d C744240C 		movl	$0, 12(%esp)
+ 531      00000000 
+ 532 0795 C7442408 		movl	$LC7, 8(%esp)
+ 532      78000000 
+ 533 079d C7442404 		movl	$0, 4(%esp)
+ 533      00000000 
+ 534 07a5 C7042400 		movl	$0, (%esp)
+ 534      000000
+ 535 07ac C745C801 		movl	$1, -56(%ebp)
+ 535      000000
+ 536 07b3 E8000000 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEjjPKcj
+ 536      00
+ 537 07b8 8B45C0   		movl	-64(%ebp), %eax
+ 538 07bb 83EC10   		subl	$16, %esp
+ 539 07be C744240C 		movl	$0, 12(%esp)
+ 539      00000000 
+ 540 07c6 C7442408 		movl	$LC7, 8(%esp)
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 15
+
+
+ 540      78000000 
+ 541 07ce 8D4820   		leal	32(%eax), %ecx
+ 542 07d1 8B4024   		movl	36(%eax), %eax
+ 543 07d4 C7042400 		movl	$0, (%esp)
+ 543      000000
+ 544 07db 89442404 		movl	%eax, 4(%esp)
+ 545 07df E8000000 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEjjPKcj
+ 545      00
+ 546 07e4 8D45C4   		leal	-60(%ebp), %eax
+ 547 07e7 83EC10   		subl	$16, %esp
+ 548 07ea 890424   		movl	%eax, (%esp)
+ 549 07ed E8000000 		call	__Unwind_SjLj_Unregister
+ 549      00
+ 550 07f2 C9       		leave
+ 551 07f3 C3       		ret
+ 552              	L72:
+ 553 07f4 83C508   		addl	$8, %ebp
+ 554 07f7 8B45CC   		movl	-52(%ebp), %eax
+ 555 07fa 8945B4   		movl	%eax, -76(%ebp)
+ 556 07fd 8B45C0   		movl	-64(%ebp), %eax
+ 557 0800 8B4020   		movl	32(%eax), %eax
+ 558 0803 3945B8   		cmpl	%eax, -72(%ebp)
+ 559 0806 7408     		je	L70
+ 560 0808 890424   		movl	%eax, (%esp)
+ 561 080b E8000000 		call	__ZdlPv
+ 561      00
+ 562              	L70:
+ 563 0810 8B45C0   		movl	-64(%ebp), %eax
+ 564 0813 8B4008   		movl	8(%eax), %eax
+ 565 0816 3945BC   		cmpl	%eax, -68(%ebp)
+ 566 0819 7408     		je	L71
+ 567 081b 890424   		movl	%eax, (%esp)
+ 568 081e E8000000 		call	__ZdlPv
+ 568      00
+ 569              	L71:
+ 570 0823 8B45B4   		movl	-76(%ebp), %eax
+ 571 0826 890424   		movl	%eax, (%esp)
+ 572 0829 C745C8FF 		movl	$-1, -56(%ebp)
+ 572      FFFFFF
+ 573 0830 E8000000 		call	__Unwind_SjLj_Resume
+ 573      00
+ 574              		.section	.gcc_except_table,"w"
+ 575              	LLSDA1090:
+ 576 0010 FF       		.byte	0xff
+ 577 0011 FF       		.byte	0xff
+ 578 0012 01       		.byte	0x1
+ 579 0013 02       		.uleb128 LLSDACSE1090-LLSDACSB1090
+ 580              	LLSDACSB1090:
+ 581 0014 00       		.uleb128 0
+ 582 0015 00       		.uleb128 0
+ 583              	LLSDACSE1090:
+ 584              		.text
+ 585              		.globl	__ZN7PersonaC1Ev
+ 587              		.set	__ZN7PersonaC1Ev,__ZN7PersonaC2Ev
+ 588 0835 90       		.align 2
+ 589 0836 8D76008D 		.p2align 4,,15
+ 589      BC270000 
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 16
+
+
+ 589      0000
+ 590              		.globl	__ZN7PersonaC2EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_
+ 592              	__ZN7PersonaC2EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_:
+ 593 0840 55       		pushl	%ebp
+ 594 0841 89E5     		movl	%esp, %ebp
+ 595 0843 83EC68   		subl	$104, %esp
+ 596 0846 8D55F8   		leal	-8(%ebp), %edx
+ 597 0849 894DC0   		movl	%ecx, -64(%ebp)
+ 598 084c C745DC00 		movl	$___gxx_personality_sj0, -36(%ebp)
+ 598      000000
+ 599 0853 C745E016 		movl	$LLSDA1093, -32(%ebp)
+ 599      000000
+ 600 085a C745E8E6 		movl	$L82, -24(%ebp)
+ 600      080000
+ 601 0861 8955E4   		movl	%edx, -28(%ebp)
+ 602 0864 8D55C4   		leal	-60(%ebp), %edx
+ 603 0867 8965EC   		movl	%esp, -20(%ebp)
+ 604 086a 891424   		movl	%edx, (%esp)
+ 605 086d E8000000 		call	__Unwind_SjLj_Register
+ 605      00
+ 606 0872 8B45C0   		movl	-64(%ebp), %eax
+ 607 0875 8D5010   		leal	16(%eax), %edx
+ 608 0878 C7000800 		movl	$__ZTV7Persona+8, (%eax)
+ 608      0000
+ 609 087e C7400C00 		movl	$0, 12(%eax)
+ 609      000000
+ 610 0885 C6401000 		movb	$0, 16(%eax)
+ 611 0889 C7402400 		movl	$0, 36(%eax)
+ 611      000000
+ 612 0890 8D4808   		leal	8(%eax), %ecx
+ 613 0893 895008   		movl	%edx, 8(%eax)
+ 614 0896 8955BC   		movl	%edx, -68(%ebp)
+ 615 0899 8D5028   		leal	40(%eax), %edx
+ 616 089c C6402800 		movb	$0, 40(%eax)
+ 617 08a0 895020   		movl	%edx, 32(%eax)
+ 618 08a3 8955B8   		movl	%edx, -72(%ebp)
+ 619 08a6 89C2     		movl	%eax, %edx
+ 620 08a8 8B4508   		movl	8(%ebp), %eax
+ 621 08ab 894204   		movl	%eax, 4(%edx)
+ 622 08ae 8B450C   		movl	12(%ebp), %eax
+ 623 08b1 890424   		movl	%eax, (%esp)
+ 624 08b4 C745C801 		movl	$1, -56(%ebp)
+ 624      000000
+ 625 08bb E8000000 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+ 625      00
+ 626 08c0 8B55C0   		movl	-64(%ebp), %edx
+ 627 08c3 8B4510   		movl	16(%ebp), %eax
+ 628 08c6 83EC04   		subl	$4, %esp
+ 629 08c9 8D4A20   		leal	32(%edx), %ecx
+ 630 08cc 890424   		movl	%eax, (%esp)
+ 631 08cf E8000000 		call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+ 631      00
+ 632 08d4 8D45C4   		leal	-60(%ebp), %eax
+ 633 08d7 83EC04   		subl	$4, %esp
+ 634 08da 890424   		movl	%eax, (%esp)
+ 635 08dd E8000000 		call	__Unwind_SjLj_Unregister
+ 635      00
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 17
+
+
+ 636 08e2 C9       		leave
+ 637 08e3 C20C00   		ret	$12
+ 638              	L82:
+ 639 08e6 83C508   		addl	$8, %ebp
+ 640 08e9 8B45CC   		movl	-52(%ebp), %eax
+ 641 08ec 8945B4   		movl	%eax, -76(%ebp)
+ 642 08ef 8B45C0   		movl	-64(%ebp), %eax
+ 643 08f2 8B4020   		movl	32(%eax), %eax
+ 644 08f5 3945B8   		cmpl	%eax, -72(%ebp)
+ 645 08f8 7408     		je	L80
+ 646 08fa 890424   		movl	%eax, (%esp)
+ 647 08fd E8000000 		call	__ZdlPv
+ 647      00
+ 648              	L80:
+ 649 0902 8B45C0   		movl	-64(%ebp), %eax
+ 650 0905 8B4008   		movl	8(%eax), %eax
+ 651 0908 3945BC   		cmpl	%eax, -68(%ebp)
+ 652 090b 7408     		je	L81
+ 653 090d 890424   		movl	%eax, (%esp)
+ 654 0910 E8000000 		call	__ZdlPv
+ 654      00
+ 655              	L81:
+ 656 0915 8B45B4   		movl	-76(%ebp), %eax
+ 657 0918 890424   		movl	%eax, (%esp)
+ 658 091b C745C8FF 		movl	$-1, -56(%ebp)
+ 658      FFFFFF
+ 659 0922 E8000000 		call	__Unwind_SjLj_Resume
+ 659      00
+ 660              		.section	.gcc_except_table,"w"
+ 661              	LLSDA1093:
+ 662 0016 FF       		.byte	0xff
+ 663 0017 FF       		.byte	0xff
+ 664 0018 01       		.byte	0x1
+ 665 0019 02       		.uleb128 LLSDACSE1093-LLSDACSB1093
+ 666              	LLSDACSB1093:
+ 667 001a 00       		.uleb128 0
+ 668 001b 00       		.uleb128 0
+ 669              	LLSDACSE1093:
+ 670              		.text
+ 671              		.globl	__ZN7PersonaC1EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_
+ 673              		.set	__ZN7PersonaC1EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_,__ZN7PersonaC2EiNSt7_
+ 674 0927 90909090 		.section	.text.startup,"x"
+ 674      90909090 
+ 674      90
+ 675              		.p2align 4,,15
+ 677              	__GLOBAL__sub_I__ZN7PersonaC2Ev:
+ 678 0000 83EC1C   		subl	$28, %esp
+ 679 0003 B9000000 		movl	$__ZStL8__ioinit, %ecx
+ 679      00
+ 680 0008 E8000000 		call	__ZNSt8ios_base4InitC1Ev
+ 680      00
+ 681 000d C7042460 		movl	$___tcf_0, (%esp)
+ 681      000000
+ 682 0014 E8000000 		call	_atexit
+ 682      00
+ 683 0019 83C41C   		addl	$28, %esp
+ 684 001c C3       		ret
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 18
+
+
+ 685 001d 909090   		.section	.ctors,"w"
+ 686              		.align 4
+ 687 0000 00000000 		.long	__GLOBAL__sub_I__ZN7PersonaC2Ev
+ 688              		.globl	__ZTS7Persona
+ 689              		.section	.rdata$_ZTS7Persona,"dr"
+ 690              		.linkonce same_size
+ 691              		.align 4
+ 692              	__ZTS7Persona:
+ 693 0000 37506572 		.ascii "7Persona\0"
+ 693      736F6E61 
+ 693      00
+ 694              		.globl	__ZTI7Persona
+ 695 0009 000000   		.section	.rdata$_ZTI7Persona,"dr"
+ 696              		.linkonce same_size
+ 697              		.align 4
+ 698              	__ZTI7Persona:
+ 699 0000 08000000 		.long	__ZTVN10__cxxabiv117__class_type_infoE+8
+ 700 0004 00000000 		.long	__ZTS7Persona
+ 701              		.globl	__ZTV7Persona
+ 702              		.section	.rdata$_ZTV7Persona,"dr"
+ 703              		.linkonce same_size
+ 704              		.align 4
+ 705              	__ZTV7Persona:
+ 706 0000 00000000 		.long	0
+ 707 0004 00000000 		.long	__ZTI7Persona
+ 708 0008 00000000 		.long	__ZN7PersonaD1Ev
+ 709 000c 40000000 		.long	__ZN7PersonaD0Ev
+ 710 0010 E0010000 		.long	__ZN7Persona8toStringB5cxx11Ev
+ 711 0014 00010000 		.long	__ZN7Persona5comerENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEf
+ 712              	.lcomm __ZStL8__ioinit,1,1
+ 713              		.ident	"GCC: (tdm-1) 5.1.0"
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccByN5xm.s 			page 19
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 Persona.cpp
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:8      .text$_ZNKSt5ctypeIcE8do_widenEc:00000000 __ZNKSt5ctypeIcE8do_widenEc
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:16     .text:00000000 __ZN7PersonaD2Ev
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:705    .rdata$_ZTV7Persona:00000000 __ZTV7Persona
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:16     .text:00000000 __ZN7PersonaD1Ev
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:45     .text:00000040 __ZN7PersonaD0Ev
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:57     .text:00000060 ___tcf_0
+                             .bss:00000000 __ZStL8__ioinit
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:68     .text:00000070 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag.isra.22
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:130    .text:00000100 __ZN7Persona5comerENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEf
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:207    .text:000001e0 __ZN7Persona8toStringB5cxx11Ev
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:503    .text:00000720 __ZN7PersonaC2Ev
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:503    .text:00000720 __ZN7PersonaC1Ev
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:592    .text:00000840 __ZN7PersonaC2EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:592    .text:00000840 __ZN7PersonaC1EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:677    .text.startup:00000000 __GLOBAL__sub_I__ZN7PersonaC2Ev
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:692    .rdata$_ZTS7Persona:00000000 __ZTS7Persona
+C:\Users\USER\AppData\Local\Temp\ccByN5xm.s:698    .rdata$_ZTI7Persona:00000000 __ZTI7Persona
+
+UNDEFINED SYMBOLS
+__ZSt4cout
+___gxx_personality_sj0
+__Unwind_SjLj_Register
+__Unwind_SjLj_Unregister
+__ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE
+__ZTVSt9basic_iosIcSt11char_traitsIcEE
+__ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE
+__ZTVSt15basic_streambufIcSt11char_traitsIcEE
+__ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE
+__ZTVN10__cxxabiv117__class_type_infoE
+__ZdlPv
+__ZNSt8ios_base4InitD1Ev
+__ZSt19__throw_logic_errorPKc
+__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERjj
+_memcpy
+__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+__ZNSo9_M_insertIdEERSoT_
+__ZNSo3putEc
+__ZNSo5flushEv
+__ZNKSt5ctypeIcE13_M_widen_initEv
+__ZSt16__throw_bad_castv
+__ZNSt8ios_baseC2Ev
+__ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E
+__ZNSt6localeC1Ev
+__ZNSolsEi
+__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+__ZNSt6localeD1Ev
+__ZNSt8ios_baseD2Ev
+__ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev
+__Unwind_SjLj_Resume
+__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEjjPKcj
+__ZNSt8ios_base4InitC1Ev
+_atexit

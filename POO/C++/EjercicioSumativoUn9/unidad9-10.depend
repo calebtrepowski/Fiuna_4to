@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1598220793 source:c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\empleado.cpp
+	"Empleado.h"
+
+1598220258 c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\empleado.h
+	"Persona.h"
+	"Trabajador.h"
+
+1598220183 c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\persona.h
+	<iostream>
+	<sstream>
+
+1598220833 c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\trabajador.h
+
+1598205392 source:c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\gerente.cpp
+	"Gerente.h"
+
+1556544479 c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\gerente.h
+	"Empleado.h"
+
+1598222954 source:c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\main.cpp
+	<iostream>
+	"Vendedor.h"
+	"Gerente.h"
+	"EmpHora.h"
+	"Empleado.h"
+
+1598221887 c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\vendedor.h
+	"Empleado.h"
+
+1598220299 source:c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\persona.cpp
+	"Persona.h"
+
+1598205392 source:c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\vendedor.cpp
+	"Vendedor.h"
+
+1598222471 source:c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\emphora.cpp
+	"EmpHora.h"
+
+1598222743 c:\users\claudio\google drive\fiuna\poo\practicas2020\unidad9-10\emphora.h
+	"Empleado.h"
+
