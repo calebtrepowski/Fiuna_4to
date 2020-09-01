@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1598880759 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial2\parcial2\main.cpp
+	<iostream>
+	<exception>
+	"Pelicula.h"
+	"Resolucion420.h"
+	"Resolucion4k.h"
+
+1598879878 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial2\parcial2\pelicula.cpp
+	"Pelicula.h"
+
+1598879878 c:\caleb\fiuna\4to semestre\poo\c++\parcial2\parcial2\pelicula.h
+	<iostream>
+	<sstream>
+
+1598879878 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial2\parcial2\resolucion420.cpp
+	"Resolucion420.h"
+
+1598879878 c:\caleb\fiuna\4to semestre\poo\c++\parcial2\parcial2\resolucion420.h
+	"Pelicula.h"
+
+1598879878 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial2\parcial2\resolucion4k.cpp
+	"Resolucion4k.h"
+
+1598879878 c:\caleb\fiuna\4to semestre\poo\c++\parcial2\parcial2\resolucion4k.h
+	"Pelicula.h"
+
