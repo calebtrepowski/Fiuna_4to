@@ -24,6 +24,9 @@ void imprimirDatos(Empleado *e){
     cout << "Salario a cobrar: "
          <<  e->calcularSalario() << endl;
     e->comer("Milanesa", 150);
+//    e->trabajar();
+//    e->descansar();
+//    cout << t->cobrarSalario() << endl;
     imprimirTrabajador(e);
     cout << "--------------------" << endl<< endl;
 }

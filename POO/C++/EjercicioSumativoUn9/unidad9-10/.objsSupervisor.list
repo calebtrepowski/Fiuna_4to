@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 1
 
 
    1              		.file	"Supervisor.cpp"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
   46      BC270000 
   46      0000
   47              		.globl	__ZThn56_N4rrhh10SupervisorD1Ev
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 2
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 2
 
 
   49              	__ZThn56_N4rrhh10SupervisorD1Ev:
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
   92              	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator
   93 00d0 57       		pushl	%edi
   94 00d1 56       		pushl	%esi
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 3
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 3
 
 
   95 00d2 89CE     		movl	%ecx, %esi
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  144              		.section .rdata,"dr"
  145 002a 0000     		.align 4
  146              	LC4:
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 4
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 4
 
 
  147 002c 53757065 		.ascii "Supervisor trabajando, supervisando\0"
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  184 01d1 81FA0000 		cmpl	$__ZNKSt5ctypeIcE8do_widenEc, %edx
  184      0000
  185 01d7 74C3     		je	L28
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 5
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 5
 
 
  186 01d9 C704240A 		movl	$10, (%esp)
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  226 024c B9000000 		movl	$__ZSt4cout, %ecx
  226      00
  227 0251 890424   		movl	%eax, (%esp)
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 6
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 6
 
 
  228 0254 E8000000 		call	__ZNSo3putEc
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  269 02d1 C7433830 		movl	$__ZTVN4rrhh10SupervisorE+48, 56(%ebx)
  269      000000
  270 02d8 83C408   		addl	$8, %esp
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 7
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 7
 
 
  271 02db 5B       		popl	%ebx
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  320 0365 89542404 		movl	%edx, 4(%esp)
  321 0369 C78578FF 		movl	$1, -136(%ebp)
  321      FFFF0100 
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 8
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 8
 
 
  321      0000
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  365      00
  366              	L45:
  367 040c 8B45E0   		movl	-32(%ebp), %eax
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 9
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 9
 
 
  368 040f 8D4DE8   		leal	-24(%ebp), %ecx
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  411 0492 39D0     		cmpl	%edx, %eax
  412 0494 7408     		je	L52
  413 0496 890424   		movl	%eax, (%esp)
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 10
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 10
 
 
  414 0499 E8000000 		call	__ZdlPv
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  461              		.section .rdata,"dr"
  462              	LC6:
  463 0067 53757065 		.ascii "Supervisor cobra en cheque: \0"
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 11
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 11
 
 
  463      72766973 
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  493 0543 898530FF 		movl	%eax, -208(%ebp)
  493      FFFF
  494 0549 A1080000 		movl	__ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+8, %eax
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 12
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 12
 
 
  494      00
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  517 05f9 C78554FF 		movl	$16, -172(%ebp)
  517      FFFF1000 
  517      0000
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 13
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 13
 
 
  518 0603 C7855CFF 		movl	$0, -164(%ebp)
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  549 06a5 C6400800 		movb	$0, 8(%eax)
  550 06a9 8910     		movl	%edx, (%eax)
  551 06ab 8B8548FF 		movl	-184(%ebp), %eax
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 14
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 14
 
 
  551      FFFF
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  583      FFFF0C00 
  583      0000
  584 074d C78570FF 		movl	$__ZTVNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE+32, -144(%ebp)
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 15
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 15
 
 
  584      FFFF2000 
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  615 07e9 8D9518FF 		leal	-232(%ebp), %edx
  615      FFFF
  616 07ef C785C8FE 		movl	$4, -312(%ebp)
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 16
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 16
 
 
  616      FFFF0400 
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  648 0886 83C508   		addl	$8, %ebp
  649 0889 83BDC8FE 		cmpl	$5, -312(%ebp)
  649      FFFF05
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 17
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 17
 
 
  650 0890 8B85CCFE 		movl	-308(%ebp), %eax
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  688      FFFFFFFF 
  688      FFFF
  689 0905 E8000000 		call	__Unwind_SjLj_Resume
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 18
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 18
 
 
  689      00
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  724 0013 00       		.uleb128 0
  725 0014 03       		.uleb128 0x3
  726 0015 00       		.uleb128 0
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 19
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 19
 
 
  727 0016 04       		.uleb128 0x4
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  771      FFFF0000 
  771      0000
  772 09ac C785D0FE 		movl	$LLSDA1110, -304(%ebp)
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 20
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 20
 
 
  772      FFFF1A00 
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  800      FFFF2000 
  800      0000
  801 0a5e C78534FF 		movl	$__ZTVSt15basic_streambufIcSt11char_traitsIcEE+8, -204(%ebp)
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 21
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 21
 
 
  801      FFFF0800 
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  824 0b0e 890424   		movl	%eax, (%esp)
  825 0b11 C785B8FE 		movl	$1, -328(%ebp)
  825      FFFF0100 
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 22
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 22
 
 
  825      0000
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  857      00
  858 0bbe 8B85B0FE 		movl	-336(%ebp), %eax
  858      FFFF
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 23
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 23
 
 
  859 0bc4 8D5008   		leal	8(%eax), %edx
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  892              	L110:
  893 0c60 8B8558FF 		movl	-168(%ebp), %eax
  893      FFFF
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 24
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 24
 
 
  894 0c66 8D9560FF 		leal	-160(%ebp), %edx
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  922 0d00 8B9544FF 		movl	-188(%ebp), %edx
  922      FFFF
  923 0d06 8D8D20FF 		leal	-224(%ebp), %ecx
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 25
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 25
 
 
  923      FFFF
@@ -1498,7 +1498,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  955      FFFF
  956 0da6 8985A8FE 		movl	%eax, -344(%ebp)
  956      FFFF
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 26
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 26
 
 
  957 0dac 770D     		ja	L130
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  994 0e18 8B40F4   		movl	-12(%eax), %eax
  995 0e1b 89940530 		movl	%edx, -208(%ebp,%eax)
  995      FFFFFF
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 27
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 27
 
 
  996              	L105:
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  1031              	LLSDACSB1110:
  1032 001e 00       		.uleb128 0
  1033 001f 00       		.uleb128 0
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 28
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 28
 
 
  1034 0020 01       		.uleb128 0x1
@@ -1678,7 +1678,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  1076 0ef5 A1000000 		movl	__ZSt4cout, %eax
  1076      00
  1077 0efa 8B40F4   		movl	-12(%eax), %eax
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 29
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 29
 
 
  1078 0efd 8B807C00 		movl	__ZSt4cout+124(%eax), %eax
@@ -1738,7 +1738,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  1121 0f93 8D45A4   		leal	-92(%ebp), %eax
  1122 0f96 890424   		movl	%eax, (%esp)
  1123 0f99 E8000000 		call	__Unwind_SjLj_Unregister
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 30
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 30
 
 
  1123      00
@@ -1798,7 +1798,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  1166              	LLSDACSB1112:
  1167 0030 00       		.uleb128 0
  1168 0031 00       		.uleb128 0
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 31
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 31
 
 
  1169              	LLSDACSE1112:
@@ -1858,7 +1858,7 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  1211 000c 02000000 		.long	2
  1212 0010 00000000 		.long	__ZTI7Persona
  1213 0014 02000000 		.long	2
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 32
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 32
 
 
  1214 0018 00000000 		.long	__ZTI10Trabajador
@@ -1913,44 +1913,44 @@ GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 1
  1259 00f8 A4703D0A 		.long	171798692
  1260 00fc D7A3E83F 		.long	1072210903
  1261              		.ident	"GCC: (tdm-1) 5.1.0"
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 33
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 33
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Supervisor.cpp
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:8      .text$_ZNKSt5ctypeIcE8do_widenEc:00000000 __ZNKSt5ctypeIcE8do_widenEc
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:16     .text:00000000 __ZN4rrhh10Supervisor15calcularSalarioEv
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:40     .text:00000050 __ZN4rrhh10SupervisorD2Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1234   .rdata$_ZTVN4rrhh10SupervisorE:00000000 __ZTVN4rrhh10SupervisorE
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:49     .text:00000070 __ZThn56_N4rrhh10SupervisorD1Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:40     .text:00000050 __ZN4rrhh10SupervisorD1Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:59     .text:00000080 __ZN4rrhh10SupervisorD0Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:76     .text:000000b0 __ZThn56_N4rrhh10SupervisorD0Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:81     .text:000000c0 ___tcf_0
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:8      .text$_ZNKSt5ctypeIcE8do_widenEc:00000000 __ZNKSt5ctypeIcE8do_widenEc
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:16     .text:00000000 __ZN4rrhh10Supervisor15calcularSalarioEv
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:40     .text:00000050 __ZN4rrhh10SupervisorD2Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1234   .rdata$_ZTVN4rrhh10SupervisorE:00000000 __ZTVN4rrhh10SupervisorE
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:49     .text:00000070 __ZThn56_N4rrhh10SupervisorD1Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:40     .text:00000050 __ZN4rrhh10SupervisorD1Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:59     .text:00000080 __ZN4rrhh10SupervisorD0Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:76     .text:000000b0 __ZThn56_N4rrhh10SupervisorD0Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:81     .text:000000c0 ___tcf_0
                              .bss:00000000 __ZStL8__ioinit
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:92     .text:000000d0 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag.isra.24
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:153    .text:00000160 __ZN4rrhh10Supervisor8trabajarEv
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:199    .text:00000200 __ZThn56_N4rrhh10Supervisor8trabajarEv
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:210    .text:00000210 __ZN4rrhh10Supervisor9descansarEv
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:256    .text:000002b0 __ZThn56_N4rrhh10Supervisor9descansarEv
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:263    .text:000002c0 __ZN4rrhh10SupervisorC2Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:263    .text:000002c0 __ZN4rrhh10SupervisorC1Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:283    .text:000002e0 __ZN4rrhh10SupervisorC2EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_jS6_
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:283    .text:000002e0 __ZN4rrhh10SupervisorC1EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_jS6_
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:444    .text$_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev:00000000 __ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:469    .text:000004c0 __ZN4rrhh10Supervisor13cobrarSalarioB5cxx11Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:738    .text:00000980 __ZThn56_N4rrhh10Supervisor13cobrarSalarioEv
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:744    .text.startup:00000000 __GLOBAL__sub_I__ZN4rrhh10SupervisorC2Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:765    .text:00000990 __ZN4rrhh10Supervisor8toStringB5cxx11Ev
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1057   .text:00000ea0 __ZN4rrhh10Supervisor5comerENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEf
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1175   .rdata$_ZTS7Persona:00000000 __ZTS7Persona
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1181   .rdata$_ZTI7Persona:00000000 __ZTI7Persona
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1188   .rdata$_ZTS10Trabajador:00000000 __ZTS10Trabajador
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1194   .rdata$_ZTI10Trabajador:00000000 __ZTI10Trabajador
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1201   .rdata$_ZTSN4rrhh8EmpleadoE:00000000 __ZTSN4rrhh8EmpleadoE
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1207   .rdata$_ZTIN4rrhh8EmpleadoE:00000000 __ZTIN4rrhh8EmpleadoE
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1220   .rdata$_ZTSN4rrhh10SupervisorE:00000000 __ZTSN4rrhh10SupervisorE
-C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s:1226   .rdata$_ZTIN4rrhh10SupervisorE:00000000 __ZTIN4rrhh10SupervisorE
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:92     .text:000000d0 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag.isra.24
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:153    .text:00000160 __ZN4rrhh10Supervisor8trabajarEv
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:199    .text:00000200 __ZThn56_N4rrhh10Supervisor8trabajarEv
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:210    .text:00000210 __ZN4rrhh10Supervisor9descansarEv
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:256    .text:000002b0 __ZThn56_N4rrhh10Supervisor9descansarEv
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:263    .text:000002c0 __ZN4rrhh10SupervisorC2Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:263    .text:000002c0 __ZN4rrhh10SupervisorC1Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:283    .text:000002e0 __ZN4rrhh10SupervisorC2EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_jS6_
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:283    .text:000002e0 __ZN4rrhh10SupervisorC1EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_jS6_
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:444    .text$_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev:00000000 __ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:469    .text:000004c0 __ZN4rrhh10Supervisor13cobrarSalarioB5cxx11Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:738    .text:00000980 __ZThn56_N4rrhh10Supervisor13cobrarSalarioEv
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:744    .text.startup:00000000 __GLOBAL__sub_I__ZN4rrhh10SupervisorC2Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:765    .text:00000990 __ZN4rrhh10Supervisor8toStringB5cxx11Ev
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1057   .text:00000ea0 __ZN4rrhh10Supervisor5comerENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEf
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1175   .rdata$_ZTS7Persona:00000000 __ZTS7Persona
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1181   .rdata$_ZTI7Persona:00000000 __ZTI7Persona
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1188   .rdata$_ZTS10Trabajador:00000000 __ZTS10Trabajador
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1194   .rdata$_ZTI10Trabajador:00000000 __ZTI10Trabajador
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1201   .rdata$_ZTSN4rrhh8EmpleadoE:00000000 __ZTSN4rrhh8EmpleadoE
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1207   .rdata$_ZTIN4rrhh8EmpleadoE:00000000 __ZTIN4rrhh8EmpleadoE
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1220   .rdata$_ZTSN4rrhh10SupervisorE:00000000 __ZTSN4rrhh10SupervisorE
+C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s:1226   .rdata$_ZTIN4rrhh10SupervisorE:00000000 __ZTIN4rrhh10SupervisorE
 
 UNDEFINED SYMBOLS
 __ZSt4cout
@@ -1973,7 +1973,7 @@ __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERjj
 _memcpy
 __ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
 __ZNSo3putEc
-GAS LISTING C:\Users\USER\AppData\Local\Temp\cc9rwD4Q.s 			page 34
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccUsW9Gj.s 			page 34
 
 
 __ZNSo5flushEv

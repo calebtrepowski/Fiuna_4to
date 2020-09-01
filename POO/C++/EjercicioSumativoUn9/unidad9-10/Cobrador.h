@@ -6,8 +6,8 @@
 namespace rrhh{
 	class Cobrador : public Empleado
 	{
-		const static float COMISION_MIN = 2.0;
 		public:
+			const static float COMISION_MIN = 2.0;
 			Cobrador();
 			Cobrador(int ced, string nom, string ape,
 								unsigned int monto, float _comision);

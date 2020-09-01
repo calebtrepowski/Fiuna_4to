@@ -9,7 +9,7 @@ Cobrador::Cobrador()
 
 Cobrador::Cobrador(int ced, string nom, string ape,
 									unsigned int monto, float _comision)
-									: Empleado(ced,nom,ape,0,"Cobranzas")
+									: Empleado(ced,nom,ape,"Cobranzas")
 {
 	montoCobrado = monto;
 	comision = _comision;

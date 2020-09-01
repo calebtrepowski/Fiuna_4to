@@ -6,9 +6,8 @@
 namespace rrhh {
 	class Supervisor : public Empleado
 	{
-		const static float SOBRE_SUELDO = Empleado::SALARIO_MIN/2;
 		public:
-
+			const static float SOBRE_SUELDO = Empleado::SALARIO_MIN/2;
 			Supervisor();
 			Supervisor(int ced, string nom, string ape,
 									unsigned int sal, string depto);
