@@ -1,3 +1,7 @@
+""" 
+Recta de regresion en minimos cuadrados
+"""
+
 import numpy as np
 import numpy.linalg as la
 import matplotlib.pyplot as plt
@@ -25,7 +29,7 @@ B=np.zeros(2)
 B[0] = sum(X*Y)
 B[1] = sum(Y)
 
-sol = np.dot(la.inv(A),B)
+sol = np.dot(la.inv(A),B) #u otro metodo de resolucion de ec. lineales
 #sol[0]=A, sol[1]=B
 #y=Ax+B
 

@@ -21,7 +21,7 @@ ejeX = np.linspace(min(X), max(X), 100)
 ejeY = f(ejeX)
 
 plt.plot(ejeX, ejeY)
-plt.show()
+
 
 Ym = np.mean(Y)
 
@@ -30,3 +30,4 @@ SStot = sum ( (Ym-Y)**2 )
 
 Rcuad = 1- SSres/SStot
 print(Rcuad)
+plt.show()
