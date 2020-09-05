@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1599241038 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun11\guianumero7\main.cpp
+	<iostream>
+	"Nodo.h"
+	"Pila.h"
+
+1599239926 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun11\guianumero7\nodo.h
+	<iostream>
+
+1599233854 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun11\guianumero7\nodo.cpp
+	"Nodo.h"
+
+1599241068 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun11\guianumero7\pila.h
+	"Nodo.h"
+	"PilaVacia.h"
+
+1599236616 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciosumativoun11\guianumero7\pilavacia.h
+	<exception>
+
