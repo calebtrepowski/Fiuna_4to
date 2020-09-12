@@ -30,7 +30,7 @@ class Cola:
       else:
         return self.lista.pop(0)
     except IndexError:
-      print("Error: la pila esta vacia")
+      print("Error: la cola esta vacia")
   def verificar(self):
     if len(self.lista) == 0:
       return True

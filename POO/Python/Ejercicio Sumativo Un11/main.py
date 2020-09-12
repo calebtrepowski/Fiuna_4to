@@ -28,4 +28,4 @@ print("Cola 1: ",cola1)
 while not(cola1.verificar()):
   print("Eliminando: ",cola1.eliminarElemento())
   print("Esta vacia?: ",cola1.verificar())
-print("Eliminando: ",pila1.eliminarElemento())
+print("Eliminando: ",cola1.eliminarElemento())
