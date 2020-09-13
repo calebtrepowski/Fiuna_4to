@@ -1,0 +1,4 @@
+Esta es una prueba de escritura en archivo
+Que escribimos
+Esta es una prueba de escritura en archivo
+hola mundo

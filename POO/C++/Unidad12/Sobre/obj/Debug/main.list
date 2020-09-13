@@ -1,0 +1,4446 @@
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 1
+
+
+   1              		.file	"main.cpp"
+   2              		.text
+   3              	Ltext0:
+   4              		.cfi_sections	.debug_frame
+   5              	.lcomm __ZStL8__ioinit,1,1
+  10              		.globl	_main
+  12              	_main:
+  13              	LFB1048:
+  14              		.file 1 "C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre/main.cpp"
+   1:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** #include <iostream>
+   2:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** #include "Fecha.h"
+   3:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** using namespace std;
+   4:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** 
+   5:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** int main()
+   6:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** {
+  15              		.loc 1 6 0
+  16              		.cfi_startproc
+  17              		.cfi_personality 0,___gxx_personality_sj0
+  18              		.cfi_lsda 0,LLSDA1048
+  19 0000 8D4C2404 		leal	4(%esp), %ecx
+  20              		.cfi_def_cfa 1, 0
+  21 0004 83E4F0   		andl	$-16, %esp
+  22 0007 FF71FC   		pushl	-4(%ecx)
+  23 000a 55       		pushl	%ebp
+  24              		.cfi_escape 0x10,0x5,0x2,0x75,0
+  25 000b 89E5     		movl	%esp, %ebp
+  26 000d 57       		pushl	%edi
+  27 000e 56       		pushl	%esi
+  28 000f 53       		pushl	%ebx
+  29 0010 51       		pushl	%ecx
+  30              		.cfi_escape 0xf,0x3,0x75,0x70,0x6
+  31              		.cfi_escape 0x10,0x7,0x2,0x75,0x7c
+  32              		.cfi_escape 0x10,0x6,0x2,0x75,0x78
+  33              		.cfi_escape 0x10,0x3,0x2,0x75,0x74
+  34 0011 81EC8800 		subl	$136, %esp
+  34      0000
+  35 0017 C7459C00 		movl	$___gxx_personality_sj0, -100(%ebp)
+  35      000000
+  36 001e C745A000 		movl	$LLSDA1048, -96(%ebp)
+  36      000000
+  37 0025 8D45A4   		leal	-92(%ebp), %eax
+  38 0028 8D5DE8   		leal	-24(%ebp), %ebx
+  39 002b 8918     		movl	%ebx, (%eax)
+  40 002d BAA50100 		movl	$L5, %edx
+  40      00
+  41 0032 895004   		movl	%edx, 4(%eax)
+  42 0035 896008   		movl	%esp, 8(%eax)
+  43 0038 8D4584   		leal	-124(%ebp), %eax
+  44 003b 890424   		movl	%eax, (%esp)
+  45 003e E8000000 		call	__Unwind_SjLj_Register
+  45      00
+  46              		.loc 1 6 0
+  47 0043 E8000000 		call	___main
+  47      00
+   7:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp ****     Fecha f1,f2;
+  48              		.loc 1 7 0
+  49 0048 8D45D4   		leal	-44(%ebp), %eax
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 2
+
+
+  50 004b C74588FF 		movl	$-1, -120(%ebp)
+  50      FFFFFF
+  51 0052 89C1     		movl	%eax, %ecx
+  52 0054 E8000000 		call	__ZN5FechaC1Ev
+  52      00
+  53 0059 8D45C4   		leal	-60(%ebp), %eax
+  54 005c C7458801 		movl	$1, -120(%ebp)
+  54      000000
+  55 0063 89C1     		movl	%eax, %ecx
+  56 0065 E8000000 		call	__ZN5FechaC1Ev
+  56      00
+   8:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp ****     cin>>f1>>f2;
+  57              		.loc 1 8 0
+  58 006a 8D45D4   		leal	-44(%ebp), %eax
+  59 006d 89442404 		movl	%eax, 4(%esp)
+  60 0071 C7042400 		movl	$__ZSt3cin, (%esp)
+  60      000000
+  61 0078 C7458802 		movl	$2, -120(%ebp)
+  61      000000
+  62 007f E8000000 		call	__ZrsRSiR5Fecha
+  62      00
+  63 0084 89C2     		movl	%eax, %edx
+  64 0086 8D45C4   		leal	-60(%ebp), %eax
+  65 0089 89442404 		movl	%eax, 4(%esp)
+  66 008d 891424   		movl	%edx, (%esp)
+  67 0090 E8000000 		call	__ZrsRSiR5Fecha
+  67      00
+   9:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp ****     cout<<f1<<endl<<f2<<endl;
+  68              		.loc 1 9 0
+  69 0095 8D45D4   		leal	-44(%ebp), %eax
+  70 0098 89442404 		movl	%eax, 4(%esp)
+  71 009c C7042400 		movl	$__ZSt4cout, (%esp)
+  71      000000
+  72 00a3 E8000000 		call	__ZlsRSoR5Fecha
+  72      00
+  73 00a8 C7042400 		movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+  73      000000
+  74 00af 89C1     		movl	%eax, %ecx
+  75 00b1 E8000000 		call	__ZNSolsEPFRSoS_E
+  75      00
+  76              		.loc 1 9 0 is_stmt 0 discriminator 1
+  77 00b6 83EC04   		subl	$4, %esp
+  78 00b9 89C2     		movl	%eax, %edx
+  79 00bb 8D45C4   		leal	-60(%ebp), %eax
+  80 00be 89442404 		movl	%eax, 4(%esp)
+  81 00c2 891424   		movl	%edx, (%esp)
+  82 00c5 E8000000 		call	__ZlsRSoR5Fecha
+  82      00
+  83              		.loc 1 9 0 discriminator 2
+  84 00ca C7042400 		movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+  84      000000
+  85 00d1 89C1     		movl	%eax, %ecx
+  86 00d3 E8000000 		call	__ZNSolsEPFRSoS_E
+  86      00
+  87              		.loc 1 9 0 discriminator 3
+  88 00d8 83EC04   		subl	$4, %esp
+  10:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp ****     bool algo = f1>=f2;
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 3
+
+
+  89              		.loc 1 10 0 is_stmt 1 discriminator 3
+  90 00db 8D45D4   		leal	-44(%ebp), %eax
+  91 00de 8D55C4   		leal	-60(%ebp), %edx
+  92 00e1 891424   		movl	%edx, (%esp)
+  93 00e4 89C1     		movl	%eax, %ecx
+  94 00e6 E8000000 		call	__ZN5FechageERKS_
+  94      00
+  95              		.loc 1 10 0 is_stmt 0
+  96 00eb 83EC04   		subl	$4, %esp
+  97 00ee 8845E7   		movb	%al, -25(%ebp)
+  11:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** 		cout<<endl<<algo;
+  98              		.loc 1 11 0 is_stmt 1
+  99 00f1 0FB645E7 		movzbl	-25(%ebp), %eax
+ 100 00f5 894580   		movl	%eax, -128(%ebp)
+ 101 00f8 C7042400 		movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+ 101      000000
+ 102 00ff B9000000 		movl	$__ZSt4cout, %ecx
+ 102      00
+ 103 0104 E8000000 		call	__ZNSolsEPFRSoS_E
+ 103      00
+ 104              		.loc 1 11 0 is_stmt 0 discriminator 1
+ 105 0109 83EC04   		subl	$4, %esp
+ 106 010c 8B7580   		movl	-128(%ebp), %esi
+ 107 010f 893424   		movl	%esi, (%esp)
+ 108 0112 89C1     		movl	%eax, %ecx
+ 109 0114 E8000000 		call	__ZNSolsEb
+ 109      00
+ 110 0119 83EC04   		subl	$4, %esp
+  12:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** 		algo = f1>f2;
+ 111              		.loc 1 12 0 is_stmt 1 discriminator 1
+ 112 011c 8D45D4   		leal	-44(%ebp), %eax
+ 113 011f 8D55C4   		leal	-60(%ebp), %edx
+ 114 0122 891424   		movl	%edx, (%esp)
+ 115 0125 89C1     		movl	%eax, %ecx
+ 116 0127 E8000000 		call	__ZN5FechagtERKS_
+ 116      00
+ 117              		.loc 1 12 0 is_stmt 0
+ 118 012c 83EC04   		subl	$4, %esp
+ 119 012f 8845E7   		movb	%al, -25(%ebp)
+  13:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** 		cout<<endl<<algo;
+ 120              		.loc 1 13 0 is_stmt 1
+ 121 0132 0FB645E7 		movzbl	-25(%ebp), %eax
+ 122 0136 894580   		movl	%eax, -128(%ebp)
+ 123 0139 C7042400 		movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+ 123      000000
+ 124 0140 B9000000 		movl	$__ZSt4cout, %ecx
+ 124      00
+ 125 0145 E8000000 		call	__ZNSolsEPFRSoS_E
+ 125      00
+ 126              		.loc 1 13 0 is_stmt 0 discriminator 1
+ 127 014a 83EC04   		subl	$4, %esp
+ 128 014d 8B7D80   		movl	-128(%ebp), %edi
+ 129 0150 893C24   		movl	%edi, (%esp)
+ 130 0153 89C1     		movl	%eax, %ecx
+ 131 0155 E8000000 		call	__ZNSolsEb
+ 131      00
+ 132 015a 83EC04   		subl	$4, %esp
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 4
+
+
+   7:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp ****     cin>>f1>>f2;
+ 133              		.loc 1 7 0 is_stmt 1 discriminator 1
+ 134 015d 8D45C4   		leal	-60(%ebp), %eax
+ 135 0160 C7458801 		movl	$1, -120(%ebp)
+ 135      000000
+ 136 0167 89C1     		movl	%eax, %ecx
+ 137 0169 E8000000 		call	__ZN5FechaD1Ev
+ 137      00
+   7:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp ****     cin>>f1>>f2;
+ 138              		.loc 1 7 0 is_stmt 0 discriminator 4
+ 139 016e 8D45D4   		leal	-44(%ebp), %eax
+ 140 0171 C74588FF 		movl	$-1, -120(%ebp)
+ 140      FFFFFF
+ 141 0178 89C1     		movl	%eax, %ecx
+ 142 017a E8000000 		call	__ZN5FechaD1Ev
+ 142      00
+  14:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp **** }
+ 143              		.loc 1 14 0 is_stmt 1 discriminator 4
+ 144 017f B8000000 		movl	$0, %eax
+ 144      00
+ 145 0184 894580   		movl	%eax, -128(%ebp)
+ 146 0187 EB5B     		jmp	L8
+ 147              	L7:
+ 148 0189 895580   		movl	%edx, -128(%ebp)
+   7:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp ****     cin>>f1>>f2;
+ 149              		.loc 1 7 0
+ 150 018c 8D45C4   		leal	-60(%ebp), %eax
+ 151 018f C7458800 		movl	$0, -120(%ebp)
+ 151      000000
+ 152 0196 89C1     		movl	%eax, %ecx
+ 153 0198 E8000000 		call	__ZN5FechaD1Ev
+ 153      00
+ 154 019d 8B4580   		movl	-128(%ebp), %eax
+ 155 01a0 894580   		movl	%eax, -128(%ebp)
+ 156 01a3 EB1C     		jmp	L4
+ 157              	L5:
+ 158 01a5 8D6D18   		leal	24(%ebp), %ebp
+ 159 01a8 8B558C   		movl	-116(%ebp), %edx
+ 160 01ab 8B4588   		movl	-120(%ebp), %eax
+ 161 01ae 85C0     		testl	%eax, %eax
+ 162 01b0 740C     		je	L6
+ 163 01b2 83E801   		subl	$1, %eax
+ 164 01b5 85C0     		testl	%eax, %eax
+ 165 01b7 74D0     		je	L7
+ 166 01b9 83E801   		subl	$1, %eax
+ 167 01bc 0F0B     		ud2
+ 168              	L6:
+ 169 01be 895580   		movl	%edx, -128(%ebp)
+ 170              	L4:
+   7:C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre\main.cpp ****     cin>>f1>>f2;
+ 171              		.loc 1 7 0 is_stmt 0 discriminator 2
+ 172 01c1 8D45D4   		leal	-44(%ebp), %eax
+ 173 01c4 C7458800 		movl	$0, -120(%ebp)
+ 173      000000
+ 174 01cb 89C1     		movl	%eax, %ecx
+ 175 01cd E8000000 		call	__ZN5FechaD1Ev
+ 175      00
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 5
+
+
+ 176 01d2 8B4580   		movl	-128(%ebp), %eax
+ 177 01d5 890424   		movl	%eax, (%esp)
+ 178 01d8 C74588FF 		movl	$-1, -120(%ebp)
+ 178      FFFFFF
+ 179 01df E8000000 		call	__Unwind_SjLj_Resume
+ 179      00
+ 180              	L8:
+ 181 01e4 8D4584   		leal	-124(%ebp), %eax
+ 182 01e7 890424   		movl	%eax, (%esp)
+ 183 01ea E8000000 		call	__Unwind_SjLj_Unregister
+ 183      00
+ 184              		.loc 1 14 0 is_stmt 1
+ 185 01ef 8B4580   		movl	-128(%ebp), %eax
+ 186 01f2 8D65F0   		leal	-16(%ebp), %esp
+ 187 01f5 59       		popl	%ecx
+ 188              		.cfi_restore 1
+ 189              		.cfi_def_cfa 1, 0
+ 190 01f6 5B       		popl	%ebx
+ 191              		.cfi_restore 3
+ 192 01f7 5E       		popl	%esi
+ 193              		.cfi_restore 6
+ 194 01f8 5F       		popl	%edi
+ 195              		.cfi_restore 7
+ 196 01f9 5D       		popl	%ebp
+ 197              		.cfi_restore 5
+ 198 01fa 8D61FC   		leal	-4(%ecx), %esp
+ 199              		.cfi_def_cfa 4, 4
+ 200 01fd C3       		ret
+ 201              		.cfi_endproc
+ 202              	LFE1048:
+ 203              		.section	.gcc_except_table,"w"
+ 204              	LLSDA1048:
+ 205 0000 FF       		.byte	0xff
+ 206 0001 FF       		.byte	0xff
+ 207 0002 01       		.byte	0x1
+ 208 0003 04       		.uleb128 LLSDACSE1048-LLSDACSB1048
+ 209              	LLSDACSB1048:
+ 210 0004 00       		.uleb128 0
+ 211 0005 00       		.uleb128 0
+ 212 0006 01       		.uleb128 0x1
+ 213 0007 00       		.uleb128 0
+ 214              	LLSDACSE1048:
+ 215              		.text
+ 217              	___tcf_0:
+ 218              	LFB1056:
+ 219              		.file 2 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/iostream"
+   1:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // Standard iostream objects -*- C++ -*-
+   2:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+   3:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // Copyright (C) 1997-2015 Free Software Foundation, Inc.
+   4:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** //
+   5:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // This file is part of the GNU ISO C++ Library.  This library is free
+   6:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // software; you can redistribute it and/or modify it under the
+   7:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // terms of the GNU General Public License as published by the
+   8:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // Free Software Foundation; either version 3, or (at your option)
+   9:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // any later version.
+  10:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  11:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // This library is distributed in the hope that it will be useful,
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 6
+
+
+  12:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // but WITHOUT ANY WARRANTY; without even the implied warranty of
+  13:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  14:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // GNU General Public License for more details.
+  15:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  16:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // Under Section 7 of GPL version 3, you are granted additional
+  17:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // permissions described in the GCC Runtime Library Exception, version
+  18:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // 3.1, as published by the Free Software Foundation.
+  19:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  20:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // You should have received a copy of the GNU General Public License and
+  21:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // a copy of the GCC Runtime Library Exception along with this program;
+  22:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+  23:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // <http://www.gnu.org/licenses/>.
+  24:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  25:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** /** @file include/iostream
+  26:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****  *  This is a Standard C++ Library header.
+  27:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****  */
+  28:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  29:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** //
+  30:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** // ISO C++ 14882: 27.3  Standard iostream objects
+  31:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** //
+  32:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  33:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** #ifndef _GLIBCXX_IOSTREAM
+  34:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** #define _GLIBCXX_IOSTREAM 1
+  35:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  36:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** #pragma GCC system_header
+  37:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  38:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** #include <bits/c++config.h>
+  39:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** #include <ostream>
+  40:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** #include <istream>
+  41:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  42:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** namespace std _GLIBCXX_VISIBILITY(default)
+  43:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** {
+  44:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  45:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  46:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   /**
+  47:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  @name Standard Stream Objects
+  48:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *
+  49:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  The &lt;iostream&gt; header declares the eight <em>standard stream
+  50:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  objects</em>.  For other declarations, see
+  51:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  http://gcc.gnu.org/onlinedocs/libstdc++/manual/io.html
+  52:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  and the @link iosfwd I/O forward declarations @endlink
+  53:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *
+  54:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  They are required by default to cooperate with the global C
+  55:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  library's @c FILE streams, and to be available during program
+  56:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  startup and termination. For more information, see the section of the
+  57:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****    *  manual linked to above.
+  58:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   */
+  59:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   //@{
+  60:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   extern istream cin;		/// Linked to standard input
+  61:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   extern ostream cout;		/// Linked to standard output
+  62:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   extern ostream cerr;		/// Linked to standard error (unbuffered)
+  63:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   extern ostream clog;		/// Linked to standard error (buffered)
+  64:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  65:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** #ifdef _GLIBCXX_USE_WCHAR_T
+  66:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   extern wistream wcin;		/// Linked to standard input
+  67:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   extern wostream wcout;	/// Linked to standard output
+  68:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   extern wostream wcerr;	/// Linked to standard error (unbuffered)
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 7
+
+
+  69:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   extern wostream wclog;	/// Linked to standard error (buffered)
+  70:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** #endif
+  71:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   //@}
+  72:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream **** 
+  73:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   // For construction of filebuffers for cout, cin, cerr, clog et. al.
+  74:C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++\iostream ****   static ios_base::Init __ioinit;
+ 220              		.loc 2 74 0
+ 221              		.cfi_startproc
+ 222 01fe 55       		pushl	%ebp
+ 223              		.cfi_def_cfa_offset 8
+ 224              		.cfi_offset 5, -8
+ 225 01ff 89E5     		movl	%esp, %ebp
+ 226              		.cfi_def_cfa_register 5
+ 227 0201 83EC08   		subl	$8, %esp
+ 228              		.loc 2 74 0
+ 229 0204 B9000000 		movl	$__ZStL8__ioinit, %ecx
+ 229      00
+ 230 0209 E8000000 		call	__ZNSt8ios_base4InitD1Ev
+ 230      00
+ 231 020e C9       		leave
+ 232              		.cfi_restore 5
+ 233              		.cfi_def_cfa 4, 4
+ 234 020f C3       		ret
+ 235              		.cfi_endproc
+ 236              	LFE1056:
+ 238              	__Z41__static_initialization_and_destruction_0ii:
+ 239              	LFB1055:
+ 240              		.loc 1 14 0
+ 241              		.cfi_startproc
+ 242 0210 55       		pushl	%ebp
+ 243              		.cfi_def_cfa_offset 8
+ 244              		.cfi_offset 5, -8
+ 245 0211 89E5     		movl	%esp, %ebp
+ 246              		.cfi_def_cfa_register 5
+ 247 0213 83EC18   		subl	$24, %esp
+ 248              		.loc 1 14 0
+ 249 0216 837D0801 		cmpl	$1, 8(%ebp)
+ 250 021a 751F     		jne	L12
+ 251              		.loc 1 14 0 is_stmt 0 discriminator 1
+ 252 021c 817D0CFF 		cmpl	$65535, 12(%ebp)
+ 252      FF0000
+ 253 0223 7516     		jne	L12
+ 254              		.loc 2 74 0 is_stmt 1
+ 255 0225 B9000000 		movl	$__ZStL8__ioinit, %ecx
+ 255      00
+ 256 022a E8000000 		call	__ZNSt8ios_base4InitC1Ev
+ 256      00
+ 257 022f C70424FE 		movl	$___tcf_0, (%esp)
+ 257      010000
+ 258 0236 E8000000 		call	_atexit
+ 258      00
+ 259              	L12:
+ 260              		.loc 1 14 0
+ 261 023b 90       		nop
+ 262 023c C9       		leave
+ 263              		.cfi_restore 5
+ 264              		.cfi_def_cfa 4, 4
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 8
+
+
+ 265 023d C3       		ret
+ 266              		.cfi_endproc
+ 267              	LFE1055:
+ 269              	__GLOBAL__sub_I_main:
+ 270              	LFB1057:
+ 271              		.loc 1 14 0
+ 272              		.cfi_startproc
+ 273 023e 55       		pushl	%ebp
+ 274              		.cfi_def_cfa_offset 8
+ 275              		.cfi_offset 5, -8
+ 276 023f 89E5     		movl	%esp, %ebp
+ 277              		.cfi_def_cfa_register 5
+ 278 0241 83EC18   		subl	$24, %esp
+ 279              		.loc 1 14 0
+ 280 0244 C7442404 		movl	$65535, 4(%esp)
+ 280      FFFF0000 
+ 281 024c C7042401 		movl	$1, (%esp)
+ 281      000000
+ 282 0253 E8B8FFFF 		call	__Z41__static_initialization_and_destruction_0ii
+ 282      FF
+ 283 0258 C9       		leave
+ 284              		.cfi_restore 5
+ 285              		.cfi_def_cfa 4, 4
+ 286 0259 C3       		ret
+ 287              		.cfi_endproc
+ 288              	LFE1057:
+ 289              		.section	.ctors,"w"
+ 290              		.align 4
+ 291 0000 3E020000 		.long	__GLOBAL__sub_I_main
+ 292              		.text
+ 293              	Letext0:
+ 294              		.file 3 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/cwchar"
+ 295              		.file 4 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/c++config.h"
+ 296              		.file 5 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/debug/debug.h"
+ 297              		.file 6 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/char_traits.h"
+ 298              		.file 7 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/clocale"
+ 299              		.file 8 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/ios_base.h"
+ 300              		.file 9 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/cwctype"
+ 301              		.file 10 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/iosfwd"
+ 302              		.file 11 "<built-in>"
+ 303              		.file 12 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/bits/predefined_ops.h"
+ 304              		.file 13 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/ext/new_allocator.h"
+ 305              		.file 14 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/ext/numeric_traits.h"
+ 306              		.file 15 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/stddef.h"
+ 307              		.file 16 "C:/TDM-GCC-32/include/wctype.h"
+ 308              		.file 17 "C:/TDM-GCC-32/include/wchar.h"
+ 309              		.file 18 "C:/TDM-GCC-32/include/locale.h"
+ 310              		.file 19 "C:/TDM-GCC-32/lib/gcc/mingw32/5.1.0/include/c++/mingw32/bits/atomic_word.h"
+ 311              		.file 20 "C:/TDM-GCC-32/include/ctype.h"
+ 312              		.file 21 "C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre/FechaNoValida.h"
+ 313              		.file 22 "C:/Caleb/FIUNA/4to Semestre/POO/C++/Unidad12/Sobre/Fecha.h"
+ 314 025a 9090     		.section	.debug_info,"dr"
+ 315              	Ldebug_info0:
+ 316 0000 C41D0000 		.long	0x1dc4
+ 317 0004 0400     		.word	0x4
+ 318 0006 00000000 		.secrel32	Ldebug_abbrev0
+ 319 000a 04       		.byte	0x4
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 9
+
+
+ 320 000b 01       		.uleb128 0x1
+ 321 000c 474E5520 		.ascii "GNU C++ 5.1.0 -mtune=generic -march=pentiumpro -g -fexceptions\0"
+ 321      432B2B20 
+ 321      352E312E 
+ 321      30202D6D 
+ 321      74756E65 
+ 322 004b 04       		.byte	0x4
+ 323 004c 433A5C43 		.ascii "C:\\Caleb\\FIUNA\\4to Semestre\\POO\\C++\\Unidad12\\Sobre\\main.cpp\0"
+ 323      616C6562 
+ 323      5C464955 
+ 323      4E415C34 
+ 323      746F2053 
+ 324 0088 433A5C43 		.ascii "C:\\Caleb\\FIUNA\\4to Semestre\\POO\\C++\\Unidad12\\Sobre\0"
+ 324      616C6562 
+ 324      5C464955 
+ 324      4E415C34 
+ 324      746F2053 
+ 325 00bb 00000000 		.long	Ltext0
+ 326 00bf 5A020000 		.long	Letext0-Ltext0
+ 327 00c3 00000000 		.secrel32	Ldebug_line0
+ 328 00c7 02       		.uleb128 0x2
+ 329 00c8 73746400 		.ascii "std\0"
+ 330 00cc 0B       		.byte	0xb
+ 331 00cd 00       		.byte	0
+ 332 00ce 080D0000 		.long	0xd08
+ 333 00d2 03       		.uleb128 0x3
+ 334 00d3 5F5F6378 		.ascii "__cxx11\0"
+ 334      78313100 
+ 335 00db 04       		.byte	0x4
+ 336 00dc DA       		.byte	0xda
+ 337 00dd 04       		.uleb128 0x4
+ 338 00de 04       		.byte	0x4
+ 339 00df DA       		.byte	0xda
+ 340 00e0 D2000000 		.long	0xd2
+ 341 00e4 05       		.uleb128 0x5
+ 342 00e5 03       		.byte	0x3
+ 343 00e6 40       		.byte	0x40
+ 344 00e7 CE100000 		.long	0x10ce
+ 345 00eb 05       		.uleb128 0x5
+ 346 00ec 03       		.byte	0x3
+ 347 00ed 8B       		.byte	0x8b
+ 348 00ee F90E0000 		.long	0xef9
+ 349 00f2 05       		.uleb128 0x5
+ 350 00f3 03       		.byte	0x3
+ 351 00f4 8D       		.byte	0x8d
+ 352 00f5 3B110000 		.long	0x113b
+ 353 00f9 05       		.uleb128 0x5
+ 354 00fa 03       		.byte	0x3
+ 355 00fb 8E       		.byte	0x8e
+ 356 00fc 53110000 		.long	0x1153
+ 357 0100 05       		.uleb128 0x5
+ 358 0101 03       		.byte	0x3
+ 359 0102 8F       		.byte	0x8f
+ 360 0103 71110000 		.long	0x1171
+ 361 0107 05       		.uleb128 0x5
+ 362 0108 03       		.byte	0x3
+ 363 0109 90       		.byte	0x90
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 10
+
+
+ 364 010a 99110000 		.long	0x1199
+ 365 010e 05       		.uleb128 0x5
+ 366 010f 03       		.byte	0x3
+ 367 0110 91       		.byte	0x91
+ 368 0111 B6110000 		.long	0x11b6
+ 369 0115 05       		.uleb128 0x5
+ 370 0116 03       		.byte	0x3
+ 371 0117 92       		.byte	0x92
+ 372 0118 DE110000 		.long	0x11de
+ 373 011c 05       		.uleb128 0x5
+ 374 011d 03       		.byte	0x3
+ 375 011e 93       		.byte	0x93
+ 376 011f FB110000 		.long	0x11fb
+ 377 0123 05       		.uleb128 0x5
+ 378 0124 03       		.byte	0x3
+ 379 0125 94       		.byte	0x94
+ 380 0126 1B120000 		.long	0x121b
+ 381 012a 05       		.uleb128 0x5
+ 382 012b 03       		.byte	0x3
+ 383 012c 95       		.byte	0x95
+ 384 012d 3A120000 		.long	0x123a
+ 385 0131 05       		.uleb128 0x5
+ 386 0132 03       		.byte	0x3
+ 387 0133 96       		.byte	0x96
+ 388 0134 51120000 		.long	0x1251
+ 389 0138 05       		.uleb128 0x5
+ 390 0139 03       		.byte	0x3
+ 391 013a 97       		.byte	0x97
+ 392 013b 61120000 		.long	0x1261
+ 393 013f 05       		.uleb128 0x5
+ 394 0140 03       		.byte	0x3
+ 395 0141 98       		.byte	0x98
+ 396 0142 95120000 		.long	0x1295
+ 397 0146 05       		.uleb128 0x5
+ 398 0147 03       		.byte	0x3
+ 399 0148 99       		.byte	0x99
+ 400 0149 BE120000 		.long	0x12be
+ 401 014d 05       		.uleb128 0x5
+ 402 014e 03       		.byte	0x3
+ 403 014f 9A       		.byte	0x9a
+ 404 0150 E3120000 		.long	0x12e3
+ 405 0154 05       		.uleb128 0x5
+ 406 0155 03       		.byte	0x3
+ 407 0156 9B       		.byte	0x9b
+ 408 0157 14130000 		.long	0x1314
+ 409 015b 05       		.uleb128 0x5
+ 410 015c 03       		.byte	0x3
+ 411 015d 9C       		.byte	0x9c
+ 412 015e 30130000 		.long	0x1330
+ 413 0162 05       		.uleb128 0x5
+ 414 0163 03       		.byte	0x3
+ 415 0164 A0       		.byte	0xa0
+ 416 0165 4A130000 		.long	0x134a
+ 417 0169 05       		.uleb128 0x5
+ 418 016a 03       		.byte	0x3
+ 419 016b A1       		.byte	0xa1
+ 420 016c 69130000 		.long	0x1369
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 11
+
+
+ 421 0170 05       		.uleb128 0x5
+ 422 0171 03       		.byte	0x3
+ 423 0172 A2       		.byte	0xa2
+ 424 0173 87130000 		.long	0x1387
+ 425 0177 05       		.uleb128 0x5
+ 426 0178 03       		.byte	0x3
+ 427 0179 A4       		.byte	0xa4
+ 428 017a AC130000 		.long	0x13ac
+ 429 017e 05       		.uleb128 0x5
+ 430 017f 03       		.byte	0x3
+ 431 0180 AA       		.byte	0xaa
+ 432 0181 D0130000 		.long	0x13d0
+ 433 0185 05       		.uleb128 0x5
+ 434 0186 03       		.byte	0x3
+ 435 0187 AC       		.byte	0xac
+ 436 0188 F4130000 		.long	0x13f4
+ 437 018c 05       		.uleb128 0x5
+ 438 018d 03       		.byte	0x3
+ 439 018e AE       		.byte	0xae
+ 440 018f 13140000 		.long	0x1413
+ 441 0193 05       		.uleb128 0x5
+ 442 0194 03       		.byte	0x3
+ 443 0195 B0       		.byte	0xb0
+ 444 0196 31140000 		.long	0x1431
+ 445 019a 05       		.uleb128 0x5
+ 446 019b 03       		.byte	0x3
+ 447 019c B1       		.byte	0xb1
+ 448 019d 55140000 		.long	0x1455
+ 449 01a1 05       		.uleb128 0x5
+ 450 01a2 03       		.byte	0x3
+ 451 01a3 B2       		.byte	0xb2
+ 452 01a4 72140000 		.long	0x1472
+ 453 01a8 05       		.uleb128 0x5
+ 454 01a9 03       		.byte	0x3
+ 455 01aa B3       		.byte	0xb3
+ 456 01ab 8F140000 		.long	0x148f
+ 457 01af 05       		.uleb128 0x5
+ 458 01b0 03       		.byte	0x3
+ 459 01b1 B4       		.byte	0xb4
+ 460 01b2 AD140000 		.long	0x14ad
+ 461 01b6 05       		.uleb128 0x5
+ 462 01b7 03       		.byte	0x3
+ 463 01b8 B5       		.byte	0xb5
+ 464 01b9 CA140000 		.long	0x14ca
+ 465 01bd 05       		.uleb128 0x5
+ 466 01be 03       		.byte	0x3
+ 467 01bf B6       		.byte	0xb6
+ 468 01c0 E8140000 		.long	0x14e8
+ 469 01c4 05       		.uleb128 0x5
+ 470 01c5 03       		.byte	0x3
+ 471 01c6 B7       		.byte	0xb7
+ 472 01c7 1C150000 		.long	0x151c
+ 473 01cb 05       		.uleb128 0x5
+ 474 01cc 03       		.byte	0x3
+ 475 01cd B8       		.byte	0xb8
+ 476 01ce 34150000 		.long	0x1534
+ 477 01d2 05       		.uleb128 0x5
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 12
+
+
+ 478 01d3 03       		.byte	0x3
+ 479 01d4 B9       		.byte	0xb9
+ 480 01d5 57150000 		.long	0x1557
+ 481 01d9 05       		.uleb128 0x5
+ 482 01da 03       		.byte	0x3
+ 483 01db BA       		.byte	0xba
+ 484 01dc 7A150000 		.long	0x157a
+ 485 01e0 05       		.uleb128 0x5
+ 486 01e1 03       		.byte	0x3
+ 487 01e2 BB       		.byte	0xbb
+ 488 01e3 9D150000 		.long	0x159d
+ 489 01e7 05       		.uleb128 0x5
+ 490 01e8 03       		.byte	0x3
+ 491 01e9 BC       		.byte	0xbc
+ 492 01ea CE150000 		.long	0x15ce
+ 493 01ee 05       		.uleb128 0x5
+ 494 01ef 03       		.byte	0x3
+ 495 01f0 BD       		.byte	0xbd
+ 496 01f1 EB150000 		.long	0x15eb
+ 497 01f5 05       		.uleb128 0x5
+ 498 01f6 03       		.byte	0x3
+ 499 01f7 BF       		.byte	0xbf
+ 500 01f8 18160000 		.long	0x1618
+ 501 01fc 05       		.uleb128 0x5
+ 502 01fd 03       		.byte	0x3
+ 503 01fe C1       		.byte	0xc1
+ 504 01ff 3E160000 		.long	0x163e
+ 505 0203 05       		.uleb128 0x5
+ 506 0204 03       		.byte	0x3
+ 507 0205 C2       		.byte	0xc2
+ 508 0206 5B160000 		.long	0x165b
+ 509 020a 05       		.uleb128 0x5
+ 510 020b 03       		.byte	0x3
+ 511 020c C3       		.byte	0xc3
+ 512 020d 7D160000 		.long	0x167d
+ 513 0211 05       		.uleb128 0x5
+ 514 0212 03       		.byte	0x3
+ 515 0213 C4       		.byte	0xc4
+ 516 0214 A0160000 		.long	0x16a0
+ 517 0218 05       		.uleb128 0x5
+ 518 0219 03       		.byte	0x3
+ 519 021a C5       		.byte	0xc5
+ 520 021b C3160000 		.long	0x16c3
+ 521 021f 05       		.uleb128 0x5
+ 522 0220 03       		.byte	0x3
+ 523 0221 C6       		.byte	0xc6
+ 524 0222 DB160000 		.long	0x16db
+ 525 0226 05       		.uleb128 0x5
+ 526 0227 03       		.byte	0x3
+ 527 0228 C7       		.byte	0xc7
+ 528 0229 FF160000 		.long	0x16ff
+ 529 022d 05       		.uleb128 0x5
+ 530 022e 03       		.byte	0x3
+ 531 022f C8       		.byte	0xc8
+ 532 0230 23170000 		.long	0x1723
+ 533 0234 05       		.uleb128 0x5
+ 534 0235 03       		.byte	0x3
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 13
+
+
+ 535 0236 C9       		.byte	0xc9
+ 536 0237 48170000 		.long	0x1748
+ 537 023b 05       		.uleb128 0x5
+ 538 023c 03       		.byte	0x3
+ 539 023d CA       		.byte	0xca
+ 540 023e 6C170000 		.long	0x176c
+ 541 0242 05       		.uleb128 0x5
+ 542 0243 03       		.byte	0x3
+ 543 0244 CB       		.byte	0xcb
+ 544 0245 86170000 		.long	0x1786
+ 545 0249 05       		.uleb128 0x5
+ 546 024a 03       		.byte	0x3
+ 547 024b CC       		.byte	0xcc
+ 548 024c 9F170000 		.long	0x179f
+ 549 0250 05       		.uleb128 0x5
+ 550 0251 03       		.byte	0x3
+ 551 0252 CD       		.byte	0xcd
+ 552 0253 BC170000 		.long	0x17bc
+ 553 0257 05       		.uleb128 0x5
+ 554 0258 03       		.byte	0x3
+ 555 0259 CE       		.byte	0xce
+ 556 025a DA170000 		.long	0x17da
+ 557 025e 05       		.uleb128 0x5
+ 558 025f 03       		.byte	0x3
+ 559 0260 CF       		.byte	0xcf
+ 560 0261 F8170000 		.long	0x17f8
+ 561 0265 05       		.uleb128 0x5
+ 562 0266 03       		.byte	0x3
+ 563 0267 D0       		.byte	0xd0
+ 564 0268 15180000 		.long	0x1815
+ 565 026c 06       		.uleb128 0x6
+ 566 026d 03       		.byte	0x3
+ 567 026e 0801     		.word	0x108
+ 568 0270 39180000 		.long	0x1839
+ 569 0274 06       		.uleb128 0x6
+ 570 0275 03       		.byte	0x3
+ 571 0276 0901     		.word	0x109
+ 572 0278 66180000 		.long	0x1866
+ 573 027c 06       		.uleb128 0x6
+ 574 027d 03       		.byte	0x3
+ 575 027e 0A01     		.word	0x10a
+ 576 0280 8A180000 		.long	0x188a
+ 577 0284 03       		.uleb128 0x3
+ 578 0285 5F5F6465 		.ascii "__debug\0"
+ 578      62756700 
+ 579 028d 05       		.byte	0x5
+ 580 028e 30       		.byte	0x30
+ 581 028f 07       		.uleb128 0x7
+ 582 0290 63686172 		.ascii "char_traits<char>\0"
+ 582      5F747261 
+ 582      6974733C 
+ 582      63686172 
+ 582      3E00
+ 583 02a2 01       		.byte	0x1
+ 584 02a3 06       		.byte	0x6
+ 585 02a4 E9       		.byte	0xe9
+ 586 02a5 50060000 		.long	0x650
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 14
+
+
+ 587 02a9 08       		.uleb128 0x8
+ 588 02aa 63686172 		.ascii "char_type\0"
+ 588      5F747970 
+ 588      6500
+ 589 02b4 06       		.byte	0x6
+ 590 02b5 EB       		.byte	0xeb
+ 591 02b6 360F0000 		.long	0xf36
+ 592 02ba 08       		.uleb128 0x8
+ 593 02bb 696E745F 		.ascii "int_type\0"
+ 593      74797065 
+ 593      00
+ 594 02c4 06       		.byte	0x6
+ 595 02c5 EC       		.byte	0xec
+ 596 02c6 6A0F0000 		.long	0xf6a
+ 597 02ca 09       		.uleb128 0x9
+ 598 02cb 61737369 		.ascii "assign\0"
+ 598      676E00
+ 599 02d2 06       		.byte	0x6
+ 600 02d3 F2       		.byte	0xf2
+ 601 02d4 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE6assignERcRKc\0"
+ 601      74313163 
+ 601      6861725F 
+ 601      74726169 
+ 601      74734963 
+ 602 02f7 06030000 		.long	0x306
+ 603 02fb 0A       		.uleb128 0xa
+ 604 02fc CA180000 		.long	0x18ca
+ 605 0300 0A       		.uleb128 0xa
+ 606 0301 D0180000 		.long	0x18d0
+ 607 0305 00       		.byte	0
+ 608 0306 0B       		.uleb128 0xb
+ 609 0307 A9020000 		.long	0x2a9
+ 610 030b 0C       		.uleb128 0xc
+ 611 030c 657100   		.ascii "eq\0"
+ 612 030f 06       		.byte	0x6
+ 613 0310 F6       		.byte	0xf6
+ 614 0311 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE2eqERKcS2_\0"
+ 614      74313163 
+ 614      6861725F 
+ 614      74726169 
+ 614      74734963 
+ 615 0331 D6180000 		.long	0x18d6
+ 616 0335 44030000 		.long	0x344
+ 617 0339 0A       		.uleb128 0xa
+ 618 033a D0180000 		.long	0x18d0
+ 619 033e 0A       		.uleb128 0xa
+ 620 033f D0180000 		.long	0x18d0
+ 621 0343 00       		.byte	0
+ 622 0344 0C       		.uleb128 0xc
+ 623 0345 6C7400   		.ascii "lt\0"
+ 624 0348 06       		.byte	0x6
+ 625 0349 FA       		.byte	0xfa
+ 626 034a 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE2ltERKcS2_\0"
+ 626      74313163 
+ 626      6861725F 
+ 626      74726169 
+ 626      74734963 
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 15
+
+
+ 627 036a D6180000 		.long	0x18d6
+ 628 036e 7D030000 		.long	0x37d
+ 629 0372 0A       		.uleb128 0xa
+ 630 0373 D0180000 		.long	0x18d0
+ 631 0377 0A       		.uleb128 0xa
+ 632 0378 D0180000 		.long	0x18d0
+ 633 037c 00       		.byte	0
+ 634 037d 0D       		.uleb128 0xd
+ 635 037e 636F6D70 		.ascii "compare\0"
+ 635      61726500 
+ 636 0386 06       		.byte	0x6
+ 637 0387 0201     		.word	0x102
+ 638 0389 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE7compareEPKcS2_j\0"
+ 638      74313163 
+ 638      6861725F 
+ 638      74726169 
+ 638      74734963 
+ 639 03af 6A0F0000 		.long	0xf6a
+ 640 03b3 C7030000 		.long	0x3c7
+ 641 03b7 0A       		.uleb128 0xa
+ 642 03b8 DE180000 		.long	0x18de
+ 643 03bc 0A       		.uleb128 0xa
+ 644 03bd DE180000 		.long	0x18de
+ 645 03c1 0A       		.uleb128 0xa
+ 646 03c2 50060000 		.long	0x650
+ 647 03c6 00       		.byte	0
+ 648 03c7 0D       		.uleb128 0xd
+ 649 03c8 6C656E67 		.ascii "length\0"
+ 649      746800
+ 650 03cf 06       		.byte	0x6
+ 651 03d0 0601     		.word	0x106
+ 652 03d2 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE6lengthEPKc\0"
+ 652      74313163 
+ 652      6861725F 
+ 652      74726169 
+ 652      74734963 
+ 653 03f3 50060000 		.long	0x650
+ 654 03f7 01040000 		.long	0x401
+ 655 03fb 0A       		.uleb128 0xa
+ 656 03fc DE180000 		.long	0x18de
+ 657 0400 00       		.byte	0
+ 658 0401 0D       		.uleb128 0xd
+ 659 0402 66696E64 		.ascii "find\0"
+ 659      00
+ 660 0407 06       		.byte	0x6
+ 661 0408 0A01     		.word	0x10a
+ 662 040a 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE4findEPKcjRS1_\0"
+ 662      74313163 
+ 662      6861725F 
+ 662      74726169 
+ 662      74734963 
+ 663 042e DE180000 		.long	0x18de
+ 664 0432 46040000 		.long	0x446
+ 665 0436 0A       		.uleb128 0xa
+ 666 0437 DE180000 		.long	0x18de
+ 667 043b 0A       		.uleb128 0xa
+ 668 043c 50060000 		.long	0x650
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 16
+
+
+ 669 0440 0A       		.uleb128 0xa
+ 670 0441 D0180000 		.long	0x18d0
+ 671 0445 00       		.byte	0
+ 672 0446 0D       		.uleb128 0xd
+ 673 0447 6D6F7665 		.ascii "move\0"
+ 673      00
+ 674 044c 06       		.byte	0x6
+ 675 044d 0E01     		.word	0x10e
+ 676 044f 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE4moveEPcPKcj\0"
+ 676      74313163 
+ 676      6861725F 
+ 676      74726169 
+ 676      74734963 
+ 677 0471 E4180000 		.long	0x18e4
+ 678 0475 89040000 		.long	0x489
+ 679 0479 0A       		.uleb128 0xa
+ 680 047a E4180000 		.long	0x18e4
+ 681 047e 0A       		.uleb128 0xa
+ 682 047f DE180000 		.long	0x18de
+ 683 0483 0A       		.uleb128 0xa
+ 684 0484 50060000 		.long	0x650
+ 685 0488 00       		.byte	0
+ 686 0489 0D       		.uleb128 0xd
+ 687 048a 636F7079 		.ascii "copy\0"
+ 687      00
+ 688 048f 06       		.byte	0x6
+ 689 0490 1201     		.word	0x112
+ 690 0492 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE4copyEPcPKcj\0"
+ 690      74313163 
+ 690      6861725F 
+ 690      74726169 
+ 690      74734963 
+ 691 04b4 E4180000 		.long	0x18e4
+ 692 04b8 CC040000 		.long	0x4cc
+ 693 04bc 0A       		.uleb128 0xa
+ 694 04bd E4180000 		.long	0x18e4
+ 695 04c1 0A       		.uleb128 0xa
+ 696 04c2 DE180000 		.long	0x18de
+ 697 04c6 0A       		.uleb128 0xa
+ 698 04c7 50060000 		.long	0x650
+ 699 04cb 00       		.byte	0
+ 700 04cc 0D       		.uleb128 0xd
+ 701 04cd 61737369 		.ascii "assign\0"
+ 701      676E00
+ 702 04d4 06       		.byte	0x6
+ 703 04d5 1601     		.word	0x116
+ 704 04d7 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE6assignEPcjc\0"
+ 704      74313163 
+ 704      6861725F 
+ 704      74726169 
+ 704      74734963 
+ 705 04f9 E4180000 		.long	0x18e4
+ 706 04fd 11050000 		.long	0x511
+ 707 0501 0A       		.uleb128 0xa
+ 708 0502 E4180000 		.long	0x18e4
+ 709 0506 0A       		.uleb128 0xa
+ 710 0507 50060000 		.long	0x650
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 17
+
+
+ 711 050b 0A       		.uleb128 0xa
+ 712 050c A9020000 		.long	0x2a9
+ 713 0510 00       		.byte	0
+ 714 0511 0D       		.uleb128 0xd
+ 715 0512 746F5F63 		.ascii "to_char_type\0"
+ 715      6861725F 
+ 715      74797065 
+ 715      00
+ 716 051f 06       		.byte	0x6
+ 717 0520 1A01     		.word	0x11a
+ 718 0522 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE12to_char_typeERKi\0"
+ 718      74313163 
+ 718      6861725F 
+ 718      74726169 
+ 718      74734963 
+ 719 054a A9020000 		.long	0x2a9
+ 720 054e 58050000 		.long	0x558
+ 721 0552 0A       		.uleb128 0xa
+ 722 0553 EA180000 		.long	0x18ea
+ 723 0557 00       		.byte	0
+ 724 0558 0B       		.uleb128 0xb
+ 725 0559 BA020000 		.long	0x2ba
+ 726 055d 0D       		.uleb128 0xd
+ 727 055e 746F5F69 		.ascii "to_int_type\0"
+ 727      6E745F74 
+ 727      79706500 
+ 728 056a 06       		.byte	0x6
+ 729 056b 2001     		.word	0x120
+ 730 056d 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE11to_int_typeERKc\0"
+ 730      74313163 
+ 730      6861725F 
+ 730      74726169 
+ 730      74734963 
+ 731 0594 BA020000 		.long	0x2ba
+ 732 0598 A2050000 		.long	0x5a2
+ 733 059c 0A       		.uleb128 0xa
+ 734 059d D0180000 		.long	0x18d0
+ 735 05a1 00       		.byte	0
+ 736 05a2 0D       		.uleb128 0xd
+ 737 05a3 65715F69 		.ascii "eq_int_type\0"
+ 737      6E745F74 
+ 737      79706500 
+ 738 05af 06       		.byte	0x6
+ 739 05b0 2401     		.word	0x124
+ 740 05b2 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE11eq_int_typeERKiS2_\0"
+ 740      74313163 
+ 740      6861725F 
+ 740      74726169 
+ 740      74734963 
+ 741 05dc D6180000 		.long	0x18d6
+ 742 05e0 EF050000 		.long	0x5ef
+ 743 05e4 0A       		.uleb128 0xa
+ 744 05e5 EA180000 		.long	0x18ea
+ 745 05e9 0A       		.uleb128 0xa
+ 746 05ea EA180000 		.long	0x18ea
+ 747 05ee 00       		.byte	0
+ 748 05ef 0E       		.uleb128 0xe
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 18
+
+
+ 749 05f0 656F6600 		.ascii "eof\0"
+ 750 05f4 06       		.byte	0x6
+ 751 05f5 2801     		.word	0x128
+ 752 05f7 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE3eofEv\0"
+ 752      74313163 
+ 752      6861725F 
+ 752      74726169 
+ 752      74734963 
+ 753 0613 BA020000 		.long	0x2ba
+ 754 0617 0F       		.uleb128 0xf
+ 755 0618 6E6F745F 		.ascii "not_eof\0"
+ 755      656F6600 
+ 756 0620 06       		.byte	0x6
+ 757 0621 2C01     		.word	0x12c
+ 758 0623 5F5A4E53 		.ascii "_ZNSt11char_traitsIcE7not_eofERKi\0"
+ 758      74313163 
+ 758      6861725F 
+ 758      74726169 
+ 758      74734963 
+ 759 0645 BA020000 		.long	0x2ba
+ 760 0649 0A       		.uleb128 0xa
+ 761 064a EA180000 		.long	0x18ea
+ 762 064e 00       		.byte	0
+ 763 064f 00       		.byte	0
+ 764 0650 08       		.uleb128 0x8
+ 765 0651 73697A65 		.ascii "size_t\0"
+ 765      5F7400
+ 766 0658 04       		.byte	0x4
+ 767 0659 C4       		.byte	0xc4
+ 768 065a E90E0000 		.long	0xee9
+ 769 065e 05       		.uleb128 0x5
+ 770 065f 07       		.byte	0x7
+ 771 0660 35       		.byte	0x35
+ 772 0661 F0180000 		.long	0x18f0
+ 773 0665 05       		.uleb128 0x5
+ 774 0666 07       		.byte	0x7
+ 775 0667 36       		.byte	0x36
+ 776 0668 8F1A0000 		.long	0x1a8f
+ 777 066c 05       		.uleb128 0x5
+ 778 066d 07       		.byte	0x7
+ 779 066e 37       		.byte	0x37
+ 780 066f AF1A0000 		.long	0x1aaf
+ 781 0673 08       		.uleb128 0x8
+ 782 0674 70747264 		.ascii "ptrdiff_t\0"
+ 782      6966665F 
+ 782      7400
+ 783 067e 04       		.byte	0x4
+ 784 067f C5       		.byte	0xc5
+ 785 0680 6A0F0000 		.long	0xf6a
+ 786 0684 10       		.uleb128 0x10
+ 787 0685 5F496F73 		.ascii "_Ios_Fmtflags\0"
+ 787      5F466D74 
+ 787      666C6167 
+ 787      7300
+ 788 0693 04       		.byte	0x4
+ 789 0694 E90E0000 		.long	0xee9
+ 790 0698 08       		.byte	0x8
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 19
+
+
+ 791 0699 39       		.byte	0x39
+ 792 069a AA070000 		.long	0x7aa
+ 793 069e 11       		.uleb128 0x11
+ 794 069f 5F535F62 		.ascii "_S_boolalpha\0"
+ 794      6F6F6C61 
+ 794      6C706861 
+ 794      00
+ 795 06ac 01       		.byte	0x1
+ 796 06ad 11       		.uleb128 0x11
+ 797 06ae 5F535F64 		.ascii "_S_dec\0"
+ 797      656300
+ 798 06b5 02       		.byte	0x2
+ 799 06b6 11       		.uleb128 0x11
+ 800 06b7 5F535F66 		.ascii "_S_fixed\0"
+ 800      69786564 
+ 800      00
+ 801 06c0 04       		.byte	0x4
+ 802 06c1 11       		.uleb128 0x11
+ 803 06c2 5F535F68 		.ascii "_S_hex\0"
+ 803      657800
+ 804 06c9 08       		.byte	0x8
+ 805 06ca 11       		.uleb128 0x11
+ 806 06cb 5F535F69 		.ascii "_S_internal\0"
+ 806      6E746572 
+ 806      6E616C00 
+ 807 06d7 10       		.byte	0x10
+ 808 06d8 11       		.uleb128 0x11
+ 809 06d9 5F535F6C 		.ascii "_S_left\0"
+ 809      65667400 
+ 810 06e1 20       		.byte	0x20
+ 811 06e2 11       		.uleb128 0x11
+ 812 06e3 5F535F6F 		.ascii "_S_oct\0"
+ 812      637400
+ 813 06ea 40       		.byte	0x40
+ 814 06eb 11       		.uleb128 0x11
+ 815 06ec 5F535F72 		.ascii "_S_right\0"
+ 815      69676874 
+ 815      00
+ 816 06f5 80       		.byte	0x80
+ 817 06f6 12       		.uleb128 0x12
+ 818 06f7 5F535F73 		.ascii "_S_scientific\0"
+ 818      6369656E 
+ 818      74696669 
+ 818      6300
+ 819 0705 0001     		.word	0x100
+ 820 0707 12       		.uleb128 0x12
+ 821 0708 5F535F73 		.ascii "_S_showbase\0"
+ 821      686F7762 
+ 821      61736500 
+ 822 0714 0002     		.word	0x200
+ 823 0716 12       		.uleb128 0x12
+ 824 0717 5F535F73 		.ascii "_S_showpoint\0"
+ 824      686F7770 
+ 824      6F696E74 
+ 824      00
+ 825 0724 0004     		.word	0x400
+ 826 0726 12       		.uleb128 0x12
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 20
+
+
+ 827 0727 5F535F73 		.ascii "_S_showpos\0"
+ 827      686F7770 
+ 827      6F7300
+ 828 0732 0008     		.word	0x800
+ 829 0734 12       		.uleb128 0x12
+ 830 0735 5F535F73 		.ascii "_S_skipws\0"
+ 830      6B697077 
+ 830      7300
+ 831 073f 0010     		.word	0x1000
+ 832 0741 12       		.uleb128 0x12
+ 833 0742 5F535F75 		.ascii "_S_unitbuf\0"
+ 833      6E697462 
+ 833      756600
+ 834 074d 0020     		.word	0x2000
+ 835 074f 12       		.uleb128 0x12
+ 836 0750 5F535F75 		.ascii "_S_uppercase\0"
+ 836      70706572 
+ 836      63617365 
+ 836      00
+ 837 075d 0040     		.word	0x4000
+ 838 075f 11       		.uleb128 0x11
+ 839 0760 5F535F61 		.ascii "_S_adjustfield\0"
+ 839      646A7573 
+ 839      74666965 
+ 839      6C6400
+ 840 076f B0       		.byte	0xb0
+ 841 0770 11       		.uleb128 0x11
+ 842 0771 5F535F62 		.ascii "_S_basefield\0"
+ 842      61736566 
+ 842      69656C64 
+ 842      00
+ 843 077e 4A       		.byte	0x4a
+ 844 077f 12       		.uleb128 0x12
+ 845 0780 5F535F66 		.ascii "_S_floatfield\0"
+ 845      6C6F6174 
+ 845      6669656C 
+ 845      6400
+ 846 078e 0401     		.word	0x104
+ 847 0790 13       		.uleb128 0x13
+ 848 0791 5F535F69 		.ascii "_S_ios_fmtflags_end\0"
+ 848      6F735F66 
+ 848      6D74666C 
+ 848      6167735F 
+ 848      656E6400 
+ 849 07a5 00000100 		.long	0x10000
+ 850 07a9 00       		.byte	0
+ 851 07aa 10       		.uleb128 0x10
+ 852 07ab 5F496F73 		.ascii "_Ios_Openmode\0"
+ 852      5F4F7065 
+ 852      6E6D6F64 
+ 852      6500
+ 853 07b9 04       		.byte	0x4
+ 854 07ba E90E0000 		.long	0xee9
+ 855 07be 08       		.byte	0x8
+ 856 07bf 6D       		.byte	0x6d
+ 857 07c0 15080000 		.long	0x815
+ 858 07c4 11       		.uleb128 0x11
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 21
+
+
+ 859 07c5 5F535F61 		.ascii "_S_app\0"
+ 859      707000
+ 860 07cc 01       		.byte	0x1
+ 861 07cd 11       		.uleb128 0x11
+ 862 07ce 5F535F61 		.ascii "_S_ate\0"
+ 862      746500
+ 863 07d5 02       		.byte	0x2
+ 864 07d6 11       		.uleb128 0x11
+ 865 07d7 5F535F62 		.ascii "_S_bin\0"
+ 865      696E00
+ 866 07de 04       		.byte	0x4
+ 867 07df 11       		.uleb128 0x11
+ 868 07e0 5F535F69 		.ascii "_S_in\0"
+ 868      6E00
+ 869 07e6 08       		.byte	0x8
+ 870 07e7 11       		.uleb128 0x11
+ 871 07e8 5F535F6F 		.ascii "_S_out\0"
+ 871      757400
+ 872 07ef 10       		.byte	0x10
+ 873 07f0 11       		.uleb128 0x11
+ 874 07f1 5F535F74 		.ascii "_S_trunc\0"
+ 874      72756E63 
+ 874      00
+ 875 07fa 20       		.byte	0x20
+ 876 07fb 13       		.uleb128 0x13
+ 877 07fc 5F535F69 		.ascii "_S_ios_openmode_end\0"
+ 877      6F735F6F 
+ 877      70656E6D 
+ 877      6F64655F 
+ 877      656E6400 
+ 878 0810 00000100 		.long	0x10000
+ 879 0814 00       		.byte	0
+ 880 0815 10       		.uleb128 0x10
+ 881 0816 5F496F73 		.ascii "_Ios_Iostate\0"
+ 881      5F496F73 
+ 881      74617465 
+ 881      00
+ 882 0823 04       		.byte	0x4
+ 883 0824 E90E0000 		.long	0xee9
+ 884 0828 08       		.byte	0x8
+ 885 0829 95       		.byte	0x95
+ 886 082a 79080000 		.long	0x879
+ 887 082e 11       		.uleb128 0x11
+ 888 082f 5F535F67 		.ascii "_S_goodbit\0"
+ 888      6F6F6462 
+ 888      697400
+ 889 083a 00       		.byte	0
+ 890 083b 11       		.uleb128 0x11
+ 891 083c 5F535F62 		.ascii "_S_badbit\0"
+ 891      61646269 
+ 891      7400
+ 892 0846 01       		.byte	0x1
+ 893 0847 11       		.uleb128 0x11
+ 894 0848 5F535F65 		.ascii "_S_eofbit\0"
+ 894      6F666269 
+ 894      7400
+ 895 0852 02       		.byte	0x2
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 22
+
+
+ 896 0853 11       		.uleb128 0x11
+ 897 0854 5F535F66 		.ascii "_S_failbit\0"
+ 897      61696C62 
+ 897      697400
+ 898 085f 04       		.byte	0x4
+ 899 0860 13       		.uleb128 0x13
+ 900 0861 5F535F69 		.ascii "_S_ios_iostate_end\0"
+ 900      6F735F69 
+ 900      6F737461 
+ 900      74655F65 
+ 900      6E6400
+ 901 0874 00000100 		.long	0x10000
+ 902 0878 00       		.byte	0
+ 903 0879 10       		.uleb128 0x10
+ 904 087a 5F496F73 		.ascii "_Ios_Seekdir\0"
+ 904      5F536565 
+ 904      6B646972 
+ 904      00
+ 905 0887 04       		.byte	0x4
+ 906 0888 E90E0000 		.long	0xee9
+ 907 088c 08       		.byte	0x8
+ 908 088d BB       		.byte	0xbb
+ 909 088e C6080000 		.long	0x8c6
+ 910 0892 11       		.uleb128 0x11
+ 911 0893 5F535F62 		.ascii "_S_beg\0"
+ 911      656700
+ 912 089a 00       		.byte	0
+ 913 089b 11       		.uleb128 0x11
+ 914 089c 5F535F63 		.ascii "_S_cur\0"
+ 914      757200
+ 915 08a3 01       		.byte	0x1
+ 916 08a4 11       		.uleb128 0x11
+ 917 08a5 5F535F65 		.ascii "_S_end\0"
+ 917      6E6400
+ 918 08ac 02       		.byte	0x2
+ 919 08ad 13       		.uleb128 0x13
+ 920 08ae 5F535F69 		.ascii "_S_ios_seekdir_end\0"
+ 920      6F735F73 
+ 920      65656B64 
+ 920      69725F65 
+ 920      6E6400
+ 921 08c1 00000100 		.long	0x10000
+ 922 08c5 00       		.byte	0
+ 923 08c6 14       		.uleb128 0x14
+ 924 08c7 696F735F 		.ascii "ios_base\0"
+ 924      62617365 
+ 924      00
+ 925 08d0 E60B0000 		.long	0xbe6
+ 926 08d4 15       		.uleb128 0x15
+ 927 08d5 496E6974 		.ascii "Init\0"
+ 927      00
+ 928 08da 01       		.byte	0x1
+ 929 08db 08       		.byte	0x8
+ 930 08dc 5302     		.word	0x253
+ 931 08de 01       		.byte	0x1
+ 932 08df 77090000 		.long	0x977
+ 933 08e3 16       		.uleb128 0x16
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 23
+
+
+ 934 08e4 5F535F72 		.ascii "_S_refcount\0"
+ 934      6566636F 
+ 934      756E7400 
+ 935 08f0 08       		.byte	0x8
+ 936 08f1 5B02     		.word	0x25b
+ 937 08f3 C71A0000 		.long	0x1ac7
+ 938 08f7 16       		.uleb128 0x16
+ 939 08f8 5F535F73 		.ascii "_S_synced_with_stdio\0"
+ 939      796E6365 
+ 939      645F7769 
+ 939      74685F73 
+ 939      7464696F 
+ 940 090d 08       		.byte	0x8
+ 941 090e 5C02     		.word	0x25c
+ 942 0910 D6180000 		.long	0x18d6
+ 943 0914 17       		.uleb128 0x17
+ 944 0915 496E6974 		.ascii "Init\0"
+ 944      00
+ 945 091a 08       		.byte	0x8
+ 946 091b 5702     		.word	0x257
+ 947 091d 5F5A4E53 		.ascii "_ZNSt8ios_base4InitC4Ev\0"
+ 947      7438696F 
+ 947      735F6261 
+ 947      73653449 
+ 947      6E697443 
+ 948 0935 01       		.byte	0x1
+ 949 0936 3E090000 		.long	0x93e
+ 950 093a 44090000 		.long	0x944
+ 951 093e 18       		.uleb128 0x18
+ 952 093f EA1A0000 		.long	0x1aea
+ 953 0943 00       		.byte	0
+ 954 0944 19       		.uleb128 0x19
+ 955 0945 7E496E69 		.ascii "~Init\0"
+ 955      7400
+ 956 094b 08       		.byte	0x8
+ 957 094c 5802     		.word	0x258
+ 958 094e 5F5A4E53 		.ascii "_ZNSt8ios_base4InitD4Ev\0"
+ 958      7438696F 
+ 958      735F6261 
+ 958      73653449 
+ 958      6E697444 
+ 959 0966 01       		.byte	0x1
+ 960 0967 6B090000 		.long	0x96b
+ 961 096b 18       		.uleb128 0x18
+ 962 096c EA1A0000 		.long	0x1aea
+ 963 0970 18       		.uleb128 0x18
+ 964 0971 6A0F0000 		.long	0xf6a
+ 965 0975 00       		.byte	0
+ 966 0976 00       		.byte	0
+ 967 0977 1A       		.uleb128 0x1a
+ 968 0978 666D7466 		.ascii "fmtflags\0"
+ 968      6C616773 
+ 968      00
+ 969 0981 08       		.byte	0x8
+ 970 0982 3D01     		.word	0x13d
+ 971 0984 84060000 		.long	0x684
+ 972 0988 01       		.byte	0x1
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 24
+
+
+ 973 0989 1B       		.uleb128 0x1b
+ 974 098a 626F6F6C 		.ascii "boolalpha\0"
+ 974      616C7068 
+ 974      6100
+ 975 0994 08       		.byte	0x8
+ 976 0995 4001     		.word	0x140
+ 977 0997 9D090000 		.long	0x99d
+ 978 099b 01       		.byte	0x1
+ 979 099c 01       		.byte	0x1
+ 980 099d 0B       		.uleb128 0xb
+ 981 099e 77090000 		.long	0x977
+ 982 09a2 1B       		.uleb128 0x1b
+ 983 09a3 64656300 		.ascii "dec\0"
+ 984 09a7 08       		.byte	0x8
+ 985 09a8 4301     		.word	0x143
+ 986 09aa 9D090000 		.long	0x99d
+ 987 09ae 01       		.byte	0x1
+ 988 09af 02       		.byte	0x2
+ 989 09b0 1B       		.uleb128 0x1b
+ 990 09b1 66697865 		.ascii "fixed\0"
+ 990      6400
+ 991 09b7 08       		.byte	0x8
+ 992 09b8 4601     		.word	0x146
+ 993 09ba 9D090000 		.long	0x99d
+ 994 09be 01       		.byte	0x1
+ 995 09bf 04       		.byte	0x4
+ 996 09c0 1B       		.uleb128 0x1b
+ 997 09c1 68657800 		.ascii "hex\0"
+ 998 09c5 08       		.byte	0x8
+ 999 09c6 4901     		.word	0x149
+ 1000 09c8 9D090000 		.long	0x99d
+ 1001 09cc 01       		.byte	0x1
+ 1002 09cd 08       		.byte	0x8
+ 1003 09ce 1B       		.uleb128 0x1b
+ 1004 09cf 696E7465 		.ascii "internal\0"
+ 1004      726E616C 
+ 1004      00
+ 1005 09d8 08       		.byte	0x8
+ 1006 09d9 4E01     		.word	0x14e
+ 1007 09db 9D090000 		.long	0x99d
+ 1008 09df 01       		.byte	0x1
+ 1009 09e0 10       		.byte	0x10
+ 1010 09e1 1B       		.uleb128 0x1b
+ 1011 09e2 6C656674 		.ascii "left\0"
+ 1011      00
+ 1012 09e7 08       		.byte	0x8
+ 1013 09e8 5201     		.word	0x152
+ 1014 09ea 9D090000 		.long	0x99d
+ 1015 09ee 01       		.byte	0x1
+ 1016 09ef 20       		.byte	0x20
+ 1017 09f0 1B       		.uleb128 0x1b
+ 1018 09f1 6F637400 		.ascii "oct\0"
+ 1019 09f5 08       		.byte	0x8
+ 1020 09f6 5501     		.word	0x155
+ 1021 09f8 9D090000 		.long	0x99d
+ 1022 09fc 01       		.byte	0x1
+ 1023 09fd 40       		.byte	0x40
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 25
+
+
+ 1024 09fe 1B       		.uleb128 0x1b
+ 1025 09ff 72696768 		.ascii "right\0"
+ 1025      7400
+ 1026 0a05 08       		.byte	0x8
+ 1027 0a06 5901     		.word	0x159
+ 1028 0a08 9D090000 		.long	0x99d
+ 1029 0a0c 01       		.byte	0x1
+ 1030 0a0d 80       		.byte	0x80
+ 1031 0a0e 1C       		.uleb128 0x1c
+ 1032 0a0f 73636965 		.ascii "scientific\0"
+ 1032      6E746966 
+ 1032      696300
+ 1033 0a1a 08       		.byte	0x8
+ 1034 0a1b 5C01     		.word	0x15c
+ 1035 0a1d 9D090000 		.long	0x99d
+ 1036 0a21 01       		.byte	0x1
+ 1037 0a22 0001     		.word	0x100
+ 1038 0a24 1C       		.uleb128 0x1c
+ 1039 0a25 73686F77 		.ascii "showbase\0"
+ 1039      62617365 
+ 1039      00
+ 1040 0a2e 08       		.byte	0x8
+ 1041 0a2f 6001     		.word	0x160
+ 1042 0a31 9D090000 		.long	0x99d
+ 1043 0a35 01       		.byte	0x1
+ 1044 0a36 0002     		.word	0x200
+ 1045 0a38 1C       		.uleb128 0x1c
+ 1046 0a39 73686F77 		.ascii "showpoint\0"
+ 1046      706F696E 
+ 1046      7400
+ 1047 0a43 08       		.byte	0x8
+ 1048 0a44 6401     		.word	0x164
+ 1049 0a46 9D090000 		.long	0x99d
+ 1050 0a4a 01       		.byte	0x1
+ 1051 0a4b 0004     		.word	0x400
+ 1052 0a4d 1C       		.uleb128 0x1c
+ 1053 0a4e 73686F77 		.ascii "showpos\0"
+ 1053      706F7300 
+ 1054 0a56 08       		.byte	0x8
+ 1055 0a57 6701     		.word	0x167
+ 1056 0a59 9D090000 		.long	0x99d
+ 1057 0a5d 01       		.byte	0x1
+ 1058 0a5e 0008     		.word	0x800
+ 1059 0a60 1C       		.uleb128 0x1c
+ 1060 0a61 736B6970 		.ascii "skipws\0"
+ 1060      777300
+ 1061 0a68 08       		.byte	0x8
+ 1062 0a69 6A01     		.word	0x16a
+ 1063 0a6b 9D090000 		.long	0x99d
+ 1064 0a6f 01       		.byte	0x1
+ 1065 0a70 0010     		.word	0x1000
+ 1066 0a72 1C       		.uleb128 0x1c
+ 1067 0a73 756E6974 		.ascii "unitbuf\0"
+ 1067      62756600 
+ 1068 0a7b 08       		.byte	0x8
+ 1069 0a7c 6D01     		.word	0x16d
+ 1070 0a7e 9D090000 		.long	0x99d
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 26
+
+
+ 1071 0a82 01       		.byte	0x1
+ 1072 0a83 0020     		.word	0x2000
+ 1073 0a85 1C       		.uleb128 0x1c
+ 1074 0a86 75707065 		.ascii "uppercase\0"
+ 1074      72636173 
+ 1074      6500
+ 1075 0a90 08       		.byte	0x8
+ 1076 0a91 7101     		.word	0x171
+ 1077 0a93 9D090000 		.long	0x99d
+ 1078 0a97 01       		.byte	0x1
+ 1079 0a98 0040     		.word	0x4000
+ 1080 0a9a 1B       		.uleb128 0x1b
+ 1081 0a9b 61646A75 		.ascii "adjustfield\0"
+ 1081      73746669 
+ 1081      656C6400 
+ 1082 0aa7 08       		.byte	0x8
+ 1083 0aa8 7401     		.word	0x174
+ 1084 0aaa 9D090000 		.long	0x99d
+ 1085 0aae 01       		.byte	0x1
+ 1086 0aaf B0       		.byte	0xb0
+ 1087 0ab0 1B       		.uleb128 0x1b
+ 1088 0ab1 62617365 		.ascii "basefield\0"
+ 1088      6669656C 
+ 1088      6400
+ 1089 0abb 08       		.byte	0x8
+ 1090 0abc 7701     		.word	0x177
+ 1091 0abe 9D090000 		.long	0x99d
+ 1092 0ac2 01       		.byte	0x1
+ 1093 0ac3 4A       		.byte	0x4a
+ 1094 0ac4 1C       		.uleb128 0x1c
+ 1095 0ac5 666C6F61 		.ascii "floatfield\0"
+ 1095      74666965 
+ 1095      6C6400
+ 1096 0ad0 08       		.byte	0x8
+ 1097 0ad1 7A01     		.word	0x17a
+ 1098 0ad3 9D090000 		.long	0x99d
+ 1099 0ad7 01       		.byte	0x1
+ 1100 0ad8 0401     		.word	0x104
+ 1101 0ada 1A       		.uleb128 0x1a
+ 1102 0adb 696F7374 		.ascii "iostate\0"
+ 1102      61746500 
+ 1103 0ae3 08       		.byte	0x8
+ 1104 0ae4 8801     		.word	0x188
+ 1105 0ae6 15080000 		.long	0x815
+ 1106 0aea 01       		.byte	0x1
+ 1107 0aeb 1B       		.uleb128 0x1b
+ 1108 0aec 62616462 		.ascii "badbit\0"
+ 1108      697400
+ 1109 0af3 08       		.byte	0x8
+ 1110 0af4 8C01     		.word	0x18c
+ 1111 0af6 FC0A0000 		.long	0xafc
+ 1112 0afa 01       		.byte	0x1
+ 1113 0afb 01       		.byte	0x1
+ 1114 0afc 0B       		.uleb128 0xb
+ 1115 0afd DA0A0000 		.long	0xada
+ 1116 0b01 1B       		.uleb128 0x1b
+ 1117 0b02 656F6662 		.ascii "eofbit\0"
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 27
+
+
+ 1117      697400
+ 1118 0b09 08       		.byte	0x8
+ 1119 0b0a 8F01     		.word	0x18f
+ 1120 0b0c FC0A0000 		.long	0xafc
+ 1121 0b10 01       		.byte	0x1
+ 1122 0b11 02       		.byte	0x2
+ 1123 0b12 1B       		.uleb128 0x1b
+ 1124 0b13 6661696C 		.ascii "failbit\0"
+ 1124      62697400 
+ 1125 0b1b 08       		.byte	0x8
+ 1126 0b1c 9401     		.word	0x194
+ 1127 0b1e FC0A0000 		.long	0xafc
+ 1128 0b22 01       		.byte	0x1
+ 1129 0b23 04       		.byte	0x4
+ 1130 0b24 1B       		.uleb128 0x1b
+ 1131 0b25 676F6F64 		.ascii "goodbit\0"
+ 1131      62697400 
+ 1132 0b2d 08       		.byte	0x8
+ 1133 0b2e 9701     		.word	0x197
+ 1134 0b30 FC0A0000 		.long	0xafc
+ 1135 0b34 01       		.byte	0x1
+ 1136 0b35 00       		.byte	0
+ 1137 0b36 1A       		.uleb128 0x1a
+ 1138 0b37 6F70656E 		.ascii "openmode\0"
+ 1138      6D6F6465 
+ 1138      00
+ 1139 0b40 08       		.byte	0x8
+ 1140 0b41 A701     		.word	0x1a7
+ 1141 0b43 AA070000 		.long	0x7aa
+ 1142 0b47 01       		.byte	0x1
+ 1143 0b48 1B       		.uleb128 0x1b
+ 1144 0b49 61707000 		.ascii "app\0"
+ 1145 0b4d 08       		.byte	0x8
+ 1146 0b4e AA01     		.word	0x1aa
+ 1147 0b50 560B0000 		.long	0xb56
+ 1148 0b54 01       		.byte	0x1
+ 1149 0b55 01       		.byte	0x1
+ 1150 0b56 0B       		.uleb128 0xb
+ 1151 0b57 360B0000 		.long	0xb36
+ 1152 0b5b 1B       		.uleb128 0x1b
+ 1153 0b5c 61746500 		.ascii "ate\0"
+ 1154 0b60 08       		.byte	0x8
+ 1155 0b61 AD01     		.word	0x1ad
+ 1156 0b63 560B0000 		.long	0xb56
+ 1157 0b67 01       		.byte	0x1
+ 1158 0b68 02       		.byte	0x2
+ 1159 0b69 1B       		.uleb128 0x1b
+ 1160 0b6a 62696E61 		.ascii "binary\0"
+ 1160      727900
+ 1161 0b71 08       		.byte	0x8
+ 1162 0b72 B201     		.word	0x1b2
+ 1163 0b74 560B0000 		.long	0xb56
+ 1164 0b78 01       		.byte	0x1
+ 1165 0b79 04       		.byte	0x4
+ 1166 0b7a 1B       		.uleb128 0x1b
+ 1167 0b7b 696E00   		.ascii "in\0"
+ 1168 0b7e 08       		.byte	0x8
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 28
+
+
+ 1169 0b7f B501     		.word	0x1b5
+ 1170 0b81 560B0000 		.long	0xb56
+ 1171 0b85 01       		.byte	0x1
+ 1172 0b86 08       		.byte	0x8
+ 1173 0b87 1B       		.uleb128 0x1b
+ 1174 0b88 6F757400 		.ascii "out\0"
+ 1175 0b8c 08       		.byte	0x8
+ 1176 0b8d B801     		.word	0x1b8
+ 1177 0b8f 560B0000 		.long	0xb56
+ 1178 0b93 01       		.byte	0x1
+ 1179 0b94 10       		.byte	0x10
+ 1180 0b95 1B       		.uleb128 0x1b
+ 1181 0b96 7472756E 		.ascii "trunc\0"
+ 1181      6300
+ 1182 0b9c 08       		.byte	0x8
+ 1183 0b9d BB01     		.word	0x1bb
+ 1184 0b9f 560B0000 		.long	0xb56
+ 1185 0ba3 01       		.byte	0x1
+ 1186 0ba4 20       		.byte	0x20
+ 1187 0ba5 1A       		.uleb128 0x1a
+ 1188 0ba6 7365656B 		.ascii "seekdir\0"
+ 1188      64697200 
+ 1189 0bae 08       		.byte	0x8
+ 1190 0baf C701     		.word	0x1c7
+ 1191 0bb1 79080000 		.long	0x879
+ 1192 0bb5 01       		.byte	0x1
+ 1193 0bb6 1B       		.uleb128 0x1b
+ 1194 0bb7 62656700 		.ascii "beg\0"
+ 1195 0bbb 08       		.byte	0x8
+ 1196 0bbc CA01     		.word	0x1ca
+ 1197 0bbe C40B0000 		.long	0xbc4
+ 1198 0bc2 01       		.byte	0x1
+ 1199 0bc3 00       		.byte	0
+ 1200 0bc4 0B       		.uleb128 0xb
+ 1201 0bc5 A50B0000 		.long	0xba5
+ 1202 0bc9 1B       		.uleb128 0x1b
+ 1203 0bca 63757200 		.ascii "cur\0"
+ 1204 0bce 08       		.byte	0x8
+ 1205 0bcf CD01     		.word	0x1cd
+ 1206 0bd1 C40B0000 		.long	0xbc4
+ 1207 0bd5 01       		.byte	0x1
+ 1208 0bd6 01       		.byte	0x1
+ 1209 0bd7 1B       		.uleb128 0x1b
+ 1210 0bd8 656E6400 		.ascii "end\0"
+ 1211 0bdc 08       		.byte	0x8
+ 1212 0bdd D001     		.word	0x1d0
+ 1213 0bdf C40B0000 		.long	0xbc4
+ 1214 0be3 01       		.byte	0x1
+ 1215 0be4 02       		.byte	0x2
+ 1216 0be5 00       		.byte	0
+ 1217 0be6 05       		.uleb128 0x5
+ 1218 0be7 09       		.byte	0x9
+ 1219 0be8 52       		.byte	0x52
+ 1220 0be9 590F0000 		.long	0xf59
+ 1221 0bed 05       		.uleb128 0x5
+ 1222 0bee 09       		.byte	0x9
+ 1223 0bef 53       		.byte	0x53
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 29
+
+
+ 1224 0bf0 3E0F0000 		.long	0xf3e
+ 1225 0bf4 05       		.uleb128 0x5
+ 1226 0bf5 09       		.byte	0x9
+ 1227 0bf6 54       		.byte	0x54
+ 1228 0bf7 F90E0000 		.long	0xef9
+ 1229 0bfb 05       		.uleb128 0x5
+ 1230 0bfc 09       		.byte	0x9
+ 1231 0bfd 5C       		.byte	0x5c
+ 1232 0bfe F01A0000 		.long	0x1af0
+ 1233 0c02 05       		.uleb128 0x5
+ 1234 0c03 09       		.byte	0x9
+ 1235 0c04 65       		.byte	0x65
+ 1236 0c05 0F1B0000 		.long	0x1b0f
+ 1237 0c09 05       		.uleb128 0x5
+ 1238 0c0a 09       		.byte	0x9
+ 1239 0c0b 68       		.byte	0x68
+ 1240 0c0c 2F1B0000 		.long	0x1b2f
+ 1241 0c10 05       		.uleb128 0x5
+ 1242 0c11 09       		.byte	0x9
+ 1243 0c12 69       		.byte	0x69
+ 1244 0c13 481B0000 		.long	0x1b48
+ 1245 0c17 14       		.uleb128 0x14
+ 1246 0c18 62617369 		.ascii "basic_ostream<char, std::char_traits<char> >\0"
+ 1246      635F6F73 
+ 1246      74726561 
+ 1246      6D3C6368 
+ 1246      61722C20 
+ 1247 0c45 630C0000 		.long	0xc63
+ 1248 0c49 1D       		.uleb128 0x1d
+ 1249 0c4a 5F436861 		.ascii "_CharT\0"
+ 1249      725400
+ 1250 0c51 360F0000 		.long	0xf36
+ 1251 0c55 1E       		.uleb128 0x1e
+ 1252 0c56 5F547261 		.ascii "_Traits\0"
+ 1252      69747300 
+ 1253 0c5e 8F020000 		.long	0x28f
+ 1254 0c62 00       		.byte	0
+ 1255 0c63 14       		.uleb128 0x14
+ 1256 0c64 62617369 		.ascii "basic_istream<char, std::char_traits<char> >\0"
+ 1256      635F6973 
+ 1256      74726561 
+ 1256      6D3C6368 
+ 1256      61722C20 
+ 1257 0c91 AF0C0000 		.long	0xcaf
+ 1258 0c95 1D       		.uleb128 0x1d
+ 1259 0c96 5F436861 		.ascii "_CharT\0"
+ 1259      725400
+ 1260 0c9d 360F0000 		.long	0xf36
+ 1261 0ca1 1E       		.uleb128 0x1e
+ 1262 0ca2 5F547261 		.ascii "_Traits\0"
+ 1262      69747300 
+ 1263 0caa 8F020000 		.long	0x28f
+ 1264 0cae 00       		.byte	0
+ 1265 0caf 08       		.uleb128 0x8
+ 1266 0cb0 69737472 		.ascii "istream\0"
+ 1266      65616D00 
+ 1267 0cb8 0A       		.byte	0xa
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 30
+
+
+ 1268 0cb9 8A       		.byte	0x8a
+ 1269 0cba 630C0000 		.long	0xc63
+ 1270 0cbe 1F       		.uleb128 0x1f
+ 1271 0cbf 63696E00 		.ascii "cin\0"
+ 1272 0cc3 02       		.byte	0x2
+ 1273 0cc4 3C       		.byte	0x3c
+ 1274 0cc5 5F5A5374 		.ascii "_ZSt3cin\0"
+ 1274      3363696E 
+ 1274      00
+ 1275 0cce AF0C0000 		.long	0xcaf
+ 1276 0cd2 08       		.uleb128 0x8
+ 1277 0cd3 6F737472 		.ascii "ostream\0"
+ 1277      65616D00 
+ 1278 0cdb 0A       		.byte	0xa
+ 1279 0cdc 8D       		.byte	0x8d
+ 1280 0cdd 170C0000 		.long	0xc17
+ 1281 0ce1 1F       		.uleb128 0x1f
+ 1282 0ce2 636F7574 		.ascii "cout\0"
+ 1282      00
+ 1283 0ce7 02       		.byte	0x2
+ 1284 0ce8 3D       		.byte	0x3d
+ 1285 0ce9 5F5A5374 		.ascii "_ZSt4cout\0"
+ 1285      34636F75 
+ 1285      7400
+ 1286 0cf3 D20C0000 		.long	0xcd2
+ 1287 0cf7 20       		.uleb128 0x20
+ 1288 0cf8 5F5F696F 		.ascii "__ioinit\0"
+ 1288      696E6974 
+ 1288      00
+ 1289 0d01 02       		.byte	0x2
+ 1290 0d02 4A       		.byte	0x4a
+ 1291 0d03 D4080000 		.long	0x8d4
+ 1292 0d07 00       		.byte	0
+ 1293 0d08 02       		.uleb128 0x2
+ 1294 0d09 5F5F676E 		.ascii "__gnu_cxx\0"
+ 1294      755F6378 
+ 1294      7800
+ 1295 0d13 04       		.byte	0x4
+ 1296 0d14 DD       		.byte	0xdd
+ 1297 0d15 DB0E0000 		.long	0xedb
+ 1298 0d19 03       		.uleb128 0x3
+ 1299 0d1a 5F5F6378 		.ascii "__cxx11\0"
+ 1299      78313100 
+ 1300 0d22 04       		.byte	0x4
+ 1301 0d23 DE       		.byte	0xde
+ 1302 0d24 04       		.uleb128 0x4
+ 1303 0d25 04       		.byte	0x4
+ 1304 0d26 DE       		.byte	0xde
+ 1305 0d27 190D0000 		.long	0xd19
+ 1306 0d2b 05       		.uleb128 0x5
+ 1307 0d2c 03       		.byte	0x3
+ 1308 0d2d F8       		.byte	0xf8
+ 1309 0d2e 39180000 		.long	0x1839
+ 1310 0d32 06       		.uleb128 0x6
+ 1311 0d33 03       		.byte	0x3
+ 1312 0d34 0101     		.word	0x101
+ 1313 0d36 66180000 		.long	0x1866
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 31
+
+
+ 1314 0d3a 06       		.uleb128 0x6
+ 1315 0d3b 03       		.byte	0x3
+ 1316 0d3c 0201     		.word	0x102
+ 1317 0d3e 8A180000 		.long	0x188a
+ 1318 0d42 03       		.uleb128 0x3
+ 1319 0d43 5F5F6F70 		.ascii "__ops\0"
+ 1319      7300
+ 1320 0d49 0C       		.byte	0xc
+ 1321 0d4a 24       		.byte	0x24
+ 1322 0d4b 05       		.uleb128 0x5
+ 1323 0d4c 0D       		.byte	0xd
+ 1324 0d4d 2C       		.byte	0x2c
+ 1325 0d4e 50060000 		.long	0x650
+ 1326 0d52 05       		.uleb128 0x5
+ 1327 0d53 0D       		.byte	0xd
+ 1328 0d54 2D       		.byte	0x2d
+ 1329 0d55 73060000 		.long	0x673
+ 1330 0d59 07       		.uleb128 0x7
+ 1331 0d5a 5F5F6E75 		.ascii "__numeric_traits_integer<int>\0"
+ 1331      6D657269 
+ 1331      635F7472 
+ 1331      61697473 
+ 1331      5F696E74 
+ 1332 0d78 01       		.byte	0x1
+ 1333 0d79 0E       		.byte	0xe
+ 1334 0d7a 37       		.byte	0x37
+ 1335 0d7b B50D0000 		.long	0xdb5
+ 1336 0d7f 21       		.uleb128 0x21
+ 1337 0d80 00000000 		.secrel32	LASF0
+ 1338 0d84 0E       		.byte	0xe
+ 1339 0d85 3A       		.byte	0x3a
+ 1340 0d86 DB1A0000 		.long	0x1adb
+ 1341 0d8a 21       		.uleb128 0x21
+ 1342 0d8b 06000000 		.secrel32	LASF1
+ 1343 0d8f 0E       		.byte	0xe
+ 1344 0d90 3B       		.byte	0x3b
+ 1345 0d91 DB1A0000 		.long	0x1adb
+ 1346 0d95 21       		.uleb128 0x21
+ 1347 0d96 1C000000 		.secrel32	LASF2
+ 1348 0d9a 0E       		.byte	0xe
+ 1349 0d9b 3F       		.byte	0x3f
+ 1350 0d9c E01A0000 		.long	0x1ae0
+ 1351 0da0 21       		.uleb128 0x21
+ 1352 0da1 0C000000 		.secrel32	LASF3
+ 1353 0da5 0E       		.byte	0xe
+ 1354 0da6 40       		.byte	0x40
+ 1355 0da7 DB1A0000 		.long	0x1adb
+ 1356 0dab 22       		.uleb128 0x22
+ 1357 0dac 15000000 		.secrel32	LASF4
+ 1358 0db0 6A0F0000 		.long	0xf6a
+ 1359 0db4 00       		.byte	0
+ 1360 0db5 07       		.uleb128 0x7
+ 1361 0db6 5F5F6E75 		.ascii "__numeric_traits_integer<long unsigned int>\0"
+ 1361      6D657269 
+ 1361      635F7472 
+ 1361      61697473 
+ 1361      5F696E74 
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 32
+
+
+ 1362 0de2 01       		.byte	0x1
+ 1363 0de3 0E       		.byte	0xe
+ 1364 0de4 37       		.byte	0x37
+ 1365 0de5 1F0E0000 		.long	0xe1f
+ 1366 0de9 21       		.uleb128 0x21
+ 1367 0dea 00000000 		.secrel32	LASF0
+ 1368 0dee 0E       		.byte	0xe
+ 1369 0def 3A       		.byte	0x3a
+ 1370 0df0 E51A0000 		.long	0x1ae5
+ 1371 0df4 21       		.uleb128 0x21
+ 1372 0df5 06000000 		.secrel32	LASF1
+ 1373 0df9 0E       		.byte	0xe
+ 1374 0dfa 3B       		.byte	0x3b
+ 1375 0dfb E51A0000 		.long	0x1ae5
+ 1376 0dff 21       		.uleb128 0x21
+ 1377 0e00 1C000000 		.secrel32	LASF2
+ 1378 0e04 0E       		.byte	0xe
+ 1379 0e05 3F       		.byte	0x3f
+ 1380 0e06 E01A0000 		.long	0x1ae0
+ 1381 0e0a 21       		.uleb128 0x21
+ 1382 0e0b 0C000000 		.secrel32	LASF3
+ 1383 0e0f 0E       		.byte	0xe
+ 1384 0e10 40       		.byte	0x40
+ 1385 0e11 DB1A0000 		.long	0x1adb
+ 1386 0e15 22       		.uleb128 0x22
+ 1387 0e16 15000000 		.secrel32	LASF4
+ 1388 0e1a E0100000 		.long	0x10e0
+ 1389 0e1e 00       		.byte	0
+ 1390 0e1f 07       		.uleb128 0x7
+ 1391 0e20 5F5F6E75 		.ascii "__numeric_traits_integer<char>\0"
+ 1391      6D657269 
+ 1391      635F7472 
+ 1391      61697473 
+ 1391      5F696E74 
+ 1392 0e3f 01       		.byte	0x1
+ 1393 0e40 0E       		.byte	0xe
+ 1394 0e41 37       		.byte	0x37
+ 1395 0e42 7C0E0000 		.long	0xe7c
+ 1396 0e46 21       		.uleb128 0x21
+ 1397 0e47 00000000 		.secrel32	LASF0
+ 1398 0e4b 0E       		.byte	0xe
+ 1399 0e4c 3A       		.byte	0x3a
+ 1400 0e4d 8A120000 		.long	0x128a
+ 1401 0e51 21       		.uleb128 0x21
+ 1402 0e52 06000000 		.secrel32	LASF1
+ 1403 0e56 0E       		.byte	0xe
+ 1404 0e57 3B       		.byte	0x3b
+ 1405 0e58 8A120000 		.long	0x128a
+ 1406 0e5c 21       		.uleb128 0x21
+ 1407 0e5d 1C000000 		.secrel32	LASF2
+ 1408 0e61 0E       		.byte	0xe
+ 1409 0e62 3F       		.byte	0x3f
+ 1410 0e63 E01A0000 		.long	0x1ae0
+ 1411 0e67 21       		.uleb128 0x21
+ 1412 0e68 0C000000 		.secrel32	LASF3
+ 1413 0e6c 0E       		.byte	0xe
+ 1414 0e6d 40       		.byte	0x40
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 33
+
+
+ 1415 0e6e DB1A0000 		.long	0x1adb
+ 1416 0e72 22       		.uleb128 0x22
+ 1417 0e73 15000000 		.secrel32	LASF4
+ 1418 0e77 360F0000 		.long	0xf36
+ 1419 0e7b 00       		.byte	0
+ 1420 0e7c 23       		.uleb128 0x23
+ 1421 0e7d 5F5F6E75 		.ascii "__numeric_traits_integer<short int>\0"
+ 1421      6D657269 
+ 1421      635F7472 
+ 1421      61697473 
+ 1421      5F696E74 
+ 1422 0ea1 01       		.byte	0x1
+ 1423 0ea2 0E       		.byte	0xe
+ 1424 0ea3 37       		.byte	0x37
+ 1425 0ea4 21       		.uleb128 0x21
+ 1426 0ea5 00000000 		.secrel32	LASF0
+ 1427 0ea9 0E       		.byte	0xe
+ 1428 0eaa 3A       		.byte	0x3a
+ 1429 0eab 601B0000 		.long	0x1b60
+ 1430 0eaf 21       		.uleb128 0x21
+ 1431 0eb0 06000000 		.secrel32	LASF1
+ 1432 0eb4 0E       		.byte	0xe
+ 1433 0eb5 3B       		.byte	0x3b
+ 1434 0eb6 601B0000 		.long	0x1b60
+ 1435 0eba 21       		.uleb128 0x21
+ 1436 0ebb 1C000000 		.secrel32	LASF2
+ 1437 0ebf 0E       		.byte	0xe
+ 1438 0ec0 3F       		.byte	0x3f
+ 1439 0ec1 E01A0000 		.long	0x1ae0
+ 1440 0ec5 21       		.uleb128 0x21
+ 1441 0ec6 0C000000 		.secrel32	LASF3
+ 1442 0eca 0E       		.byte	0xe
+ 1443 0ecb 40       		.byte	0x40
+ 1444 0ecc DB1A0000 		.long	0x1adb
+ 1445 0ed0 22       		.uleb128 0x22
+ 1446 0ed1 15000000 		.secrel32	LASF4
+ 1447 0ed5 8E0F0000 		.long	0xf8e
+ 1448 0ed9 00       		.byte	0
+ 1449 0eda 00       		.byte	0
+ 1450 0edb 08       		.uleb128 0x8
+ 1451 0edc 73697A65 		.ascii "size_t\0"
+ 1451      5F7400
+ 1452 0ee3 0F       		.byte	0xf
+ 1453 0ee4 D8       		.byte	0xd8
+ 1454 0ee5 E90E0000 		.long	0xee9
+ 1455 0ee9 24       		.uleb128 0x24
+ 1456 0eea 04       		.byte	0x4
+ 1457 0eeb 07       		.byte	0x7
+ 1458 0eec 756E7369 		.ascii "unsigned int\0"
+ 1458      676E6564 
+ 1458      20696E74 
+ 1458      00
+ 1459 0ef9 25       		.uleb128 0x25
+ 1460 0efa 77696E74 		.ascii "wint_t\0"
+ 1460      5F7400
+ 1461 0f01 0F       		.byte	0xf
+ 1462 0f02 6501     		.word	0x165
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 34
+
+
+ 1463 0f04 080F0000 		.long	0xf08
+ 1464 0f08 24       		.uleb128 0x24
+ 1465 0f09 02       		.byte	0x2
+ 1466 0f0a 07       		.byte	0x7
+ 1467 0f0b 73686F72 		.ascii "short unsigned int\0"
+ 1467      7420756E 
+ 1467      7369676E 
+ 1467      65642069 
+ 1467      6E7400
+ 1468 0f1e 26       		.uleb128 0x26
+ 1469 0f1f 04       		.byte	0x4
+ 1470 0f20 5F5F6275 		.ascii "__builtin_va_list\0"
+ 1470      696C7469 
+ 1470      6E5F7661 
+ 1470      5F6C6973 
+ 1470      7400
+ 1471 0f32 360F0000 		.long	0xf36
+ 1472 0f36 24       		.uleb128 0x24
+ 1473 0f37 01       		.byte	0x1
+ 1474 0f38 06       		.byte	0x6
+ 1475 0f39 63686172 		.ascii "char\0"
+ 1475      00
+ 1476 0f3e 08       		.uleb128 0x8
+ 1477 0f3f 77637479 		.ascii "wctype_t\0"
+ 1477      70655F74 
+ 1477      00
+ 1478 0f48 10       		.byte	0x10
+ 1479 0f49 3E       		.byte	0x3e
+ 1480 0f4a 4E0F0000 		.long	0xf4e
+ 1481 0f4e 24       		.uleb128 0x24
+ 1482 0f4f 02       		.byte	0x2
+ 1483 0f50 07       		.byte	0x7
+ 1484 0f51 77636861 		.ascii "wchar_t\0"
+ 1484      725F7400 
+ 1485 0f59 08       		.uleb128 0x8
+ 1486 0f5a 77637472 		.ascii "wctrans_t\0"
+ 1486      616E735F 
+ 1486      7400
+ 1487 0f64 10       		.byte	0x10
+ 1488 0f65 94       		.byte	0x94
+ 1489 0f66 4E0F0000 		.long	0xf4e
+ 1490 0f6a 24       		.uleb128 0x24
+ 1491 0f6b 04       		.byte	0x4
+ 1492 0f6c 05       		.byte	0x5
+ 1493 0f6d 696E7400 		.ascii "int\0"
+ 1494 0f71 24       		.uleb128 0x24
+ 1495 0f72 04       		.byte	0x4
+ 1496 0f73 05       		.byte	0x5
+ 1497 0f74 6C6F6E67 		.ascii "long int\0"
+ 1497      20696E74 
+ 1497      00
+ 1498 0f7d 24       		.uleb128 0x24
+ 1499 0f7e 08       		.byte	0x8
+ 1500 0f7f 05       		.byte	0x5
+ 1501 0f80 6C6F6E67 		.ascii "long long int\0"
+ 1501      206C6F6E 
+ 1501      6720696E 
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 35
+
+
+ 1501      7400
+ 1502 0f8e 24       		.uleb128 0x24
+ 1503 0f8f 02       		.byte	0x2
+ 1504 0f90 05       		.byte	0x5
+ 1505 0f91 73686F72 		.ascii "short int\0"
+ 1505      7420696E 
+ 1505      7400
+ 1506 0f9b 07       		.uleb128 0x7
+ 1507 0f9c 5F696F62 		.ascii "_iobuf\0"
+ 1507      756600
+ 1508 0fa3 20       		.byte	0x20
+ 1509 0fa4 11       		.byte	0x11
+ 1510 0fa5 44       		.byte	0x44
+ 1511 0fa6 22100000 		.long	0x1022
+ 1512 0faa 27       		.uleb128 0x27
+ 1513 0fab 5F707472 		.ascii "_ptr\0"
+ 1513      00
+ 1514 0fb0 11       		.byte	0x11
+ 1515 0fb1 46       		.byte	0x46
+ 1516 0fb2 22100000 		.long	0x1022
+ 1517 0fb6 00       		.byte	0
+ 1518 0fb7 27       		.uleb128 0x27
+ 1519 0fb8 5F636E74 		.ascii "_cnt\0"
+ 1519      00
+ 1520 0fbd 11       		.byte	0x11
+ 1521 0fbe 47       		.byte	0x47
+ 1522 0fbf 6A0F0000 		.long	0xf6a
+ 1523 0fc3 04       		.byte	0x4
+ 1524 0fc4 27       		.uleb128 0x27
+ 1525 0fc5 5F626173 		.ascii "_base\0"
+ 1525      6500
+ 1526 0fcb 11       		.byte	0x11
+ 1527 0fcc 48       		.byte	0x48
+ 1528 0fcd 22100000 		.long	0x1022
+ 1529 0fd1 08       		.byte	0x8
+ 1530 0fd2 27       		.uleb128 0x27
+ 1531 0fd3 5F666C61 		.ascii "_flag\0"
+ 1531      6700
+ 1532 0fd9 11       		.byte	0x11
+ 1533 0fda 49       		.byte	0x49
+ 1534 0fdb 6A0F0000 		.long	0xf6a
+ 1535 0fdf 0C       		.byte	0xc
+ 1536 0fe0 27       		.uleb128 0x27
+ 1537 0fe1 5F66696C 		.ascii "_file\0"
+ 1537      6500
+ 1538 0fe7 11       		.byte	0x11
+ 1539 0fe8 4A       		.byte	0x4a
+ 1540 0fe9 6A0F0000 		.long	0xf6a
+ 1541 0fed 10       		.byte	0x10
+ 1542 0fee 27       		.uleb128 0x27
+ 1543 0fef 5F636861 		.ascii "_charbuf\0"
+ 1543      72627566 
+ 1543      00
+ 1544 0ff8 11       		.byte	0x11
+ 1545 0ff9 4B       		.byte	0x4b
+ 1546 0ffa 6A0F0000 		.long	0xf6a
+ 1547 0ffe 14       		.byte	0x14
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 36
+
+
+ 1548 0fff 27       		.uleb128 0x27
+ 1549 1000 5F627566 		.ascii "_bufsiz\0"
+ 1549      73697A00 
+ 1550 1008 11       		.byte	0x11
+ 1551 1009 4C       		.byte	0x4c
+ 1552 100a 6A0F0000 		.long	0xf6a
+ 1553 100e 18       		.byte	0x18
+ 1554 100f 27       		.uleb128 0x27
+ 1555 1010 5F746D70 		.ascii "_tmpfname\0"
+ 1555      666E616D 
+ 1555      6500
+ 1556 101a 11       		.byte	0x11
+ 1557 101b 4D       		.byte	0x4d
+ 1558 101c 22100000 		.long	0x1022
+ 1559 1020 1C       		.byte	0x1c
+ 1560 1021 00       		.byte	0
+ 1561 1022 28       		.uleb128 0x28
+ 1562 1023 04       		.byte	0x4
+ 1563 1024 360F0000 		.long	0xf36
+ 1564 1028 08       		.uleb128 0x8
+ 1565 1029 46494C45 		.ascii "FILE\0"
+ 1565      00
+ 1566 102e 11       		.byte	0x11
+ 1567 102f 4E       		.byte	0x4e
+ 1568 1030 9B0F0000 		.long	0xf9b
+ 1569 1034 07       		.uleb128 0x7
+ 1570 1035 746D00   		.ascii "tm\0"
+ 1571 1038 24       		.byte	0x24
+ 1572 1039 11       		.byte	0x11
+ 1573 103a 57       		.byte	0x57
+ 1574 103b CE100000 		.long	0x10ce
+ 1575 103f 27       		.uleb128 0x27
+ 1576 1040 746D5F73 		.ascii "tm_sec\0"
+ 1576      656300
+ 1577 1047 11       		.byte	0x11
+ 1578 1048 58       		.byte	0x58
+ 1579 1049 6A0F0000 		.long	0xf6a
+ 1580 104d 00       		.byte	0
+ 1581 104e 27       		.uleb128 0x27
+ 1582 104f 746D5F6D 		.ascii "tm_min\0"
+ 1582      696E00
+ 1583 1056 11       		.byte	0x11
+ 1584 1057 59       		.byte	0x59
+ 1585 1058 6A0F0000 		.long	0xf6a
+ 1586 105c 04       		.byte	0x4
+ 1587 105d 27       		.uleb128 0x27
+ 1588 105e 746D5F68 		.ascii "tm_hour\0"
+ 1588      6F757200 
+ 1589 1066 11       		.byte	0x11
+ 1590 1067 5A       		.byte	0x5a
+ 1591 1068 6A0F0000 		.long	0xf6a
+ 1592 106c 08       		.byte	0x8
+ 1593 106d 27       		.uleb128 0x27
+ 1594 106e 746D5F6D 		.ascii "tm_mday\0"
+ 1594      64617900 
+ 1595 1076 11       		.byte	0x11
+ 1596 1077 5B       		.byte	0x5b
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 37
+
+
+ 1597 1078 6A0F0000 		.long	0xf6a
+ 1598 107c 0C       		.byte	0xc
+ 1599 107d 27       		.uleb128 0x27
+ 1600 107e 746D5F6D 		.ascii "tm_mon\0"
+ 1600      6F6E00
+ 1601 1085 11       		.byte	0x11
+ 1602 1086 5C       		.byte	0x5c
+ 1603 1087 6A0F0000 		.long	0xf6a
+ 1604 108b 10       		.byte	0x10
+ 1605 108c 27       		.uleb128 0x27
+ 1606 108d 746D5F79 		.ascii "tm_year\0"
+ 1606      65617200 
+ 1607 1095 11       		.byte	0x11
+ 1608 1096 5D       		.byte	0x5d
+ 1609 1097 6A0F0000 		.long	0xf6a
+ 1610 109b 14       		.byte	0x14
+ 1611 109c 27       		.uleb128 0x27
+ 1612 109d 746D5F77 		.ascii "tm_wday\0"
+ 1612      64617900 
+ 1613 10a5 11       		.byte	0x11
+ 1614 10a6 5E       		.byte	0x5e
+ 1615 10a7 6A0F0000 		.long	0xf6a
+ 1616 10ab 18       		.byte	0x18
+ 1617 10ac 27       		.uleb128 0x27
+ 1618 10ad 746D5F79 		.ascii "tm_yday\0"
+ 1618      64617900 
+ 1619 10b5 11       		.byte	0x11
+ 1620 10b6 5F       		.byte	0x5f
+ 1621 10b7 6A0F0000 		.long	0xf6a
+ 1622 10bb 1C       		.byte	0x1c
+ 1623 10bc 27       		.uleb128 0x27
+ 1624 10bd 746D5F69 		.ascii "tm_isdst\0"
+ 1624      73647374 
+ 1624      00
+ 1625 10c6 11       		.byte	0x11
+ 1626 10c7 60       		.byte	0x60
+ 1627 10c8 6A0F0000 		.long	0xf6a
+ 1628 10cc 20       		.byte	0x20
+ 1629 10cd 00       		.byte	0
+ 1630 10ce 25       		.uleb128 0x25
+ 1631 10cf 6D627374 		.ascii "mbstate_t\0"
+ 1631      6174655F 
+ 1631      7400
+ 1632 10d9 11       		.byte	0x11
+ 1633 10da 2701     		.word	0x127
+ 1634 10dc 6A0F0000 		.long	0xf6a
+ 1635 10e0 24       		.uleb128 0x24
+ 1636 10e1 04       		.byte	0x4
+ 1637 10e2 07       		.byte	0x7
+ 1638 10e3 6C6F6E67 		.ascii "long unsigned int\0"
+ 1638      20756E73 
+ 1638      69676E65 
+ 1638      6420696E 
+ 1638      7400
+ 1639 10f5 24       		.uleb128 0x24
+ 1640 10f6 04       		.byte	0x4
+ 1641 10f7 07       		.byte	0x7
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 38
+
+
+ 1642 10f8 73697A65 		.ascii "sizetype\0"
+ 1642      74797065 
+ 1642      00
+ 1643 1101 24       		.uleb128 0x24
+ 1644 1102 01       		.byte	0x1
+ 1645 1103 06       		.byte	0x6
+ 1646 1104 7369676E 		.ascii "signed char\0"
+ 1646      65642063 
+ 1646      68617200 
+ 1647 1110 24       		.uleb128 0x24
+ 1648 1111 01       		.byte	0x1
+ 1649 1112 08       		.byte	0x8
+ 1650 1113 756E7369 		.ascii "unsigned char\0"
+ 1650      676E6564 
+ 1650      20636861 
+ 1650      7200
+ 1651 1121 24       		.uleb128 0x24
+ 1652 1122 08       		.byte	0x8
+ 1653 1123 07       		.byte	0x7
+ 1654 1124 6C6F6E67 		.ascii "long long unsigned int\0"
+ 1654      206C6F6E 
+ 1654      6720756E 
+ 1654      7369676E 
+ 1654      65642069 
+ 1655 113b 29       		.uleb128 0x29
+ 1656 113c 62746F77 		.ascii "btowc\0"
+ 1656      6300
+ 1657 1142 11       		.byte	0x11
+ 1658 1143 2901     		.word	0x129
+ 1659 1145 F90E0000 		.long	0xef9
+ 1660 1149 53110000 		.long	0x1153
+ 1661 114d 0A       		.uleb128 0xa
+ 1662 114e 6A0F0000 		.long	0xf6a
+ 1663 1152 00       		.byte	0
+ 1664 1153 2A       		.uleb128 0x2a
+ 1665 1154 66676574 		.ascii "fgetwc\0"
+ 1665      776300
+ 1666 115b 11       		.byte	0x11
+ 1667 115c 70       		.byte	0x70
+ 1668 115d F90E0000 		.long	0xef9
+ 1669 1161 6B110000 		.long	0x116b
+ 1670 1165 0A       		.uleb128 0xa
+ 1671 1166 6B110000 		.long	0x116b
+ 1672 116a 00       		.byte	0
+ 1673 116b 28       		.uleb128 0x28
+ 1674 116c 04       		.byte	0x4
+ 1675 116d 28100000 		.long	0x1028
+ 1676 1171 2A       		.uleb128 0x2a
+ 1677 1172 66676574 		.ascii "fgetws\0"
+ 1677      777300
+ 1678 1179 11       		.byte	0x11
+ 1679 117a 7B       		.byte	0x7b
+ 1680 117b 93110000 		.long	0x1193
+ 1681 117f 93110000 		.long	0x1193
+ 1682 1183 0A       		.uleb128 0xa
+ 1683 1184 93110000 		.long	0x1193
+ 1684 1188 0A       		.uleb128 0xa
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 39
+
+
+ 1685 1189 6A0F0000 		.long	0xf6a
+ 1686 118d 0A       		.uleb128 0xa
+ 1687 118e 6B110000 		.long	0x116b
+ 1688 1192 00       		.byte	0
+ 1689 1193 28       		.uleb128 0x28
+ 1690 1194 04       		.byte	0x4
+ 1691 1195 4E0F0000 		.long	0xf4e
+ 1692 1199 2A       		.uleb128 0x2a
+ 1693 119a 66707574 		.ascii "fputwc\0"
+ 1693      776300
+ 1694 11a1 11       		.byte	0x11
+ 1695 11a2 71       		.byte	0x71
+ 1696 11a3 F90E0000 		.long	0xef9
+ 1697 11a7 B6110000 		.long	0x11b6
+ 1698 11ab 0A       		.uleb128 0xa
+ 1699 11ac 4E0F0000 		.long	0xf4e
+ 1700 11b0 0A       		.uleb128 0xa
+ 1701 11b1 6B110000 		.long	0x116b
+ 1702 11b5 00       		.byte	0
+ 1703 11b6 2A       		.uleb128 0x2a
+ 1704 11b7 66707574 		.ascii "fputws\0"
+ 1704      777300
+ 1705 11be 11       		.byte	0x11
+ 1706 11bf 7C       		.byte	0x7c
+ 1707 11c0 6A0F0000 		.long	0xf6a
+ 1708 11c4 D3110000 		.long	0x11d3
+ 1709 11c8 0A       		.uleb128 0xa
+ 1710 11c9 D3110000 		.long	0x11d3
+ 1711 11cd 0A       		.uleb128 0xa
+ 1712 11ce 6B110000 		.long	0x116b
+ 1713 11d2 00       		.byte	0
+ 1714 11d3 28       		.uleb128 0x28
+ 1715 11d4 04       		.byte	0x4
+ 1716 11d5 D9110000 		.long	0x11d9
+ 1717 11d9 0B       		.uleb128 0xb
+ 1718 11da 4E0F0000 		.long	0xf4e
+ 1719 11de 29       		.uleb128 0x29
+ 1720 11df 66776964 		.ascii "fwide\0"
+ 1720      6500
+ 1721 11e5 11       		.byte	0x11
+ 1722 11e6 3701     		.word	0x137
+ 1723 11e8 6A0F0000 		.long	0xf6a
+ 1724 11ec FB110000 		.long	0x11fb
+ 1725 11f0 0A       		.uleb128 0xa
+ 1726 11f1 6B110000 		.long	0x116b
+ 1727 11f5 0A       		.uleb128 0xa
+ 1728 11f6 6A0F0000 		.long	0xf6a
+ 1729 11fa 00       		.byte	0
+ 1730 11fb 2A       		.uleb128 0x2a
+ 1731 11fc 66777072 		.ascii "fwprintf\0"
+ 1731      696E7466 
+ 1731      00
+ 1732 1205 11       		.byte	0x11
+ 1733 1206 67       		.byte	0x67
+ 1734 1207 6A0F0000 		.long	0xf6a
+ 1735 120b 1B120000 		.long	0x121b
+ 1736 120f 0A       		.uleb128 0xa
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 40
+
+
+ 1737 1210 6B110000 		.long	0x116b
+ 1738 1214 0A       		.uleb128 0xa
+ 1739 1215 D3110000 		.long	0x11d3
+ 1740 1219 2B       		.uleb128 0x2b
+ 1741 121a 00       		.byte	0
+ 1742 121b 2A       		.uleb128 0x2a
+ 1743 121c 66777363 		.ascii "fwscanf\0"
+ 1743      616E6600 
+ 1744 1224 11       		.byte	0x11
+ 1745 1225 6D       		.byte	0x6d
+ 1746 1226 6A0F0000 		.long	0xf6a
+ 1747 122a 3A120000 		.long	0x123a
+ 1748 122e 0A       		.uleb128 0xa
+ 1749 122f 6B110000 		.long	0x116b
+ 1750 1233 0A       		.uleb128 0xa
+ 1751 1234 D3110000 		.long	0x11d3
+ 1752 1238 2B       		.uleb128 0x2b
+ 1753 1239 00       		.byte	0
+ 1754 123a 2A       		.uleb128 0x2a
+ 1755 123b 67657477 		.ascii "getwc\0"
+ 1755      6300
+ 1756 1241 11       		.byte	0x11
+ 1757 1242 7D       		.byte	0x7d
+ 1758 1243 F90E0000 		.long	0xef9
+ 1759 1247 51120000 		.long	0x1251
+ 1760 124b 0A       		.uleb128 0xa
+ 1761 124c 6B110000 		.long	0x116b
+ 1762 1250 00       		.byte	0
+ 1763 1251 2C       		.uleb128 0x2c
+ 1764 1252 67657477 		.ascii "getwchar\0"
+ 1764      63686172 
+ 1764      00
+ 1765 125b 11       		.byte	0x11
+ 1766 125c 7E       		.byte	0x7e
+ 1767 125d F90E0000 		.long	0xef9
+ 1768 1261 29       		.uleb128 0x29
+ 1769 1262 6D62726C 		.ascii "mbrlen\0"
+ 1769      656E00
+ 1770 1269 11       		.byte	0x11
+ 1771 126a 2A01     		.word	0x12a
+ 1772 126c DB0E0000 		.long	0xedb
+ 1773 1270 84120000 		.long	0x1284
+ 1774 1274 0A       		.uleb128 0xa
+ 1775 1275 84120000 		.long	0x1284
+ 1776 1279 0A       		.uleb128 0xa
+ 1777 127a DB0E0000 		.long	0xedb
+ 1778 127e 0A       		.uleb128 0xa
+ 1779 127f 8F120000 		.long	0x128f
+ 1780 1283 00       		.byte	0
+ 1781 1284 28       		.uleb128 0x28
+ 1782 1285 04       		.byte	0x4
+ 1783 1286 8A120000 		.long	0x128a
+ 1784 128a 0B       		.uleb128 0xb
+ 1785 128b 360F0000 		.long	0xf36
+ 1786 128f 28       		.uleb128 0x28
+ 1787 1290 04       		.byte	0x4
+ 1788 1291 CE100000 		.long	0x10ce
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 41
+
+
+ 1789 1295 29       		.uleb128 0x29
+ 1790 1296 6D627274 		.ascii "mbrtowc\0"
+ 1790      6F776300 
+ 1791 129e 11       		.byte	0x11
+ 1792 129f 2C01     		.word	0x12c
+ 1793 12a1 DB0E0000 		.long	0xedb
+ 1794 12a5 BE120000 		.long	0x12be
+ 1795 12a9 0A       		.uleb128 0xa
+ 1796 12aa 93110000 		.long	0x1193
+ 1797 12ae 0A       		.uleb128 0xa
+ 1798 12af 84120000 		.long	0x1284
+ 1799 12b3 0A       		.uleb128 0xa
+ 1800 12b4 DB0E0000 		.long	0xedb
+ 1801 12b8 0A       		.uleb128 0xa
+ 1802 12b9 8F120000 		.long	0x128f
+ 1803 12bd 00       		.byte	0
+ 1804 12be 29       		.uleb128 0x29
+ 1805 12bf 6D627369 		.ascii "mbsinit\0"
+ 1805      6E697400 
+ 1806 12c7 11       		.byte	0x11
+ 1807 12c8 3801     		.word	0x138
+ 1808 12ca 6A0F0000 		.long	0xf6a
+ 1809 12ce D8120000 		.long	0x12d8
+ 1810 12d2 0A       		.uleb128 0xa
+ 1811 12d3 D8120000 		.long	0x12d8
+ 1812 12d7 00       		.byte	0
+ 1813 12d8 28       		.uleb128 0x28
+ 1814 12d9 04       		.byte	0x4
+ 1815 12da DE120000 		.long	0x12de
+ 1816 12de 0B       		.uleb128 0xb
+ 1817 12df CE100000 		.long	0x10ce
+ 1818 12e3 29       		.uleb128 0x29
+ 1819 12e4 6D627372 		.ascii "mbsrtowcs\0"
+ 1819      746F7763 
+ 1819      7300
+ 1820 12ee 11       		.byte	0x11
+ 1821 12ef 2E01     		.word	0x12e
+ 1822 12f1 DB0E0000 		.long	0xedb
+ 1823 12f5 0E130000 		.long	0x130e
+ 1824 12f9 0A       		.uleb128 0xa
+ 1825 12fa 93110000 		.long	0x1193
+ 1826 12fe 0A       		.uleb128 0xa
+ 1827 12ff 0E130000 		.long	0x130e
+ 1828 1303 0A       		.uleb128 0xa
+ 1829 1304 DB0E0000 		.long	0xedb
+ 1830 1308 0A       		.uleb128 0xa
+ 1831 1309 8F120000 		.long	0x128f
+ 1832 130d 00       		.byte	0
+ 1833 130e 28       		.uleb128 0x28
+ 1834 130f 04       		.byte	0x4
+ 1835 1310 84120000 		.long	0x1284
+ 1836 1314 2A       		.uleb128 0x2a
+ 1837 1315 70757477 		.ascii "putwc\0"
+ 1837      6300
+ 1838 131b 11       		.byte	0x11
+ 1839 131c 7F       		.byte	0x7f
+ 1840 131d F90E0000 		.long	0xef9
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 42
+
+
+ 1841 1321 30130000 		.long	0x1330
+ 1842 1325 0A       		.uleb128 0xa
+ 1843 1326 F90E0000 		.long	0xef9
+ 1844 132a 0A       		.uleb128 0xa
+ 1845 132b 6B110000 		.long	0x116b
+ 1846 132f 00       		.byte	0
+ 1847 1330 2A       		.uleb128 0x2a
+ 1848 1331 70757477 		.ascii "putwchar\0"
+ 1848      63686172 
+ 1848      00
+ 1849 133a 11       		.byte	0x11
+ 1850 133b 80       		.byte	0x80
+ 1851 133c F90E0000 		.long	0xef9
+ 1852 1340 4A130000 		.long	0x134a
+ 1853 1344 0A       		.uleb128 0xa
+ 1854 1345 F90E0000 		.long	0xef9
+ 1855 1349 00       		.byte	0
+ 1856 134a 2A       		.uleb128 0x2a
+ 1857 134b 73777363 		.ascii "swscanf\0"
+ 1857      616E6600 
+ 1858 1353 11       		.byte	0x11
+ 1859 1354 6F       		.byte	0x6f
+ 1860 1355 6A0F0000 		.long	0xf6a
+ 1861 1359 69130000 		.long	0x1369
+ 1862 135d 0A       		.uleb128 0xa
+ 1863 135e D3110000 		.long	0x11d3
+ 1864 1362 0A       		.uleb128 0xa
+ 1865 1363 D3110000 		.long	0x11d3
+ 1866 1367 2B       		.uleb128 0x2b
+ 1867 1368 00       		.byte	0
+ 1868 1369 2A       		.uleb128 0x2a
+ 1869 136a 756E6765 		.ascii "ungetwc\0"
+ 1869      74776300 
+ 1870 1372 11       		.byte	0x11
+ 1871 1373 72       		.byte	0x72
+ 1872 1374 F90E0000 		.long	0xef9
+ 1873 1378 87130000 		.long	0x1387
+ 1874 137c 0A       		.uleb128 0xa
+ 1875 137d 4E0F0000 		.long	0xf4e
+ 1876 1381 0A       		.uleb128 0xa
+ 1877 1382 6B110000 		.long	0x116b
+ 1878 1386 00       		.byte	0
+ 1879 1387 2A       		.uleb128 0x2a
+ 1880 1388 76667770 		.ascii "vfwprintf\0"
+ 1880      72696E74 
+ 1880      6600
+ 1881 1392 11       		.byte	0x11
+ 1882 1393 6A       		.byte	0x6a
+ 1883 1394 6A0F0000 		.long	0xf6a
+ 1884 1398 AC130000 		.long	0x13ac
+ 1885 139c 0A       		.uleb128 0xa
+ 1886 139d 6B110000 		.long	0x116b
+ 1887 13a1 0A       		.uleb128 0xa
+ 1888 13a2 D3110000 		.long	0x11d3
+ 1889 13a6 0A       		.uleb128 0xa
+ 1890 13a7 1E0F0000 		.long	0xf1e
+ 1891 13ab 00       		.byte	0
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 43
+
+
+ 1892 13ac 2A       		.uleb128 0x2a
+ 1893 13ad 76667773 		.ascii "vfwscanf\0"
+ 1893      63616E66 
+ 1893      00
+ 1894 13b6 11       		.byte	0x11
+ 1895 13b7 9A       		.byte	0x9a
+ 1896 13b8 6A0F0000 		.long	0xf6a
+ 1897 13bc D0130000 		.long	0x13d0
+ 1898 13c0 0A       		.uleb128 0xa
+ 1899 13c1 6B110000 		.long	0x116b
+ 1900 13c5 0A       		.uleb128 0xa
+ 1901 13c6 D3110000 		.long	0x11d3
+ 1902 13ca 0A       		.uleb128 0xa
+ 1903 13cb 1E0F0000 		.long	0xf1e
+ 1904 13cf 00       		.byte	0
+ 1905 13d0 2A       		.uleb128 0x2a
+ 1906 13d1 76737773 		.ascii "vswscanf\0"
+ 1906      63616E66 
+ 1906      00
+ 1907 13da 11       		.byte	0x11
+ 1908 13db 9C       		.byte	0x9c
+ 1909 13dc 6A0F0000 		.long	0xf6a
+ 1910 13e0 F4130000 		.long	0x13f4
+ 1911 13e4 0A       		.uleb128 0xa
+ 1912 13e5 D3110000 		.long	0x11d3
+ 1913 13e9 0A       		.uleb128 0xa
+ 1914 13ea D3110000 		.long	0x11d3
+ 1915 13ee 0A       		.uleb128 0xa
+ 1916 13ef 1E0F0000 		.long	0xf1e
+ 1917 13f3 00       		.byte	0
+ 1918 13f4 2A       		.uleb128 0x2a
+ 1919 13f5 76777072 		.ascii "vwprintf\0"
+ 1919      696E7466 
+ 1919      00
+ 1920 13fe 11       		.byte	0x11
+ 1921 13ff 6B       		.byte	0x6b
+ 1922 1400 6A0F0000 		.long	0xf6a
+ 1923 1404 13140000 		.long	0x1413
+ 1924 1408 0A       		.uleb128 0xa
+ 1925 1409 D3110000 		.long	0x11d3
+ 1926 140d 0A       		.uleb128 0xa
+ 1927 140e 1E0F0000 		.long	0xf1e
+ 1928 1412 00       		.byte	0
+ 1929 1413 2A       		.uleb128 0x2a
+ 1930 1414 76777363 		.ascii "vwscanf\0"
+ 1930      616E6600 
+ 1931 141c 11       		.byte	0x11
+ 1932 141d 99       		.byte	0x99
+ 1933 141e 6A0F0000 		.long	0xf6a
+ 1934 1422 31140000 		.long	0x1431
+ 1935 1426 0A       		.uleb128 0xa
+ 1936 1427 D3110000 		.long	0x11d3
+ 1937 142b 0A       		.uleb128 0xa
+ 1938 142c 1E0F0000 		.long	0xf1e
+ 1939 1430 00       		.byte	0
+ 1940 1431 29       		.uleb128 0x29
+ 1941 1432 77637274 		.ascii "wcrtomb\0"
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 44
+
+
+ 1941      6F6D6200 
+ 1942 143a 11       		.byte	0x11
+ 1943 143b 3001     		.word	0x130
+ 1944 143d DB0E0000 		.long	0xedb
+ 1945 1441 55140000 		.long	0x1455
+ 1946 1445 0A       		.uleb128 0xa
+ 1947 1446 22100000 		.long	0x1022
+ 1948 144a 0A       		.uleb128 0xa
+ 1949 144b 4E0F0000 		.long	0xf4e
+ 1950 144f 0A       		.uleb128 0xa
+ 1951 1450 8F120000 		.long	0x128f
+ 1952 1454 00       		.byte	0
+ 1953 1455 2A       		.uleb128 0x2a
+ 1954 1456 77637363 		.ascii "wcscat\0"
+ 1954      617400
+ 1955 145d 11       		.byte	0x11
+ 1956 145e D9       		.byte	0xd9
+ 1957 145f 93110000 		.long	0x1193
+ 1958 1463 72140000 		.long	0x1472
+ 1959 1467 0A       		.uleb128 0xa
+ 1960 1468 93110000 		.long	0x1193
+ 1961 146c 0A       		.uleb128 0xa
+ 1962 146d D3110000 		.long	0x11d3
+ 1963 1471 00       		.byte	0
+ 1964 1472 2A       		.uleb128 0x2a
+ 1965 1473 77637363 		.ascii "wcscmp\0"
+ 1965      6D7000
+ 1966 147a 11       		.byte	0x11
+ 1967 147b DB       		.byte	0xdb
+ 1968 147c 6A0F0000 		.long	0xf6a
+ 1969 1480 8F140000 		.long	0x148f
+ 1970 1484 0A       		.uleb128 0xa
+ 1971 1485 D3110000 		.long	0x11d3
+ 1972 1489 0A       		.uleb128 0xa
+ 1973 148a D3110000 		.long	0x11d3
+ 1974 148e 00       		.byte	0
+ 1975 148f 2A       		.uleb128 0x2a
+ 1976 1490 77637363 		.ascii "wcscoll\0"
+ 1976      6F6C6C00 
+ 1977 1498 11       		.byte	0x11
+ 1978 1499 DC       		.byte	0xdc
+ 1979 149a 6A0F0000 		.long	0xf6a
+ 1980 149e AD140000 		.long	0x14ad
+ 1981 14a2 0A       		.uleb128 0xa
+ 1982 14a3 D3110000 		.long	0x11d3
+ 1983 14a7 0A       		.uleb128 0xa
+ 1984 14a8 D3110000 		.long	0x11d3
+ 1985 14ac 00       		.byte	0
+ 1986 14ad 2A       		.uleb128 0x2a
+ 1987 14ae 77637363 		.ascii "wcscpy\0"
+ 1987      707900
+ 1988 14b5 11       		.byte	0x11
+ 1989 14b6 DD       		.byte	0xdd
+ 1990 14b7 93110000 		.long	0x1193
+ 1991 14bb CA140000 		.long	0x14ca
+ 1992 14bf 0A       		.uleb128 0xa
+ 1993 14c0 93110000 		.long	0x1193
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 45
+
+
+ 1994 14c4 0A       		.uleb128 0xa
+ 1995 14c5 D3110000 		.long	0x11d3
+ 1996 14c9 00       		.byte	0
+ 1997 14ca 2A       		.uleb128 0x2a
+ 1998 14cb 77637363 		.ascii "wcscspn\0"
+ 1998      73706E00 
+ 1999 14d3 11       		.byte	0x11
+ 2000 14d4 DE       		.byte	0xde
+ 2001 14d5 DB0E0000 		.long	0xedb
+ 2002 14d9 E8140000 		.long	0x14e8
+ 2003 14dd 0A       		.uleb128 0xa
+ 2004 14de D3110000 		.long	0x11d3
+ 2005 14e2 0A       		.uleb128 0xa
+ 2006 14e3 D3110000 		.long	0x11d3
+ 2007 14e7 00       		.byte	0
+ 2008 14e8 2A       		.uleb128 0x2a
+ 2009 14e9 77637366 		.ascii "wcsftime\0"
+ 2009      74696D65 
+ 2009      00
+ 2010 14f2 11       		.byte	0x11
+ 2011 14f3 CF       		.byte	0xcf
+ 2012 14f4 DB0E0000 		.long	0xedb
+ 2013 14f8 11150000 		.long	0x1511
+ 2014 14fc 0A       		.uleb128 0xa
+ 2015 14fd 93110000 		.long	0x1193
+ 2016 1501 0A       		.uleb128 0xa
+ 2017 1502 DB0E0000 		.long	0xedb
+ 2018 1506 0A       		.uleb128 0xa
+ 2019 1507 D3110000 		.long	0x11d3
+ 2020 150b 0A       		.uleb128 0xa
+ 2021 150c 11150000 		.long	0x1511
+ 2022 1510 00       		.byte	0
+ 2023 1511 28       		.uleb128 0x28
+ 2024 1512 04       		.byte	0x4
+ 2025 1513 17150000 		.long	0x1517
+ 2026 1517 0B       		.uleb128 0xb
+ 2027 1518 34100000 		.long	0x1034
+ 2028 151c 2A       		.uleb128 0x2a
+ 2029 151d 7763736C 		.ascii "wcslen\0"
+ 2029      656E00
+ 2030 1524 11       		.byte	0x11
+ 2031 1525 E0       		.byte	0xe0
+ 2032 1526 DB0E0000 		.long	0xedb
+ 2033 152a 34150000 		.long	0x1534
+ 2034 152e 0A       		.uleb128 0xa
+ 2035 152f D3110000 		.long	0x11d3
+ 2036 1533 00       		.byte	0
+ 2037 1534 2A       		.uleb128 0x2a
+ 2038 1535 7763736E 		.ascii "wcsncat\0"
+ 2038      63617400 
+ 2039 153d 11       		.byte	0x11
+ 2040 153e E1       		.byte	0xe1
+ 2041 153f 93110000 		.long	0x1193
+ 2042 1543 57150000 		.long	0x1557
+ 2043 1547 0A       		.uleb128 0xa
+ 2044 1548 93110000 		.long	0x1193
+ 2045 154c 0A       		.uleb128 0xa
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 46
+
+
+ 2046 154d D3110000 		.long	0x11d3
+ 2047 1551 0A       		.uleb128 0xa
+ 2048 1552 DB0E0000 		.long	0xedb
+ 2049 1556 00       		.byte	0
+ 2050 1557 2A       		.uleb128 0x2a
+ 2051 1558 7763736E 		.ascii "wcsncmp\0"
+ 2051      636D7000 
+ 2052 1560 11       		.byte	0x11
+ 2053 1561 E2       		.byte	0xe2
+ 2054 1562 6A0F0000 		.long	0xf6a
+ 2055 1566 7A150000 		.long	0x157a
+ 2056 156a 0A       		.uleb128 0xa
+ 2057 156b D3110000 		.long	0x11d3
+ 2058 156f 0A       		.uleb128 0xa
+ 2059 1570 D3110000 		.long	0x11d3
+ 2060 1574 0A       		.uleb128 0xa
+ 2061 1575 DB0E0000 		.long	0xedb
+ 2062 1579 00       		.byte	0
+ 2063 157a 2A       		.uleb128 0x2a
+ 2064 157b 7763736E 		.ascii "wcsncpy\0"
+ 2064      63707900 
+ 2065 1583 11       		.byte	0x11
+ 2066 1584 E3       		.byte	0xe3
+ 2067 1585 93110000 		.long	0x1193
+ 2068 1589 9D150000 		.long	0x159d
+ 2069 158d 0A       		.uleb128 0xa
+ 2070 158e 93110000 		.long	0x1193
+ 2071 1592 0A       		.uleb128 0xa
+ 2072 1593 D3110000 		.long	0x11d3
+ 2073 1597 0A       		.uleb128 0xa
+ 2074 1598 DB0E0000 		.long	0xedb
+ 2075 159c 00       		.byte	0
+ 2076 159d 29       		.uleb128 0x29
+ 2077 159e 77637372 		.ascii "wcsrtombs\0"
+ 2077      746F6D62 
+ 2077      7300
+ 2078 15a8 11       		.byte	0x11
+ 2079 15a9 3201     		.word	0x132
+ 2080 15ab DB0E0000 		.long	0xedb
+ 2081 15af C8150000 		.long	0x15c8
+ 2082 15b3 0A       		.uleb128 0xa
+ 2083 15b4 22100000 		.long	0x1022
+ 2084 15b8 0A       		.uleb128 0xa
+ 2085 15b9 C8150000 		.long	0x15c8
+ 2086 15bd 0A       		.uleb128 0xa
+ 2087 15be DB0E0000 		.long	0xedb
+ 2088 15c2 0A       		.uleb128 0xa
+ 2089 15c3 8F120000 		.long	0x128f
+ 2090 15c7 00       		.byte	0
+ 2091 15c8 28       		.uleb128 0x28
+ 2092 15c9 04       		.byte	0x4
+ 2093 15ca D3110000 		.long	0x11d3
+ 2094 15ce 2A       		.uleb128 0x2a
+ 2095 15cf 77637373 		.ascii "wcsspn\0"
+ 2095      706E00
+ 2096 15d6 11       		.byte	0x11
+ 2097 15d7 E6       		.byte	0xe6
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 47
+
+
+ 2098 15d8 DB0E0000 		.long	0xedb
+ 2099 15dc EB150000 		.long	0x15eb
+ 2100 15e0 0A       		.uleb128 0xa
+ 2101 15e1 D3110000 		.long	0x11d3
+ 2102 15e5 0A       		.uleb128 0xa
+ 2103 15e6 D3110000 		.long	0x11d3
+ 2104 15ea 00       		.byte	0
+ 2105 15eb 2A       		.uleb128 0x2a
+ 2106 15ec 77637374 		.ascii "wcstod\0"
+ 2106      6F6400
+ 2107 15f3 11       		.byte	0x11
+ 2108 15f4 A6       		.byte	0xa6
+ 2109 15f5 08160000 		.long	0x1608
+ 2110 15f9 08160000 		.long	0x1608
+ 2111 15fd 0A       		.uleb128 0xa
+ 2112 15fe D3110000 		.long	0x11d3
+ 2113 1602 0A       		.uleb128 0xa
+ 2114 1603 12160000 		.long	0x1612
+ 2115 1607 00       		.byte	0
+ 2116 1608 24       		.uleb128 0x24
+ 2117 1609 08       		.byte	0x8
+ 2118 160a 04       		.byte	0x4
+ 2119 160b 646F7562 		.ascii "double\0"
+ 2119      6C6500
+ 2120 1612 28       		.uleb128 0x28
+ 2121 1613 04       		.byte	0x4
+ 2122 1614 93110000 		.long	0x1193
+ 2123 1618 2A       		.uleb128 0x2a
+ 2124 1619 77637374 		.ascii "wcstof\0"
+ 2124      6F6600
+ 2125 1620 11       		.byte	0x11
+ 2126 1621 A8       		.byte	0xa8
+ 2127 1622 35160000 		.long	0x1635
+ 2128 1626 35160000 		.long	0x1635
+ 2129 162a 0A       		.uleb128 0xa
+ 2130 162b D3110000 		.long	0x11d3
+ 2131 162f 0A       		.uleb128 0xa
+ 2132 1630 12160000 		.long	0x1612
+ 2133 1634 00       		.byte	0
+ 2134 1635 24       		.uleb128 0x24
+ 2135 1636 04       		.byte	0x4
+ 2136 1637 04       		.byte	0x4
+ 2137 1638 666C6F61 		.ascii "float\0"
+ 2137      7400
+ 2138 163e 2A       		.uleb128 0x2a
+ 2139 163f 77637374 		.ascii "wcstok\0"
+ 2139      6F6B00
+ 2140 1646 11       		.byte	0x11
+ 2141 1647 E8       		.byte	0xe8
+ 2142 1648 93110000 		.long	0x1193
+ 2143 164c 5B160000 		.long	0x165b
+ 2144 1650 0A       		.uleb128 0xa
+ 2145 1651 93110000 		.long	0x1193
+ 2146 1655 0A       		.uleb128 0xa
+ 2147 1656 D3110000 		.long	0x11d3
+ 2148 165a 00       		.byte	0
+ 2149 165b 2A       		.uleb128 0x2a
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 48
+
+
+ 2150 165c 77637374 		.ascii "wcstol\0"
+ 2150      6F6C00
+ 2151 1663 11       		.byte	0x11
+ 2152 1664 A4       		.byte	0xa4
+ 2153 1665 710F0000 		.long	0xf71
+ 2154 1669 7D160000 		.long	0x167d
+ 2155 166d 0A       		.uleb128 0xa
+ 2156 166e D3110000 		.long	0x11d3
+ 2157 1672 0A       		.uleb128 0xa
+ 2158 1673 12160000 		.long	0x1612
+ 2159 1677 0A       		.uleb128 0xa
+ 2160 1678 6A0F0000 		.long	0xf6a
+ 2161 167c 00       		.byte	0
+ 2162 167d 2A       		.uleb128 0x2a
+ 2163 167e 77637374 		.ascii "wcstoul\0"
+ 2163      6F756C00 
+ 2164 1686 11       		.byte	0x11
+ 2165 1687 A5       		.byte	0xa5
+ 2166 1688 E0100000 		.long	0x10e0
+ 2167 168c A0160000 		.long	0x16a0
+ 2168 1690 0A       		.uleb128 0xa
+ 2169 1691 D3110000 		.long	0x11d3
+ 2170 1695 0A       		.uleb128 0xa
+ 2171 1696 12160000 		.long	0x1612
+ 2172 169a 0A       		.uleb128 0xa
+ 2173 169b 6A0F0000 		.long	0xf6a
+ 2174 169f 00       		.byte	0
+ 2175 16a0 2A       		.uleb128 0x2a
+ 2176 16a1 77637378 		.ascii "wcsxfrm\0"
+ 2176      66726D00 
+ 2177 16a9 11       		.byte	0x11
+ 2178 16aa E9       		.byte	0xe9
+ 2179 16ab DB0E0000 		.long	0xedb
+ 2180 16af C3160000 		.long	0x16c3
+ 2181 16b3 0A       		.uleb128 0xa
+ 2182 16b4 93110000 		.long	0x1193
+ 2183 16b8 0A       		.uleb128 0xa
+ 2184 16b9 D3110000 		.long	0x11d3
+ 2185 16bd 0A       		.uleb128 0xa
+ 2186 16be DB0E0000 		.long	0xedb
+ 2187 16c2 00       		.byte	0
+ 2188 16c3 29       		.uleb128 0x29
+ 2189 16c4 7763746F 		.ascii "wctob\0"
+ 2189      6200
+ 2190 16ca 11       		.byte	0x11
+ 2191 16cb 3401     		.word	0x134
+ 2192 16cd 6A0F0000 		.long	0xf6a
+ 2193 16d1 DB160000 		.long	0x16db
+ 2194 16d5 0A       		.uleb128 0xa
+ 2195 16d6 F90E0000 		.long	0xef9
+ 2196 16da 00       		.byte	0
+ 2197 16db 29       		.uleb128 0x29
+ 2198 16dc 776D656D 		.ascii "wmemcmp\0"
+ 2198      636D7000 
+ 2199 16e4 11       		.byte	0x11
+ 2200 16e5 4201     		.word	0x142
+ 2201 16e7 6A0F0000 		.long	0xf6a
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 49
+
+
+ 2202 16eb FF160000 		.long	0x16ff
+ 2203 16ef 0A       		.uleb128 0xa
+ 2204 16f0 D3110000 		.long	0x11d3
+ 2205 16f4 0A       		.uleb128 0xa
+ 2206 16f5 D3110000 		.long	0x11d3
+ 2207 16f9 0A       		.uleb128 0xa
+ 2208 16fa DB0E0000 		.long	0xedb
+ 2209 16fe 00       		.byte	0
+ 2210 16ff 29       		.uleb128 0x29
+ 2211 1700 776D656D 		.ascii "wmemcpy\0"
+ 2211      63707900 
+ 2212 1708 11       		.byte	0x11
+ 2213 1709 4301     		.word	0x143
+ 2214 170b 93110000 		.long	0x1193
+ 2215 170f 23170000 		.long	0x1723
+ 2216 1713 0A       		.uleb128 0xa
+ 2217 1714 93110000 		.long	0x1193
+ 2218 1718 0A       		.uleb128 0xa
+ 2219 1719 D3110000 		.long	0x11d3
+ 2220 171d 0A       		.uleb128 0xa
+ 2221 171e DB0E0000 		.long	0xedb
+ 2222 1722 00       		.byte	0
+ 2223 1723 29       		.uleb128 0x29
+ 2224 1724 776D656D 		.ascii "wmemmove\0"
+ 2224      6D6F7665 
+ 2224      00
+ 2225 172d 11       		.byte	0x11
+ 2226 172e 4601     		.word	0x146
+ 2227 1730 93110000 		.long	0x1193
+ 2228 1734 48170000 		.long	0x1748
+ 2229 1738 0A       		.uleb128 0xa
+ 2230 1739 93110000 		.long	0x1193
+ 2231 173d 0A       		.uleb128 0xa
+ 2232 173e D3110000 		.long	0x11d3
+ 2233 1742 0A       		.uleb128 0xa
+ 2234 1743 DB0E0000 		.long	0xedb
+ 2235 1747 00       		.byte	0
+ 2236 1748 29       		.uleb128 0x29
+ 2237 1749 776D656D 		.ascii "wmemset\0"
+ 2237      73657400 
+ 2238 1751 11       		.byte	0x11
+ 2239 1752 4001     		.word	0x140
+ 2240 1754 93110000 		.long	0x1193
+ 2241 1758 6C170000 		.long	0x176c
+ 2242 175c 0A       		.uleb128 0xa
+ 2243 175d 93110000 		.long	0x1193
+ 2244 1761 0A       		.uleb128 0xa
+ 2245 1762 4E0F0000 		.long	0xf4e
+ 2246 1766 0A       		.uleb128 0xa
+ 2247 1767 DB0E0000 		.long	0xedb
+ 2248 176b 00       		.byte	0
+ 2249 176c 2A       		.uleb128 0x2a
+ 2250 176d 77707269 		.ascii "wprintf\0"
+ 2250      6E746600 
+ 2251 1775 11       		.byte	0x11
+ 2252 1776 68       		.byte	0x68
+ 2253 1777 6A0F0000 		.long	0xf6a
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 50
+
+
+ 2254 177b 86170000 		.long	0x1786
+ 2255 177f 0A       		.uleb128 0xa
+ 2256 1780 D3110000 		.long	0x11d3
+ 2257 1784 2B       		.uleb128 0x2b
+ 2258 1785 00       		.byte	0
+ 2259 1786 2A       		.uleb128 0x2a
+ 2260 1787 77736361 		.ascii "wscanf\0"
+ 2260      6E6600
+ 2261 178e 11       		.byte	0x11
+ 2262 178f 6E       		.byte	0x6e
+ 2263 1790 6A0F0000 		.long	0xf6a
+ 2264 1794 9F170000 		.long	0x179f
+ 2265 1798 0A       		.uleb128 0xa
+ 2266 1799 D3110000 		.long	0x11d3
+ 2267 179d 2B       		.uleb128 0x2b
+ 2268 179e 00       		.byte	0
+ 2269 179f 2A       		.uleb128 0x2a
+ 2270 17a0 77637363 		.ascii "wcschr\0"
+ 2270      687200
+ 2271 17a7 11       		.byte	0x11
+ 2272 17a8 DA       		.byte	0xda
+ 2273 17a9 93110000 		.long	0x1193
+ 2274 17ad BC170000 		.long	0x17bc
+ 2275 17b1 0A       		.uleb128 0xa
+ 2276 17b2 D3110000 		.long	0x11d3
+ 2277 17b6 0A       		.uleb128 0xa
+ 2278 17b7 4E0F0000 		.long	0xf4e
+ 2279 17bb 00       		.byte	0
+ 2280 17bc 2A       		.uleb128 0x2a
+ 2281 17bd 77637370 		.ascii "wcspbrk\0"
+ 2281      62726B00 
+ 2282 17c5 11       		.byte	0x11
+ 2283 17c6 E4       		.byte	0xe4
+ 2284 17c7 93110000 		.long	0x1193
+ 2285 17cb DA170000 		.long	0x17da
+ 2286 17cf 0A       		.uleb128 0xa
+ 2287 17d0 D3110000 		.long	0x11d3
+ 2288 17d4 0A       		.uleb128 0xa
+ 2289 17d5 D3110000 		.long	0x11d3
+ 2290 17d9 00       		.byte	0
+ 2291 17da 2A       		.uleb128 0x2a
+ 2292 17db 77637372 		.ascii "wcsrchr\0"
+ 2292      63687200 
+ 2293 17e3 11       		.byte	0x11
+ 2294 17e4 E5       		.byte	0xe5
+ 2295 17e5 93110000 		.long	0x1193
+ 2296 17e9 F8170000 		.long	0x17f8
+ 2297 17ed 0A       		.uleb128 0xa
+ 2298 17ee D3110000 		.long	0x11d3
+ 2299 17f2 0A       		.uleb128 0xa
+ 2300 17f3 4E0F0000 		.long	0xf4e
+ 2301 17f7 00       		.byte	0
+ 2302 17f8 2A       		.uleb128 0x2a
+ 2303 17f9 77637373 		.ascii "wcsstr\0"
+ 2303      747200
+ 2304 1800 11       		.byte	0x11
+ 2305 1801 E7       		.byte	0xe7
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 51
+
+
+ 2306 1802 93110000 		.long	0x1193
+ 2307 1806 15180000 		.long	0x1815
+ 2308 180a 0A       		.uleb128 0xa
+ 2309 180b D3110000 		.long	0x11d3
+ 2310 180f 0A       		.uleb128 0xa
+ 2311 1810 D3110000 		.long	0x11d3
+ 2312 1814 00       		.byte	0
+ 2313 1815 29       		.uleb128 0x29
+ 2314 1816 776D656D 		.ascii "wmemchr\0"
+ 2314      63687200 
+ 2315 181e 11       		.byte	0x11
+ 2316 181f 4101     		.word	0x141
+ 2317 1821 93110000 		.long	0x1193
+ 2318 1825 39180000 		.long	0x1839
+ 2319 1829 0A       		.uleb128 0xa
+ 2320 182a D3110000 		.long	0x11d3
+ 2321 182e 0A       		.uleb128 0xa
+ 2322 182f 4E0F0000 		.long	0xf4e
+ 2323 1833 0A       		.uleb128 0xa
+ 2324 1834 DB0E0000 		.long	0xedb
+ 2325 1838 00       		.byte	0
+ 2326 1839 2A       		.uleb128 0x2a
+ 2327 183a 77637374 		.ascii "wcstold\0"
+ 2327      6F6C6400 
+ 2328 1842 11       		.byte	0x11
+ 2329 1843 A9       		.byte	0xa9
+ 2330 1844 57180000 		.long	0x1857
+ 2331 1848 57180000 		.long	0x1857
+ 2332 184c 0A       		.uleb128 0xa
+ 2333 184d D3110000 		.long	0x11d3
+ 2334 1851 0A       		.uleb128 0xa
+ 2335 1852 12160000 		.long	0x1612
+ 2336 1856 00       		.byte	0
+ 2337 1857 24       		.uleb128 0x24
+ 2338 1858 0C       		.byte	0xc
+ 2339 1859 04       		.byte	0x4
+ 2340 185a 6C6F6E67 		.ascii "long double\0"
+ 2340      20646F75 
+ 2340      626C6500 
+ 2341 1866 29       		.uleb128 0x29
+ 2342 1867 77637374 		.ascii "wcstoll\0"
+ 2342      6F6C6C00 
+ 2343 186f 11       		.byte	0x11
+ 2344 1870 4701     		.word	0x147
+ 2345 1872 7D0F0000 		.long	0xf7d
+ 2346 1876 8A180000 		.long	0x188a
+ 2347 187a 0A       		.uleb128 0xa
+ 2348 187b D3110000 		.long	0x11d3
+ 2349 187f 0A       		.uleb128 0xa
+ 2350 1880 12160000 		.long	0x1612
+ 2351 1884 0A       		.uleb128 0xa
+ 2352 1885 6A0F0000 		.long	0xf6a
+ 2353 1889 00       		.byte	0
+ 2354 188a 29       		.uleb128 0x29
+ 2355 188b 77637374 		.ascii "wcstoull\0"
+ 2355      6F756C6C 
+ 2355      00
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 52
+
+
+ 2356 1894 11       		.byte	0x11
+ 2357 1895 4901     		.word	0x149
+ 2358 1897 21110000 		.long	0x1121
+ 2359 189b AF180000 		.long	0x18af
+ 2360 189f 0A       		.uleb128 0xa
+ 2361 18a0 D3110000 		.long	0x11d3
+ 2362 18a4 0A       		.uleb128 0xa
+ 2363 18a5 12160000 		.long	0x1612
+ 2364 18a9 0A       		.uleb128 0xa
+ 2365 18aa 6A0F0000 		.long	0xf6a
+ 2366 18ae 00       		.byte	0
+ 2367 18af 02       		.uleb128 0x2
+ 2368 18b0 5F5F676E 		.ascii "__gnu_debug\0"
+ 2368      755F6465 
+ 2368      62756700 
+ 2369 18bc 05       		.byte	0x5
+ 2370 18bd 37       		.byte	0x37
+ 2371 18be CA180000 		.long	0x18ca
+ 2372 18c2 04       		.uleb128 0x4
+ 2373 18c3 05       		.byte	0x5
+ 2374 18c4 38       		.byte	0x38
+ 2375 18c5 84020000 		.long	0x284
+ 2376 18c9 00       		.byte	0
+ 2377 18ca 2D       		.uleb128 0x2d
+ 2378 18cb 04       		.byte	0x4
+ 2379 18cc A9020000 		.long	0x2a9
+ 2380 18d0 2D       		.uleb128 0x2d
+ 2381 18d1 04       		.byte	0x4
+ 2382 18d2 06030000 		.long	0x306
+ 2383 18d6 24       		.uleb128 0x24
+ 2384 18d7 01       		.byte	0x1
+ 2385 18d8 02       		.byte	0x2
+ 2386 18d9 626F6F6C 		.ascii "bool\0"
+ 2386      00
+ 2387 18de 28       		.uleb128 0x28
+ 2388 18df 04       		.byte	0x4
+ 2389 18e0 06030000 		.long	0x306
+ 2390 18e4 28       		.uleb128 0x28
+ 2391 18e5 04       		.byte	0x4
+ 2392 18e6 A9020000 		.long	0x2a9
+ 2393 18ea 2D       		.uleb128 0x2d
+ 2394 18eb 04       		.byte	0x4
+ 2395 18ec 58050000 		.long	0x558
+ 2396 18f0 07       		.uleb128 0x7
+ 2397 18f1 6C636F6E 		.ascii "lconv\0"
+ 2397      7600
+ 2398 18f7 30       		.byte	0x30
+ 2399 18f8 12       		.byte	0x12
+ 2400 18f9 2D       		.byte	0x2d
+ 2401 18fa 8F1A0000 		.long	0x1a8f
+ 2402 18fe 27       		.uleb128 0x27
+ 2403 18ff 64656369 		.ascii "decimal_point\0"
+ 2403      6D616C5F 
+ 2403      706F696E 
+ 2403      7400
+ 2404 190d 12       		.byte	0x12
+ 2405 190e 2F       		.byte	0x2f
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 53
+
+
+ 2406 190f 22100000 		.long	0x1022
+ 2407 1913 00       		.byte	0
+ 2408 1914 27       		.uleb128 0x27
+ 2409 1915 74686F75 		.ascii "thousands_sep\0"
+ 2409      73616E64 
+ 2409      735F7365 
+ 2409      7000
+ 2410 1923 12       		.byte	0x12
+ 2411 1924 30       		.byte	0x30
+ 2412 1925 22100000 		.long	0x1022
+ 2413 1929 04       		.byte	0x4
+ 2414 192a 27       		.uleb128 0x27
+ 2415 192b 67726F75 		.ascii "grouping\0"
+ 2415      70696E67 
+ 2415      00
+ 2416 1934 12       		.byte	0x12
+ 2417 1935 31       		.byte	0x31
+ 2418 1936 22100000 		.long	0x1022
+ 2419 193a 08       		.byte	0x8
+ 2420 193b 27       		.uleb128 0x27
+ 2421 193c 696E745F 		.ascii "int_curr_symbol\0"
+ 2421      63757272 
+ 2421      5F73796D 
+ 2421      626F6C00 
+ 2422 194c 12       		.byte	0x12
+ 2423 194d 32       		.byte	0x32
+ 2424 194e 22100000 		.long	0x1022
+ 2425 1952 0C       		.byte	0xc
+ 2426 1953 27       		.uleb128 0x27
+ 2427 1954 63757272 		.ascii "currency_symbol\0"
+ 2427      656E6379 
+ 2427      5F73796D 
+ 2427      626F6C00 
+ 2428 1964 12       		.byte	0x12
+ 2429 1965 33       		.byte	0x33
+ 2430 1966 22100000 		.long	0x1022
+ 2431 196a 10       		.byte	0x10
+ 2432 196b 27       		.uleb128 0x27
+ 2433 196c 6D6F6E5F 		.ascii "mon_decimal_point\0"
+ 2433      64656369 
+ 2433      6D616C5F 
+ 2433      706F696E 
+ 2433      7400
+ 2434 197e 12       		.byte	0x12
+ 2435 197f 34       		.byte	0x34
+ 2436 1980 22100000 		.long	0x1022
+ 2437 1984 14       		.byte	0x14
+ 2438 1985 27       		.uleb128 0x27
+ 2439 1986 6D6F6E5F 		.ascii "mon_thousands_sep\0"
+ 2439      74686F75 
+ 2439      73616E64 
+ 2439      735F7365 
+ 2439      7000
+ 2440 1998 12       		.byte	0x12
+ 2441 1999 35       		.byte	0x35
+ 2442 199a 22100000 		.long	0x1022
+ 2443 199e 18       		.byte	0x18
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 54
+
+
+ 2444 199f 27       		.uleb128 0x27
+ 2445 19a0 6D6F6E5F 		.ascii "mon_grouping\0"
+ 2445      67726F75 
+ 2445      70696E67 
+ 2445      00
+ 2446 19ad 12       		.byte	0x12
+ 2447 19ae 36       		.byte	0x36
+ 2448 19af 22100000 		.long	0x1022
+ 2449 19b3 1C       		.byte	0x1c
+ 2450 19b4 27       		.uleb128 0x27
+ 2451 19b5 706F7369 		.ascii "positive_sign\0"
+ 2451      74697665 
+ 2451      5F736967 
+ 2451      6E00
+ 2452 19c3 12       		.byte	0x12
+ 2453 19c4 37       		.byte	0x37
+ 2454 19c5 22100000 		.long	0x1022
+ 2455 19c9 20       		.byte	0x20
+ 2456 19ca 27       		.uleb128 0x27
+ 2457 19cb 6E656761 		.ascii "negative_sign\0"
+ 2457      74697665 
+ 2457      5F736967 
+ 2457      6E00
+ 2458 19d9 12       		.byte	0x12
+ 2459 19da 38       		.byte	0x38
+ 2460 19db 22100000 		.long	0x1022
+ 2461 19df 24       		.byte	0x24
+ 2462 19e0 27       		.uleb128 0x27
+ 2463 19e1 696E745F 		.ascii "int_frac_digits\0"
+ 2463      66726163 
+ 2463      5F646967 
+ 2463      69747300 
+ 2464 19f1 12       		.byte	0x12
+ 2465 19f2 39       		.byte	0x39
+ 2466 19f3 360F0000 		.long	0xf36
+ 2467 19f7 28       		.byte	0x28
+ 2468 19f8 27       		.uleb128 0x27
+ 2469 19f9 66726163 		.ascii "frac_digits\0"
+ 2469      5F646967 
+ 2469      69747300 
+ 2470 1a05 12       		.byte	0x12
+ 2471 1a06 3A       		.byte	0x3a
+ 2472 1a07 360F0000 		.long	0xf36
+ 2473 1a0b 29       		.byte	0x29
+ 2474 1a0c 27       		.uleb128 0x27
+ 2475 1a0d 705F6373 		.ascii "p_cs_precedes\0"
+ 2475      5F707265 
+ 2475      63656465 
+ 2475      7300
+ 2476 1a1b 12       		.byte	0x12
+ 2477 1a1c 3B       		.byte	0x3b
+ 2478 1a1d 360F0000 		.long	0xf36
+ 2479 1a21 2A       		.byte	0x2a
+ 2480 1a22 27       		.uleb128 0x27
+ 2481 1a23 705F7365 		.ascii "p_sep_by_space\0"
+ 2481      705F6279 
+ 2481      5F737061 
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 55
+
+
+ 2481      636500
+ 2482 1a32 12       		.byte	0x12
+ 2483 1a33 3C       		.byte	0x3c
+ 2484 1a34 360F0000 		.long	0xf36
+ 2485 1a38 2B       		.byte	0x2b
+ 2486 1a39 27       		.uleb128 0x27
+ 2487 1a3a 6E5F6373 		.ascii "n_cs_precedes\0"
+ 2487      5F707265 
+ 2487      63656465 
+ 2487      7300
+ 2488 1a48 12       		.byte	0x12
+ 2489 1a49 3D       		.byte	0x3d
+ 2490 1a4a 360F0000 		.long	0xf36
+ 2491 1a4e 2C       		.byte	0x2c
+ 2492 1a4f 27       		.uleb128 0x27
+ 2493 1a50 6E5F7365 		.ascii "n_sep_by_space\0"
+ 2493      705F6279 
+ 2493      5F737061 
+ 2493      636500
+ 2494 1a5f 12       		.byte	0x12
+ 2495 1a60 3E       		.byte	0x3e
+ 2496 1a61 360F0000 		.long	0xf36
+ 2497 1a65 2D       		.byte	0x2d
+ 2498 1a66 27       		.uleb128 0x27
+ 2499 1a67 705F7369 		.ascii "p_sign_posn\0"
+ 2499      676E5F70 
+ 2499      6F736E00 
+ 2500 1a73 12       		.byte	0x12
+ 2501 1a74 3F       		.byte	0x3f
+ 2502 1a75 360F0000 		.long	0xf36
+ 2503 1a79 2E       		.byte	0x2e
+ 2504 1a7a 27       		.uleb128 0x27
+ 2505 1a7b 6E5F7369 		.ascii "n_sign_posn\0"
+ 2505      676E5F70 
+ 2505      6F736E00 
+ 2506 1a87 12       		.byte	0x12
+ 2507 1a88 40       		.byte	0x40
+ 2508 1a89 360F0000 		.long	0xf36
+ 2509 1a8d 2F       		.byte	0x2f
+ 2510 1a8e 00       		.byte	0
+ 2511 1a8f 2A       		.uleb128 0x2a
+ 2512 1a90 7365746C 		.ascii "setlocale\0"
+ 2512      6F63616C 
+ 2512      6500
+ 2513 1a9a 12       		.byte	0x12
+ 2514 1a9b 47       		.byte	0x47
+ 2515 1a9c 22100000 		.long	0x1022
+ 2516 1aa0 AF1A0000 		.long	0x1aaf
+ 2517 1aa4 0A       		.uleb128 0xa
+ 2518 1aa5 6A0F0000 		.long	0xf6a
+ 2519 1aa9 0A       		.uleb128 0xa
+ 2520 1aaa 84120000 		.long	0x1284
+ 2521 1aae 00       		.byte	0
+ 2522 1aaf 2C       		.uleb128 0x2c
+ 2523 1ab0 6C6F6361 		.ascii "localeconv\0"
+ 2523      6C65636F 
+ 2523      6E7600
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 56
+
+
+ 2524 1abb 12       		.byte	0x12
+ 2525 1abc 48       		.byte	0x48
+ 2526 1abd C11A0000 		.long	0x1ac1
+ 2527 1ac1 28       		.uleb128 0x28
+ 2528 1ac2 04       		.byte	0x4
+ 2529 1ac3 F0180000 		.long	0x18f0
+ 2530 1ac7 08       		.uleb128 0x8
+ 2531 1ac8 5F41746F 		.ascii "_Atomic_word\0"
+ 2531      6D69635F 
+ 2531      776F7264 
+ 2531      00
+ 2532 1ad5 13       		.byte	0x13
+ 2533 1ad6 20       		.byte	0x20
+ 2534 1ad7 6A0F0000 		.long	0xf6a
+ 2535 1adb 0B       		.uleb128 0xb
+ 2536 1adc 6A0F0000 		.long	0xf6a
+ 2537 1ae0 0B       		.uleb128 0xb
+ 2538 1ae1 D6180000 		.long	0x18d6
+ 2539 1ae5 0B       		.uleb128 0xb
+ 2540 1ae6 E0100000 		.long	0x10e0
+ 2541 1aea 28       		.uleb128 0x28
+ 2542 1aeb 04       		.byte	0x4
+ 2543 1aec D4080000 		.long	0x8d4
+ 2544 1af0 2A       		.uleb128 0x2a
+ 2545 1af1 69737763 		.ascii "iswctype\0"
+ 2545      74797065 
+ 2545      00
+ 2546 1afa 14       		.byte	0x14
+ 2547 1afb C4       		.byte	0xc4
+ 2548 1afc 6A0F0000 		.long	0xf6a
+ 2549 1b00 0F1B0000 		.long	0x1b0f
+ 2550 1b04 0A       		.uleb128 0xa
+ 2551 1b05 F90E0000 		.long	0xef9
+ 2552 1b09 0A       		.uleb128 0xa
+ 2553 1b0a 3E0F0000 		.long	0xf3e
+ 2554 1b0e 00       		.byte	0
+ 2555 1b0f 2A       		.uleb128 0x2a
+ 2556 1b10 746F7763 		.ascii "towctrans\0"
+ 2556      7472616E 
+ 2556      7300
+ 2557 1b1a 10       		.byte	0x10
+ 2558 1b1b 9D       		.byte	0x9d
+ 2559 1b1c F90E0000 		.long	0xef9
+ 2560 1b20 2F1B0000 		.long	0x1b2f
+ 2561 1b24 0A       		.uleb128 0xa
+ 2562 1b25 F90E0000 		.long	0xef9
+ 2563 1b29 0A       		.uleb128 0xa
+ 2564 1b2a 590F0000 		.long	0xf59
+ 2565 1b2e 00       		.byte	0
+ 2566 1b2f 2A       		.uleb128 0x2a
+ 2567 1b30 77637472 		.ascii "wctrans\0"
+ 2567      616E7300 
+ 2568 1b38 10       		.byte	0x10
+ 2569 1b39 9E       		.byte	0x9e
+ 2570 1b3a 590F0000 		.long	0xf59
+ 2571 1b3e 481B0000 		.long	0x1b48
+ 2572 1b42 0A       		.uleb128 0xa
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 57
+
+
+ 2573 1b43 84120000 		.long	0x1284
+ 2574 1b47 00       		.byte	0
+ 2575 1b48 2A       		.uleb128 0x2a
+ 2576 1b49 77637479 		.ascii "wctype\0"
+ 2576      706500
+ 2577 1b50 10       		.byte	0x10
+ 2578 1b51 9F       		.byte	0x9f
+ 2579 1b52 3E0F0000 		.long	0xf3e
+ 2580 1b56 601B0000 		.long	0x1b60
+ 2581 1b5a 0A       		.uleb128 0xa
+ 2582 1b5b 84120000 		.long	0x1284
+ 2583 1b5f 00       		.byte	0
+ 2584 1b60 0B       		.uleb128 0xb
+ 2585 1b61 8E0F0000 		.long	0xf8e
+ 2586 1b65 04       		.uleb128 0x4
+ 2587 1b66 15       		.byte	0x15
+ 2588 1b67 05       		.byte	0x5
+ 2589 1b68 C7000000 		.long	0xc7
+ 2590 1b6c 04       		.uleb128 0x4
+ 2591 1b6d 16       		.byte	0x16
+ 2592 1b6e 08       		.byte	0x8
+ 2593 1b6f C7000000 		.long	0xc7
+ 2594 1b73 04       		.uleb128 0x4
+ 2595 1b74 01       		.byte	0x1
+ 2596 1b75 03       		.byte	0x3
+ 2597 1b76 C7000000 		.long	0xc7
+ 2598 1b7a 2E       		.uleb128 0x2e
+ 2599 1b7b 6D61696E 		.ascii "main\0"
+ 2599      00
+ 2600 1b80 01       		.byte	0x1
+ 2601 1b81 05       		.byte	0x5
+ 2602 1b82 6A0F0000 		.long	0xf6a
+ 2603 1b86 00000000 		.long	LFB1048
+ 2604 1b8a FE010000 		.long	LFE1048-LFB1048
+ 2605 1b8e 01       		.uleb128 0x1
+ 2606 1b8f 9C       		.byte	0x9c
+ 2607 1b90 BE1B0000 		.long	0x1bbe
+ 2608 1b94 2F       		.uleb128 0x2f
+ 2609 1b95 663100   		.ascii "f1\0"
+ 2610 1b98 01       		.byte	0x1
+ 2611 1b99 07       		.byte	0x7
+ 2612 1b9a BE1B0000 		.long	0x1bbe
+ 2613 1b9e 02       		.uleb128 0x2
+ 2614 1b9f 75       		.byte	0x75
+ 2615 1ba0 54       		.sleb128 -44
+ 2616 1ba1 2F       		.uleb128 0x2f
+ 2617 1ba2 663200   		.ascii "f2\0"
+ 2618 1ba5 01       		.byte	0x1
+ 2619 1ba6 07       		.byte	0x7
+ 2620 1ba7 BE1B0000 		.long	0x1bbe
+ 2621 1bab 02       		.uleb128 0x2
+ 2622 1bac 75       		.byte	0x75
+ 2623 1bad 44       		.sleb128 -60
+ 2624 1bae 2F       		.uleb128 0x2f
+ 2625 1baf 616C676F 		.ascii "algo\0"
+ 2625      00
+ 2626 1bb4 01       		.byte	0x1
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 58
+
+
+ 2627 1bb5 0A       		.byte	0xa
+ 2628 1bb6 D6180000 		.long	0x18d6
+ 2629 1bba 02       		.uleb128 0x2
+ 2630 1bbb 75       		.byte	0x75
+ 2631 1bbc 67       		.sleb128 -25
+ 2632 1bbd 00       		.byte	0
+ 2633 1bbe 30       		.uleb128 0x30
+ 2634 1bbf 46656368 		.ascii "Fecha\0"
+ 2634      6100
+ 2635 1bc5 31       		.uleb128 0x31
+ 2636 1bc6 5F5F7463 		.ascii "__tcf_0\0"
+ 2636      665F3000 
+ 2637 1bce FE010000 		.long	LFB1056
+ 2638 1bd2 12000000 		.long	LFE1056-LFB1056
+ 2639 1bd6 01       		.uleb128 0x1
+ 2640 1bd7 9C       		.byte	0x9c
+ 2641 1bd8 32       		.uleb128 0x32
+ 2642 1bd9 5F5F7374 		.ascii "__static_initialization_and_destruction_0\0"
+ 2642      61746963 
+ 2642      5F696E69 
+ 2642      7469616C 
+ 2642      697A6174 
+ 2643 1c03 10020000 		.long	LFB1055
+ 2644 1c07 2E000000 		.long	LFE1055-LFB1055
+ 2645 1c0b 01       		.uleb128 0x1
+ 2646 1c0c 9C       		.byte	0x9c
+ 2647 1c0d 401C0000 		.long	0x1c40
+ 2648 1c11 33       		.uleb128 0x33
+ 2649 1c12 5F5F696E 		.ascii "__initialize_p\0"
+ 2649      69746961 
+ 2649      6C697A65 
+ 2649      5F7000
+ 2650 1c21 01       		.byte	0x1
+ 2651 1c22 0E       		.byte	0xe
+ 2652 1c23 6A0F0000 		.long	0xf6a
+ 2653 1c27 02       		.uleb128 0x2
+ 2654 1c28 91       		.byte	0x91
+ 2655 1c29 00       		.sleb128 0
+ 2656 1c2a 33       		.uleb128 0x33
+ 2657 1c2b 5F5F7072 		.ascii "__priority\0"
+ 2657      696F7269 
+ 2657      747900
+ 2658 1c36 01       		.byte	0x1
+ 2659 1c37 0E       		.byte	0xe
+ 2660 1c38 6A0F0000 		.long	0xf6a
+ 2661 1c3c 02       		.uleb128 0x2
+ 2662 1c3d 91       		.byte	0x91
+ 2663 1c3e 04       		.sleb128 4
+ 2664 1c3f 00       		.byte	0
+ 2665 1c40 31       		.uleb128 0x31
+ 2666 1c41 5F474C4F 		.ascii "_GLOBAL__sub_I_main\0"
+ 2666      42414C5F 
+ 2666      5F737562 
+ 2666      5F495F6D 
+ 2666      61696E00 
+ 2667 1c55 3E020000 		.long	LFB1057
+ 2668 1c59 1C000000 		.long	LFE1057-LFB1057
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 59
+
+
+ 2669 1c5d 01       		.uleb128 0x1
+ 2670 1c5e 9C       		.byte	0x9c
+ 2671 1c5f 34       		.uleb128 0x34
+ 2672 1c60 F70C0000 		.long	0xcf7
+ 2673 1c64 05       		.uleb128 0x5
+ 2674 1c65 03       		.byte	0x3
+ 2675 1c66 00000000 		.long	__ZStL8__ioinit
+ 2676 1c6a 35       		.uleb128 0x35
+ 2677 1c6b 7F0D0000 		.long	0xd7f
+ 2678 1c6f 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIiE5__minE\0"
+ 2678      5F5F676E 
+ 2678      755F6378 
+ 2678      7832345F 
+ 2678      5F6E756D 
+ 2679 1ca1 80808080 		.sleb128 -2147483648
+ 2679      78
+ 2680 1ca6 36       		.uleb128 0x36
+ 2681 1ca7 8A0D0000 		.long	0xd8a
+ 2682 1cab 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIiE5__maxE\0"
+ 2682      5F5F676E 
+ 2682      755F6378 
+ 2682      7832345F 
+ 2682      5F6E756D 
+ 2683 1cdd FFFFFF7F 		.long	0x7fffffff
+ 2684 1ce1 37       		.uleb128 0x37
+ 2685 1ce2 0A0E0000 		.long	0xe0a
+ 2686 1ce6 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerImE8__digitsE\0"
+ 2686      5F5F676E 
+ 2686      755F6378 
+ 2686      7832345F 
+ 2686      5F6E756D 
+ 2687 1d1b 20       		.byte	0x20
+ 2688 1d1c 37       		.uleb128 0x37
+ 2689 1d1d 510E0000 		.long	0xe51
+ 2690 1d21 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIcE5__maxE\0"
+ 2690      5F5F676E 
+ 2690      755F6378 
+ 2690      7832345F 
+ 2690      5F6E756D 
+ 2691 1d53 7F       		.byte	0x7f
+ 2692 1d54 35       		.uleb128 0x35
+ 2693 1d55 A40E0000 		.long	0xea4
+ 2694 1d59 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIsE5__minE\0"
+ 2694      5F5F676E 
+ 2694      755F6378 
+ 2694      7832345F 
+ 2694      5F6E756D 
+ 2695 1d8b 80807E   		.sleb128 -32768
+ 2696 1d8e 38       		.uleb128 0x38
+ 2697 1d8f AF0E0000 		.long	0xeaf
+ 2698 1d93 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIsE5__maxE\0"
+ 2698      5F5F676E 
+ 2698      755F6378 
+ 2698      7832345F 
+ 2698      5F6E756D 
+ 2699 1dc5 FF7F     		.word	0x7fff
+ 2700 1dc7 00       		.byte	0
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 60
+
+
+ 2701              		.section	.debug_abbrev,"dr"
+ 2702              	Ldebug_abbrev0:
+ 2703 0000 01       		.uleb128 0x1
+ 2704 0001 11       		.uleb128 0x11
+ 2705 0002 01       		.byte	0x1
+ 2706 0003 25       		.uleb128 0x25
+ 2707 0004 08       		.uleb128 0x8
+ 2708 0005 13       		.uleb128 0x13
+ 2709 0006 0B       		.uleb128 0xb
+ 2710 0007 03       		.uleb128 0x3
+ 2711 0008 08       		.uleb128 0x8
+ 2712 0009 1B       		.uleb128 0x1b
+ 2713 000a 08       		.uleb128 0x8
+ 2714 000b 11       		.uleb128 0x11
+ 2715 000c 01       		.uleb128 0x1
+ 2716 000d 12       		.uleb128 0x12
+ 2717 000e 06       		.uleb128 0x6
+ 2718 000f 10       		.uleb128 0x10
+ 2719 0010 17       		.uleb128 0x17
+ 2720 0011 00       		.byte	0
+ 2721 0012 00       		.byte	0
+ 2722 0013 02       		.uleb128 0x2
+ 2723 0014 39       		.uleb128 0x39
+ 2724 0015 01       		.byte	0x1
+ 2725 0016 03       		.uleb128 0x3
+ 2726 0017 08       		.uleb128 0x8
+ 2727 0018 3A       		.uleb128 0x3a
+ 2728 0019 0B       		.uleb128 0xb
+ 2729 001a 3B       		.uleb128 0x3b
+ 2730 001b 0B       		.uleb128 0xb
+ 2731 001c 01       		.uleb128 0x1
+ 2732 001d 13       		.uleb128 0x13
+ 2733 001e 00       		.byte	0
+ 2734 001f 00       		.byte	0
+ 2735 0020 03       		.uleb128 0x3
+ 2736 0021 39       		.uleb128 0x39
+ 2737 0022 00       		.byte	0
+ 2738 0023 03       		.uleb128 0x3
+ 2739 0024 08       		.uleb128 0x8
+ 2740 0025 3A       		.uleb128 0x3a
+ 2741 0026 0B       		.uleb128 0xb
+ 2742 0027 3B       		.uleb128 0x3b
+ 2743 0028 0B       		.uleb128 0xb
+ 2744 0029 00       		.byte	0
+ 2745 002a 00       		.byte	0
+ 2746 002b 04       		.uleb128 0x4
+ 2747 002c 3A       		.uleb128 0x3a
+ 2748 002d 00       		.byte	0
+ 2749 002e 3A       		.uleb128 0x3a
+ 2750 002f 0B       		.uleb128 0xb
+ 2751 0030 3B       		.uleb128 0x3b
+ 2752 0031 0B       		.uleb128 0xb
+ 2753 0032 18       		.uleb128 0x18
+ 2754 0033 13       		.uleb128 0x13
+ 2755 0034 00       		.byte	0
+ 2756 0035 00       		.byte	0
+ 2757 0036 05       		.uleb128 0x5
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 61
+
+
+ 2758 0037 08       		.uleb128 0x8
+ 2759 0038 00       		.byte	0
+ 2760 0039 3A       		.uleb128 0x3a
+ 2761 003a 0B       		.uleb128 0xb
+ 2762 003b 3B       		.uleb128 0x3b
+ 2763 003c 0B       		.uleb128 0xb
+ 2764 003d 18       		.uleb128 0x18
+ 2765 003e 13       		.uleb128 0x13
+ 2766 003f 00       		.byte	0
+ 2767 0040 00       		.byte	0
+ 2768 0041 06       		.uleb128 0x6
+ 2769 0042 08       		.uleb128 0x8
+ 2770 0043 00       		.byte	0
+ 2771 0044 3A       		.uleb128 0x3a
+ 2772 0045 0B       		.uleb128 0xb
+ 2773 0046 3B       		.uleb128 0x3b
+ 2774 0047 05       		.uleb128 0x5
+ 2775 0048 18       		.uleb128 0x18
+ 2776 0049 13       		.uleb128 0x13
+ 2777 004a 00       		.byte	0
+ 2778 004b 00       		.byte	0
+ 2779 004c 07       		.uleb128 0x7
+ 2780 004d 13       		.uleb128 0x13
+ 2781 004e 01       		.byte	0x1
+ 2782 004f 03       		.uleb128 0x3
+ 2783 0050 08       		.uleb128 0x8
+ 2784 0051 0B       		.uleb128 0xb
+ 2785 0052 0B       		.uleb128 0xb
+ 2786 0053 3A       		.uleb128 0x3a
+ 2787 0054 0B       		.uleb128 0xb
+ 2788 0055 3B       		.uleb128 0x3b
+ 2789 0056 0B       		.uleb128 0xb
+ 2790 0057 01       		.uleb128 0x1
+ 2791 0058 13       		.uleb128 0x13
+ 2792 0059 00       		.byte	0
+ 2793 005a 00       		.byte	0
+ 2794 005b 08       		.uleb128 0x8
+ 2795 005c 16       		.uleb128 0x16
+ 2796 005d 00       		.byte	0
+ 2797 005e 03       		.uleb128 0x3
+ 2798 005f 08       		.uleb128 0x8
+ 2799 0060 3A       		.uleb128 0x3a
+ 2800 0061 0B       		.uleb128 0xb
+ 2801 0062 3B       		.uleb128 0x3b
+ 2802 0063 0B       		.uleb128 0xb
+ 2803 0064 49       		.uleb128 0x49
+ 2804 0065 13       		.uleb128 0x13
+ 2805 0066 00       		.byte	0
+ 2806 0067 00       		.byte	0
+ 2807 0068 09       		.uleb128 0x9
+ 2808 0069 2E       		.uleb128 0x2e
+ 2809 006a 01       		.byte	0x1
+ 2810 006b 3F       		.uleb128 0x3f
+ 2811 006c 19       		.uleb128 0x19
+ 2812 006d 03       		.uleb128 0x3
+ 2813 006e 08       		.uleb128 0x8
+ 2814 006f 3A       		.uleb128 0x3a
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 62
+
+
+ 2815 0070 0B       		.uleb128 0xb
+ 2816 0071 3B       		.uleb128 0x3b
+ 2817 0072 0B       		.uleb128 0xb
+ 2818 0073 6E       		.uleb128 0x6e
+ 2819 0074 08       		.uleb128 0x8
+ 2820 0075 3C       		.uleb128 0x3c
+ 2821 0076 19       		.uleb128 0x19
+ 2822 0077 01       		.uleb128 0x1
+ 2823 0078 13       		.uleb128 0x13
+ 2824 0079 00       		.byte	0
+ 2825 007a 00       		.byte	0
+ 2826 007b 0A       		.uleb128 0xa
+ 2827 007c 05       		.uleb128 0x5
+ 2828 007d 00       		.byte	0
+ 2829 007e 49       		.uleb128 0x49
+ 2830 007f 13       		.uleb128 0x13
+ 2831 0080 00       		.byte	0
+ 2832 0081 00       		.byte	0
+ 2833 0082 0B       		.uleb128 0xb
+ 2834 0083 26       		.uleb128 0x26
+ 2835 0084 00       		.byte	0
+ 2836 0085 49       		.uleb128 0x49
+ 2837 0086 13       		.uleb128 0x13
+ 2838 0087 00       		.byte	0
+ 2839 0088 00       		.byte	0
+ 2840 0089 0C       		.uleb128 0xc
+ 2841 008a 2E       		.uleb128 0x2e
+ 2842 008b 01       		.byte	0x1
+ 2843 008c 3F       		.uleb128 0x3f
+ 2844 008d 19       		.uleb128 0x19
+ 2845 008e 03       		.uleb128 0x3
+ 2846 008f 08       		.uleb128 0x8
+ 2847 0090 3A       		.uleb128 0x3a
+ 2848 0091 0B       		.uleb128 0xb
+ 2849 0092 3B       		.uleb128 0x3b
+ 2850 0093 0B       		.uleb128 0xb
+ 2851 0094 6E       		.uleb128 0x6e
+ 2852 0095 08       		.uleb128 0x8
+ 2853 0096 49       		.uleb128 0x49
+ 2854 0097 13       		.uleb128 0x13
+ 2855 0098 3C       		.uleb128 0x3c
+ 2856 0099 19       		.uleb128 0x19
+ 2857 009a 01       		.uleb128 0x1
+ 2858 009b 13       		.uleb128 0x13
+ 2859 009c 00       		.byte	0
+ 2860 009d 00       		.byte	0
+ 2861 009e 0D       		.uleb128 0xd
+ 2862 009f 2E       		.uleb128 0x2e
+ 2863 00a0 01       		.byte	0x1
+ 2864 00a1 3F       		.uleb128 0x3f
+ 2865 00a2 19       		.uleb128 0x19
+ 2866 00a3 03       		.uleb128 0x3
+ 2867 00a4 08       		.uleb128 0x8
+ 2868 00a5 3A       		.uleb128 0x3a
+ 2869 00a6 0B       		.uleb128 0xb
+ 2870 00a7 3B       		.uleb128 0x3b
+ 2871 00a8 05       		.uleb128 0x5
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 63
+
+
+ 2872 00a9 6E       		.uleb128 0x6e
+ 2873 00aa 08       		.uleb128 0x8
+ 2874 00ab 49       		.uleb128 0x49
+ 2875 00ac 13       		.uleb128 0x13
+ 2876 00ad 3C       		.uleb128 0x3c
+ 2877 00ae 19       		.uleb128 0x19
+ 2878 00af 01       		.uleb128 0x1
+ 2879 00b0 13       		.uleb128 0x13
+ 2880 00b1 00       		.byte	0
+ 2881 00b2 00       		.byte	0
+ 2882 00b3 0E       		.uleb128 0xe
+ 2883 00b4 2E       		.uleb128 0x2e
+ 2884 00b5 00       		.byte	0
+ 2885 00b6 3F       		.uleb128 0x3f
+ 2886 00b7 19       		.uleb128 0x19
+ 2887 00b8 03       		.uleb128 0x3
+ 2888 00b9 08       		.uleb128 0x8
+ 2889 00ba 3A       		.uleb128 0x3a
+ 2890 00bb 0B       		.uleb128 0xb
+ 2891 00bc 3B       		.uleb128 0x3b
+ 2892 00bd 05       		.uleb128 0x5
+ 2893 00be 6E       		.uleb128 0x6e
+ 2894 00bf 08       		.uleb128 0x8
+ 2895 00c0 49       		.uleb128 0x49
+ 2896 00c1 13       		.uleb128 0x13
+ 2897 00c2 3C       		.uleb128 0x3c
+ 2898 00c3 19       		.uleb128 0x19
+ 2899 00c4 00       		.byte	0
+ 2900 00c5 00       		.byte	0
+ 2901 00c6 0F       		.uleb128 0xf
+ 2902 00c7 2E       		.uleb128 0x2e
+ 2903 00c8 01       		.byte	0x1
+ 2904 00c9 3F       		.uleb128 0x3f
+ 2905 00ca 19       		.uleb128 0x19
+ 2906 00cb 03       		.uleb128 0x3
+ 2907 00cc 08       		.uleb128 0x8
+ 2908 00cd 3A       		.uleb128 0x3a
+ 2909 00ce 0B       		.uleb128 0xb
+ 2910 00cf 3B       		.uleb128 0x3b
+ 2911 00d0 05       		.uleb128 0x5
+ 2912 00d1 6E       		.uleb128 0x6e
+ 2913 00d2 08       		.uleb128 0x8
+ 2914 00d3 49       		.uleb128 0x49
+ 2915 00d4 13       		.uleb128 0x13
+ 2916 00d5 3C       		.uleb128 0x3c
+ 2917 00d6 19       		.uleb128 0x19
+ 2918 00d7 00       		.byte	0
+ 2919 00d8 00       		.byte	0
+ 2920 00d9 10       		.uleb128 0x10
+ 2921 00da 04       		.uleb128 0x4
+ 2922 00db 01       		.byte	0x1
+ 2923 00dc 03       		.uleb128 0x3
+ 2924 00dd 08       		.uleb128 0x8
+ 2925 00de 0B       		.uleb128 0xb
+ 2926 00df 0B       		.uleb128 0xb
+ 2927 00e0 49       		.uleb128 0x49
+ 2928 00e1 13       		.uleb128 0x13
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 64
+
+
+ 2929 00e2 3A       		.uleb128 0x3a
+ 2930 00e3 0B       		.uleb128 0xb
+ 2931 00e4 3B       		.uleb128 0x3b
+ 2932 00e5 0B       		.uleb128 0xb
+ 2933 00e6 01       		.uleb128 0x1
+ 2934 00e7 13       		.uleb128 0x13
+ 2935 00e8 00       		.byte	0
+ 2936 00e9 00       		.byte	0
+ 2937 00ea 11       		.uleb128 0x11
+ 2938 00eb 28       		.uleb128 0x28
+ 2939 00ec 00       		.byte	0
+ 2940 00ed 03       		.uleb128 0x3
+ 2941 00ee 08       		.uleb128 0x8
+ 2942 00ef 1C       		.uleb128 0x1c
+ 2943 00f0 0B       		.uleb128 0xb
+ 2944 00f1 00       		.byte	0
+ 2945 00f2 00       		.byte	0
+ 2946 00f3 12       		.uleb128 0x12
+ 2947 00f4 28       		.uleb128 0x28
+ 2948 00f5 00       		.byte	0
+ 2949 00f6 03       		.uleb128 0x3
+ 2950 00f7 08       		.uleb128 0x8
+ 2951 00f8 1C       		.uleb128 0x1c
+ 2952 00f9 05       		.uleb128 0x5
+ 2953 00fa 00       		.byte	0
+ 2954 00fb 00       		.byte	0
+ 2955 00fc 13       		.uleb128 0x13
+ 2956 00fd 28       		.uleb128 0x28
+ 2957 00fe 00       		.byte	0
+ 2958 00ff 03       		.uleb128 0x3
+ 2959 0100 08       		.uleb128 0x8
+ 2960 0101 1C       		.uleb128 0x1c
+ 2961 0102 06       		.uleb128 0x6
+ 2962 0103 00       		.byte	0
+ 2963 0104 00       		.byte	0
+ 2964 0105 14       		.uleb128 0x14
+ 2965 0106 02       		.uleb128 0x2
+ 2966 0107 01       		.byte	0x1
+ 2967 0108 03       		.uleb128 0x3
+ 2968 0109 08       		.uleb128 0x8
+ 2969 010a 3C       		.uleb128 0x3c
+ 2970 010b 19       		.uleb128 0x19
+ 2971 010c 01       		.uleb128 0x1
+ 2972 010d 13       		.uleb128 0x13
+ 2973 010e 00       		.byte	0
+ 2974 010f 00       		.byte	0
+ 2975 0110 15       		.uleb128 0x15
+ 2976 0111 02       		.uleb128 0x2
+ 2977 0112 01       		.byte	0x1
+ 2978 0113 03       		.uleb128 0x3
+ 2979 0114 08       		.uleb128 0x8
+ 2980 0115 0B       		.uleb128 0xb
+ 2981 0116 0B       		.uleb128 0xb
+ 2982 0117 3A       		.uleb128 0x3a
+ 2983 0118 0B       		.uleb128 0xb
+ 2984 0119 3B       		.uleb128 0x3b
+ 2985 011a 05       		.uleb128 0x5
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 65
+
+
+ 2986 011b 32       		.uleb128 0x32
+ 2987 011c 0B       		.uleb128 0xb
+ 2988 011d 01       		.uleb128 0x1
+ 2989 011e 13       		.uleb128 0x13
+ 2990 011f 00       		.byte	0
+ 2991 0120 00       		.byte	0
+ 2992 0121 16       		.uleb128 0x16
+ 2993 0122 0D       		.uleb128 0xd
+ 2994 0123 00       		.byte	0
+ 2995 0124 03       		.uleb128 0x3
+ 2996 0125 08       		.uleb128 0x8
+ 2997 0126 3A       		.uleb128 0x3a
+ 2998 0127 0B       		.uleb128 0xb
+ 2999 0128 3B       		.uleb128 0x3b
+ 3000 0129 05       		.uleb128 0x5
+ 3001 012a 49       		.uleb128 0x49
+ 3002 012b 13       		.uleb128 0x13
+ 3003 012c 3F       		.uleb128 0x3f
+ 3004 012d 19       		.uleb128 0x19
+ 3005 012e 3C       		.uleb128 0x3c
+ 3006 012f 19       		.uleb128 0x19
+ 3007 0130 00       		.byte	0
+ 3008 0131 00       		.byte	0
+ 3009 0132 17       		.uleb128 0x17
+ 3010 0133 2E       		.uleb128 0x2e
+ 3011 0134 01       		.byte	0x1
+ 3012 0135 3F       		.uleb128 0x3f
+ 3013 0136 19       		.uleb128 0x19
+ 3014 0137 03       		.uleb128 0x3
+ 3015 0138 08       		.uleb128 0x8
+ 3016 0139 3A       		.uleb128 0x3a
+ 3017 013a 0B       		.uleb128 0xb
+ 3018 013b 3B       		.uleb128 0x3b
+ 3019 013c 05       		.uleb128 0x5
+ 3020 013d 6E       		.uleb128 0x6e
+ 3021 013e 08       		.uleb128 0x8
+ 3022 013f 32       		.uleb128 0x32
+ 3023 0140 0B       		.uleb128 0xb
+ 3024 0141 3C       		.uleb128 0x3c
+ 3025 0142 19       		.uleb128 0x19
+ 3026 0143 64       		.uleb128 0x64
+ 3027 0144 13       		.uleb128 0x13
+ 3028 0145 01       		.uleb128 0x1
+ 3029 0146 13       		.uleb128 0x13
+ 3030 0147 00       		.byte	0
+ 3031 0148 00       		.byte	0
+ 3032 0149 18       		.uleb128 0x18
+ 3033 014a 05       		.uleb128 0x5
+ 3034 014b 00       		.byte	0
+ 3035 014c 49       		.uleb128 0x49
+ 3036 014d 13       		.uleb128 0x13
+ 3037 014e 34       		.uleb128 0x34
+ 3038 014f 19       		.uleb128 0x19
+ 3039 0150 00       		.byte	0
+ 3040 0151 00       		.byte	0
+ 3041 0152 19       		.uleb128 0x19
+ 3042 0153 2E       		.uleb128 0x2e
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 66
+
+
+ 3043 0154 01       		.byte	0x1
+ 3044 0155 3F       		.uleb128 0x3f
+ 3045 0156 19       		.uleb128 0x19
+ 3046 0157 03       		.uleb128 0x3
+ 3047 0158 08       		.uleb128 0x8
+ 3048 0159 3A       		.uleb128 0x3a
+ 3049 015a 0B       		.uleb128 0xb
+ 3050 015b 3B       		.uleb128 0x3b
+ 3051 015c 05       		.uleb128 0x5
+ 3052 015d 6E       		.uleb128 0x6e
+ 3053 015e 08       		.uleb128 0x8
+ 3054 015f 32       		.uleb128 0x32
+ 3055 0160 0B       		.uleb128 0xb
+ 3056 0161 3C       		.uleb128 0x3c
+ 3057 0162 19       		.uleb128 0x19
+ 3058 0163 64       		.uleb128 0x64
+ 3059 0164 13       		.uleb128 0x13
+ 3060 0165 00       		.byte	0
+ 3061 0166 00       		.byte	0
+ 3062 0167 1A       		.uleb128 0x1a
+ 3063 0168 16       		.uleb128 0x16
+ 3064 0169 00       		.byte	0
+ 3065 016a 03       		.uleb128 0x3
+ 3066 016b 08       		.uleb128 0x8
+ 3067 016c 3A       		.uleb128 0x3a
+ 3068 016d 0B       		.uleb128 0xb
+ 3069 016e 3B       		.uleb128 0x3b
+ 3070 016f 05       		.uleb128 0x5
+ 3071 0170 49       		.uleb128 0x49
+ 3072 0171 13       		.uleb128 0x13
+ 3073 0172 32       		.uleb128 0x32
+ 3074 0173 0B       		.uleb128 0xb
+ 3075 0174 00       		.byte	0
+ 3076 0175 00       		.byte	0
+ 3077 0176 1B       		.uleb128 0x1b
+ 3078 0177 0D       		.uleb128 0xd
+ 3079 0178 00       		.byte	0
+ 3080 0179 03       		.uleb128 0x3
+ 3081 017a 08       		.uleb128 0x8
+ 3082 017b 3A       		.uleb128 0x3a
+ 3083 017c 0B       		.uleb128 0xb
+ 3084 017d 3B       		.uleb128 0x3b
+ 3085 017e 05       		.uleb128 0x5
+ 3086 017f 49       		.uleb128 0x49
+ 3087 0180 13       		.uleb128 0x13
+ 3088 0181 3F       		.uleb128 0x3f
+ 3089 0182 19       		.uleb128 0x19
+ 3090 0183 32       		.uleb128 0x32
+ 3091 0184 0B       		.uleb128 0xb
+ 3092 0185 3C       		.uleb128 0x3c
+ 3093 0186 19       		.uleb128 0x19
+ 3094 0187 1C       		.uleb128 0x1c
+ 3095 0188 0B       		.uleb128 0xb
+ 3096 0189 00       		.byte	0
+ 3097 018a 00       		.byte	0
+ 3098 018b 1C       		.uleb128 0x1c
+ 3099 018c 0D       		.uleb128 0xd
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 67
+
+
+ 3100 018d 00       		.byte	0
+ 3101 018e 03       		.uleb128 0x3
+ 3102 018f 08       		.uleb128 0x8
+ 3103 0190 3A       		.uleb128 0x3a
+ 3104 0191 0B       		.uleb128 0xb
+ 3105 0192 3B       		.uleb128 0x3b
+ 3106 0193 05       		.uleb128 0x5
+ 3107 0194 49       		.uleb128 0x49
+ 3108 0195 13       		.uleb128 0x13
+ 3109 0196 3F       		.uleb128 0x3f
+ 3110 0197 19       		.uleb128 0x19
+ 3111 0198 32       		.uleb128 0x32
+ 3112 0199 0B       		.uleb128 0xb
+ 3113 019a 3C       		.uleb128 0x3c
+ 3114 019b 19       		.uleb128 0x19
+ 3115 019c 1C       		.uleb128 0x1c
+ 3116 019d 05       		.uleb128 0x5
+ 3117 019e 00       		.byte	0
+ 3118 019f 00       		.byte	0
+ 3119 01a0 1D       		.uleb128 0x1d
+ 3120 01a1 2F       		.uleb128 0x2f
+ 3121 01a2 00       		.byte	0
+ 3122 01a3 03       		.uleb128 0x3
+ 3123 01a4 08       		.uleb128 0x8
+ 3124 01a5 49       		.uleb128 0x49
+ 3125 01a6 13       		.uleb128 0x13
+ 3126 01a7 00       		.byte	0
+ 3127 01a8 00       		.byte	0
+ 3128 01a9 1E       		.uleb128 0x1e
+ 3129 01aa 2F       		.uleb128 0x2f
+ 3130 01ab 00       		.byte	0
+ 3131 01ac 03       		.uleb128 0x3
+ 3132 01ad 08       		.uleb128 0x8
+ 3133 01ae 49       		.uleb128 0x49
+ 3134 01af 13       		.uleb128 0x13
+ 3135 01b0 1E       		.uleb128 0x1e
+ 3136 01b1 19       		.uleb128 0x19
+ 3137 01b2 00       		.byte	0
+ 3138 01b3 00       		.byte	0
+ 3139 01b4 1F       		.uleb128 0x1f
+ 3140 01b5 34       		.uleb128 0x34
+ 3141 01b6 00       		.byte	0
+ 3142 01b7 03       		.uleb128 0x3
+ 3143 01b8 08       		.uleb128 0x8
+ 3144 01b9 3A       		.uleb128 0x3a
+ 3145 01ba 0B       		.uleb128 0xb
+ 3146 01bb 3B       		.uleb128 0x3b
+ 3147 01bc 0B       		.uleb128 0xb
+ 3148 01bd 6E       		.uleb128 0x6e
+ 3149 01be 08       		.uleb128 0x8
+ 3150 01bf 49       		.uleb128 0x49
+ 3151 01c0 13       		.uleb128 0x13
+ 3152 01c1 3F       		.uleb128 0x3f
+ 3153 01c2 19       		.uleb128 0x19
+ 3154 01c3 3C       		.uleb128 0x3c
+ 3155 01c4 19       		.uleb128 0x19
+ 3156 01c5 00       		.byte	0
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 68
+
+
+ 3157 01c6 00       		.byte	0
+ 3158 01c7 20       		.uleb128 0x20
+ 3159 01c8 34       		.uleb128 0x34
+ 3160 01c9 00       		.byte	0
+ 3161 01ca 03       		.uleb128 0x3
+ 3162 01cb 08       		.uleb128 0x8
+ 3163 01cc 3A       		.uleb128 0x3a
+ 3164 01cd 0B       		.uleb128 0xb
+ 3165 01ce 3B       		.uleb128 0x3b
+ 3166 01cf 0B       		.uleb128 0xb
+ 3167 01d0 49       		.uleb128 0x49
+ 3168 01d1 13       		.uleb128 0x13
+ 3169 01d2 3C       		.uleb128 0x3c
+ 3170 01d3 19       		.uleb128 0x19
+ 3171 01d4 00       		.byte	0
+ 3172 01d5 00       		.byte	0
+ 3173 01d6 21       		.uleb128 0x21
+ 3174 01d7 0D       		.uleb128 0xd
+ 3175 01d8 00       		.byte	0
+ 3176 01d9 03       		.uleb128 0x3
+ 3177 01da 0E       		.uleb128 0xe
+ 3178 01db 3A       		.uleb128 0x3a
+ 3179 01dc 0B       		.uleb128 0xb
+ 3180 01dd 3B       		.uleb128 0x3b
+ 3181 01de 0B       		.uleb128 0xb
+ 3182 01df 49       		.uleb128 0x49
+ 3183 01e0 13       		.uleb128 0x13
+ 3184 01e1 3F       		.uleb128 0x3f
+ 3185 01e2 19       		.uleb128 0x19
+ 3186 01e3 3C       		.uleb128 0x3c
+ 3187 01e4 19       		.uleb128 0x19
+ 3188 01e5 00       		.byte	0
+ 3189 01e6 00       		.byte	0
+ 3190 01e7 22       		.uleb128 0x22
+ 3191 01e8 2F       		.uleb128 0x2f
+ 3192 01e9 00       		.byte	0
+ 3193 01ea 03       		.uleb128 0x3
+ 3194 01eb 0E       		.uleb128 0xe
+ 3195 01ec 49       		.uleb128 0x49
+ 3196 01ed 13       		.uleb128 0x13
+ 3197 01ee 00       		.byte	0
+ 3198 01ef 00       		.byte	0
+ 3199 01f0 23       		.uleb128 0x23
+ 3200 01f1 13       		.uleb128 0x13
+ 3201 01f2 01       		.byte	0x1
+ 3202 01f3 03       		.uleb128 0x3
+ 3203 01f4 08       		.uleb128 0x8
+ 3204 01f5 0B       		.uleb128 0xb
+ 3205 01f6 0B       		.uleb128 0xb
+ 3206 01f7 3A       		.uleb128 0x3a
+ 3207 01f8 0B       		.uleb128 0xb
+ 3208 01f9 3B       		.uleb128 0x3b
+ 3209 01fa 0B       		.uleb128 0xb
+ 3210 01fb 00       		.byte	0
+ 3211 01fc 00       		.byte	0
+ 3212 01fd 24       		.uleb128 0x24
+ 3213 01fe 24       		.uleb128 0x24
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 69
+
+
+ 3214 01ff 00       		.byte	0
+ 3215 0200 0B       		.uleb128 0xb
+ 3216 0201 0B       		.uleb128 0xb
+ 3217 0202 3E       		.uleb128 0x3e
+ 3218 0203 0B       		.uleb128 0xb
+ 3219 0204 03       		.uleb128 0x3
+ 3220 0205 08       		.uleb128 0x8
+ 3221 0206 00       		.byte	0
+ 3222 0207 00       		.byte	0
+ 3223 0208 25       		.uleb128 0x25
+ 3224 0209 16       		.uleb128 0x16
+ 3225 020a 00       		.byte	0
+ 3226 020b 03       		.uleb128 0x3
+ 3227 020c 08       		.uleb128 0x8
+ 3228 020d 3A       		.uleb128 0x3a
+ 3229 020e 0B       		.uleb128 0xb
+ 3230 020f 3B       		.uleb128 0x3b
+ 3231 0210 05       		.uleb128 0x5
+ 3232 0211 49       		.uleb128 0x49
+ 3233 0212 13       		.uleb128 0x13
+ 3234 0213 00       		.byte	0
+ 3235 0214 00       		.byte	0
+ 3236 0215 26       		.uleb128 0x26
+ 3237 0216 0F       		.uleb128 0xf
+ 3238 0217 00       		.byte	0
+ 3239 0218 0B       		.uleb128 0xb
+ 3240 0219 0B       		.uleb128 0xb
+ 3241 021a 03       		.uleb128 0x3
+ 3242 021b 08       		.uleb128 0x8
+ 3243 021c 49       		.uleb128 0x49
+ 3244 021d 13       		.uleb128 0x13
+ 3245 021e 00       		.byte	0
+ 3246 021f 00       		.byte	0
+ 3247 0220 27       		.uleb128 0x27
+ 3248 0221 0D       		.uleb128 0xd
+ 3249 0222 00       		.byte	0
+ 3250 0223 03       		.uleb128 0x3
+ 3251 0224 08       		.uleb128 0x8
+ 3252 0225 3A       		.uleb128 0x3a
+ 3253 0226 0B       		.uleb128 0xb
+ 3254 0227 3B       		.uleb128 0x3b
+ 3255 0228 0B       		.uleb128 0xb
+ 3256 0229 49       		.uleb128 0x49
+ 3257 022a 13       		.uleb128 0x13
+ 3258 022b 38       		.uleb128 0x38
+ 3259 022c 0B       		.uleb128 0xb
+ 3260 022d 00       		.byte	0
+ 3261 022e 00       		.byte	0
+ 3262 022f 28       		.uleb128 0x28
+ 3263 0230 0F       		.uleb128 0xf
+ 3264 0231 00       		.byte	0
+ 3265 0232 0B       		.uleb128 0xb
+ 3266 0233 0B       		.uleb128 0xb
+ 3267 0234 49       		.uleb128 0x49
+ 3268 0235 13       		.uleb128 0x13
+ 3269 0236 00       		.byte	0
+ 3270 0237 00       		.byte	0
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 70
+
+
+ 3271 0238 29       		.uleb128 0x29
+ 3272 0239 2E       		.uleb128 0x2e
+ 3273 023a 01       		.byte	0x1
+ 3274 023b 3F       		.uleb128 0x3f
+ 3275 023c 19       		.uleb128 0x19
+ 3276 023d 03       		.uleb128 0x3
+ 3277 023e 08       		.uleb128 0x8
+ 3278 023f 3A       		.uleb128 0x3a
+ 3279 0240 0B       		.uleb128 0xb
+ 3280 0241 3B       		.uleb128 0x3b
+ 3281 0242 05       		.uleb128 0x5
+ 3282 0243 49       		.uleb128 0x49
+ 3283 0244 13       		.uleb128 0x13
+ 3284 0245 3C       		.uleb128 0x3c
+ 3285 0246 19       		.uleb128 0x19
+ 3286 0247 01       		.uleb128 0x1
+ 3287 0248 13       		.uleb128 0x13
+ 3288 0249 00       		.byte	0
+ 3289 024a 00       		.byte	0
+ 3290 024b 2A       		.uleb128 0x2a
+ 3291 024c 2E       		.uleb128 0x2e
+ 3292 024d 01       		.byte	0x1
+ 3293 024e 3F       		.uleb128 0x3f
+ 3294 024f 19       		.uleb128 0x19
+ 3295 0250 03       		.uleb128 0x3
+ 3296 0251 08       		.uleb128 0x8
+ 3297 0252 3A       		.uleb128 0x3a
+ 3298 0253 0B       		.uleb128 0xb
+ 3299 0254 3B       		.uleb128 0x3b
+ 3300 0255 0B       		.uleb128 0xb
+ 3301 0256 49       		.uleb128 0x49
+ 3302 0257 13       		.uleb128 0x13
+ 3303 0258 3C       		.uleb128 0x3c
+ 3304 0259 19       		.uleb128 0x19
+ 3305 025a 01       		.uleb128 0x1
+ 3306 025b 13       		.uleb128 0x13
+ 3307 025c 00       		.byte	0
+ 3308 025d 00       		.byte	0
+ 3309 025e 2B       		.uleb128 0x2b
+ 3310 025f 18       		.uleb128 0x18
+ 3311 0260 00       		.byte	0
+ 3312 0261 00       		.byte	0
+ 3313 0262 00       		.byte	0
+ 3314 0263 2C       		.uleb128 0x2c
+ 3315 0264 2E       		.uleb128 0x2e
+ 3316 0265 00       		.byte	0
+ 3317 0266 3F       		.uleb128 0x3f
+ 3318 0267 19       		.uleb128 0x19
+ 3319 0268 03       		.uleb128 0x3
+ 3320 0269 08       		.uleb128 0x8
+ 3321 026a 3A       		.uleb128 0x3a
+ 3322 026b 0B       		.uleb128 0xb
+ 3323 026c 3B       		.uleb128 0x3b
+ 3324 026d 0B       		.uleb128 0xb
+ 3325 026e 49       		.uleb128 0x49
+ 3326 026f 13       		.uleb128 0x13
+ 3327 0270 3C       		.uleb128 0x3c
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 71
+
+
+ 3328 0271 19       		.uleb128 0x19
+ 3329 0272 00       		.byte	0
+ 3330 0273 00       		.byte	0
+ 3331 0274 2D       		.uleb128 0x2d
+ 3332 0275 10       		.uleb128 0x10
+ 3333 0276 00       		.byte	0
+ 3334 0277 0B       		.uleb128 0xb
+ 3335 0278 0B       		.uleb128 0xb
+ 3336 0279 49       		.uleb128 0x49
+ 3337 027a 13       		.uleb128 0x13
+ 3338 027b 00       		.byte	0
+ 3339 027c 00       		.byte	0
+ 3340 027d 2E       		.uleb128 0x2e
+ 3341 027e 2E       		.uleb128 0x2e
+ 3342 027f 01       		.byte	0x1
+ 3343 0280 3F       		.uleb128 0x3f
+ 3344 0281 19       		.uleb128 0x19
+ 3345 0282 03       		.uleb128 0x3
+ 3346 0283 08       		.uleb128 0x8
+ 3347 0284 3A       		.uleb128 0x3a
+ 3348 0285 0B       		.uleb128 0xb
+ 3349 0286 3B       		.uleb128 0x3b
+ 3350 0287 0B       		.uleb128 0xb
+ 3351 0288 49       		.uleb128 0x49
+ 3352 0289 13       		.uleb128 0x13
+ 3353 028a 11       		.uleb128 0x11
+ 3354 028b 01       		.uleb128 0x1
+ 3355 028c 12       		.uleb128 0x12
+ 3356 028d 06       		.uleb128 0x6
+ 3357 028e 40       		.uleb128 0x40
+ 3358 028f 18       		.uleb128 0x18
+ 3359 0290 9642     		.uleb128 0x2116
+ 3360 0292 19       		.uleb128 0x19
+ 3361 0293 01       		.uleb128 0x1
+ 3362 0294 13       		.uleb128 0x13
+ 3363 0295 00       		.byte	0
+ 3364 0296 00       		.byte	0
+ 3365 0297 2F       		.uleb128 0x2f
+ 3366 0298 34       		.uleb128 0x34
+ 3367 0299 00       		.byte	0
+ 3368 029a 03       		.uleb128 0x3
+ 3369 029b 08       		.uleb128 0x8
+ 3370 029c 3A       		.uleb128 0x3a
+ 3371 029d 0B       		.uleb128 0xb
+ 3372 029e 3B       		.uleb128 0x3b
+ 3373 029f 0B       		.uleb128 0xb
+ 3374 02a0 49       		.uleb128 0x49
+ 3375 02a1 13       		.uleb128 0x13
+ 3376 02a2 02       		.uleb128 0x2
+ 3377 02a3 18       		.uleb128 0x18
+ 3378 02a4 00       		.byte	0
+ 3379 02a5 00       		.byte	0
+ 3380 02a6 30       		.uleb128 0x30
+ 3381 02a7 02       		.uleb128 0x2
+ 3382 02a8 00       		.byte	0
+ 3383 02a9 03       		.uleb128 0x3
+ 3384 02aa 08       		.uleb128 0x8
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 72
+
+
+ 3385 02ab 3C       		.uleb128 0x3c
+ 3386 02ac 19       		.uleb128 0x19
+ 3387 02ad 00       		.byte	0
+ 3388 02ae 00       		.byte	0
+ 3389 02af 31       		.uleb128 0x31
+ 3390 02b0 2E       		.uleb128 0x2e
+ 3391 02b1 00       		.byte	0
+ 3392 02b2 03       		.uleb128 0x3
+ 3393 02b3 08       		.uleb128 0x8
+ 3394 02b4 34       		.uleb128 0x34
+ 3395 02b5 19       		.uleb128 0x19
+ 3396 02b6 11       		.uleb128 0x11
+ 3397 02b7 01       		.uleb128 0x1
+ 3398 02b8 12       		.uleb128 0x12
+ 3399 02b9 06       		.uleb128 0x6
+ 3400 02ba 40       		.uleb128 0x40
+ 3401 02bb 18       		.uleb128 0x18
+ 3402 02bc 9642     		.uleb128 0x2116
+ 3403 02be 19       		.uleb128 0x19
+ 3404 02bf 00       		.byte	0
+ 3405 02c0 00       		.byte	0
+ 3406 02c1 32       		.uleb128 0x32
+ 3407 02c2 2E       		.uleb128 0x2e
+ 3408 02c3 01       		.byte	0x1
+ 3409 02c4 03       		.uleb128 0x3
+ 3410 02c5 08       		.uleb128 0x8
+ 3411 02c6 34       		.uleb128 0x34
+ 3412 02c7 19       		.uleb128 0x19
+ 3413 02c8 11       		.uleb128 0x11
+ 3414 02c9 01       		.uleb128 0x1
+ 3415 02ca 12       		.uleb128 0x12
+ 3416 02cb 06       		.uleb128 0x6
+ 3417 02cc 40       		.uleb128 0x40
+ 3418 02cd 18       		.uleb128 0x18
+ 3419 02ce 9642     		.uleb128 0x2116
+ 3420 02d0 19       		.uleb128 0x19
+ 3421 02d1 01       		.uleb128 0x1
+ 3422 02d2 13       		.uleb128 0x13
+ 3423 02d3 00       		.byte	0
+ 3424 02d4 00       		.byte	0
+ 3425 02d5 33       		.uleb128 0x33
+ 3426 02d6 05       		.uleb128 0x5
+ 3427 02d7 00       		.byte	0
+ 3428 02d8 03       		.uleb128 0x3
+ 3429 02d9 08       		.uleb128 0x8
+ 3430 02da 3A       		.uleb128 0x3a
+ 3431 02db 0B       		.uleb128 0xb
+ 3432 02dc 3B       		.uleb128 0x3b
+ 3433 02dd 0B       		.uleb128 0xb
+ 3434 02de 49       		.uleb128 0x49
+ 3435 02df 13       		.uleb128 0x13
+ 3436 02e0 02       		.uleb128 0x2
+ 3437 02e1 18       		.uleb128 0x18
+ 3438 02e2 00       		.byte	0
+ 3439 02e3 00       		.byte	0
+ 3440 02e4 34       		.uleb128 0x34
+ 3441 02e5 34       		.uleb128 0x34
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 73
+
+
+ 3442 02e6 00       		.byte	0
+ 3443 02e7 47       		.uleb128 0x47
+ 3444 02e8 13       		.uleb128 0x13
+ 3445 02e9 02       		.uleb128 0x2
+ 3446 02ea 18       		.uleb128 0x18
+ 3447 02eb 00       		.byte	0
+ 3448 02ec 00       		.byte	0
+ 3449 02ed 35       		.uleb128 0x35
+ 3450 02ee 34       		.uleb128 0x34
+ 3451 02ef 00       		.byte	0
+ 3452 02f0 47       		.uleb128 0x47
+ 3453 02f1 13       		.uleb128 0x13
+ 3454 02f2 6E       		.uleb128 0x6e
+ 3455 02f3 08       		.uleb128 0x8
+ 3456 02f4 1C       		.uleb128 0x1c
+ 3457 02f5 0D       		.uleb128 0xd
+ 3458 02f6 00       		.byte	0
+ 3459 02f7 00       		.byte	0
+ 3460 02f8 36       		.uleb128 0x36
+ 3461 02f9 34       		.uleb128 0x34
+ 3462 02fa 00       		.byte	0
+ 3463 02fb 47       		.uleb128 0x47
+ 3464 02fc 13       		.uleb128 0x13
+ 3465 02fd 6E       		.uleb128 0x6e
+ 3466 02fe 08       		.uleb128 0x8
+ 3467 02ff 1C       		.uleb128 0x1c
+ 3468 0300 06       		.uleb128 0x6
+ 3469 0301 00       		.byte	0
+ 3470 0302 00       		.byte	0
+ 3471 0303 37       		.uleb128 0x37
+ 3472 0304 34       		.uleb128 0x34
+ 3473 0305 00       		.byte	0
+ 3474 0306 47       		.uleb128 0x47
+ 3475 0307 13       		.uleb128 0x13
+ 3476 0308 6E       		.uleb128 0x6e
+ 3477 0309 08       		.uleb128 0x8
+ 3478 030a 1C       		.uleb128 0x1c
+ 3479 030b 0B       		.uleb128 0xb
+ 3480 030c 00       		.byte	0
+ 3481 030d 00       		.byte	0
+ 3482 030e 38       		.uleb128 0x38
+ 3483 030f 34       		.uleb128 0x34
+ 3484 0310 00       		.byte	0
+ 3485 0311 47       		.uleb128 0x47
+ 3486 0312 13       		.uleb128 0x13
+ 3487 0313 6E       		.uleb128 0x6e
+ 3488 0314 08       		.uleb128 0x8
+ 3489 0315 1C       		.uleb128 0x1c
+ 3490 0316 05       		.uleb128 0x5
+ 3491 0317 00       		.byte	0
+ 3492 0318 00       		.byte	0
+ 3493 0319 00       		.byte	0
+ 3494              		.section	.debug_aranges,"dr"
+ 3495 0000 1C000000 		.long	0x1c
+ 3496 0004 0200     		.word	0x2
+ 3497 0006 00000000 		.secrel32	Ldebug_info0
+ 3498 000a 04       		.byte	0x4
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 74
+
+
+ 3499 000b 00       		.byte	0
+ 3500 000c 0000     		.word	0
+ 3501 000e 0000     		.word	0
+ 3502 0010 00000000 		.long	Ltext0
+ 3503 0014 5A020000 		.long	Letext0-Ltext0
+ 3504 0018 00000000 		.long	0
+ 3505 001c 00000000 		.long	0
+ 3506              		.section	.debug_line,"dr"
+ 3507              	Ldebug_line0:
+ 3508 0000 59030000 		.section	.debug_str,"dr"
+ 3508      0200C102 
+ 3508      00000101 
+ 3508      FB0E0D00 
+ 3508      01010101 
+ 3509              	LASF0:
+ 3510 0000 5F5F6D69 		.ascii "__min\0"
+ 3510      6E00
+ 3511              	LASF1:
+ 3512 0006 5F5F6D61 		.ascii "__max\0"
+ 3512      7800
+ 3513              	LASF3:
+ 3514 000c 5F5F6469 		.ascii "__digits\0"
+ 3514      67697473 
+ 3514      00
+ 3515              	LASF4:
+ 3516 0015 5F56616C 		.ascii "_Value\0"
+ 3516      756500
+ 3517              	LASF2:
+ 3518 001c 5F5F6973 		.ascii "__is_signed\0"
+ 3518      5F736967 
+ 3518      6E656400 
+ 3519              		.ident	"GCC: (tdm-1) 5.1.0"
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccoKN8by.s 			page 75
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.cpp
+                             .bss:00000000 __ZStL8__ioinit
+C:\Users\USER\AppData\Local\Temp\ccoKN8by.s:12     .text:00000000 _main
+C:\Users\USER\AppData\Local\Temp\ccoKN8by.s:217    .text:000001fe ___tcf_0
+C:\Users\USER\AppData\Local\Temp\ccoKN8by.s:238    .text:00000210 __Z41__static_initialization_and_destruction_0ii
+C:\Users\USER\AppData\Local\Temp\ccoKN8by.s:269    .text:0000023e __GLOBAL__sub_I_main
+
+UNDEFINED SYMBOLS
+___main
+___gxx_personality_sj0
+__Unwind_SjLj_Register
+__Unwind_SjLj_Unregister
+__ZSt3cin
+__ZSt4cout
+__ZN5FechaC1Ev
+__ZrsRSiR5Fecha
+__ZlsRSoR5Fecha
+__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+__ZNSolsEPFRSoS_E
+__ZN5FechageERKS_
+__ZNSolsEb
+__ZN5FechagtERKS_
+__ZN5FechaD1Ev
+__Unwind_SjLj_Resume
+__ZNSt8ios_base4InitD1Ev
+__ZNSt8ios_base4InitC1Ev
+_atexit

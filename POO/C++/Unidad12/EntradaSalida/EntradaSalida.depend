@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1397592139 source:c:\users\claudio\google drive\_poo_ing\fuentes\entradasalida\main.cpp
+	<iostream>
+	<fstream>
+	"Something.h"
+
+1397505176 c:\users\claudio\google drive\_poo_ing\fuentes\entradasalida\something.h
+
+1397592160 source:c:\caleb\fiuna\4to semestre\poo\c++\unidad12\entradasalida\main.cpp
+	<iostream>
+	<fstream>
+	"Something.h"
+
+1397505176 c:\caleb\fiuna\4to semestre\poo\c++\unidad12\entradasalida\something.h
+
