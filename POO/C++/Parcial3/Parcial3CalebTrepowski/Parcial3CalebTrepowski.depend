@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1601386407 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial3\parcial3calebtrepowski\main.cpp
+	<iostream>
+	"List.h"
+	"Pelicula.h"
+
+1601386295 c:\caleb\fiuna\4to semestre\poo\c++\parcial3\parcial3calebtrepowski\list.h
+	<vector>
+	<iostream>
+	<fstream>
+	"NoValidPosition.h"
+
+1601385949 c:\caleb\fiuna\4to semestre\poo\c++\parcial3\parcial3calebtrepowski\novalidposition.h
+	<exception>
+
+1601384984 c:\caleb\fiuna\4to semestre\poo\c++\parcial3\parcial3calebtrepowski\pelicula.h
+	<sstream>
+
