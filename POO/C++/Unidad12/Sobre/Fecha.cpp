@@ -132,7 +132,7 @@ istream& operator>>(istream &i,Fecha &f){
     return i;
 }
 
-ostream& operator << (ostream& os,Fecha &f){
+ostream& operator << (ostream& os,Fecha f){
     os<<f.getFecha();
     return os;
 }

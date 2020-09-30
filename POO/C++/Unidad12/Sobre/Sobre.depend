@@ -14,10 +14,10 @@
 1599661807 c:\users\sscav\desktop\sobre\fechanovalida.h
 	<exception>
 
-1600030726 source:c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobre\fecha.cpp
+1600203115 source:c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobre\fecha.cpp
 	"Fecha.h"
 
-1600036858 c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobre\fecha.h
+1600203115 c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobre\fecha.h
 	<iostream>
 	<sstream>
 	"FechaNoValida.h"
@@ -25,7 +25,7 @@
 1599661807 c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobre\fechanovalida.h
 	<exception>
 
-1600031338 source:c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobre\main.cpp
+1600203190 source:c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobre\main.cpp
 	<iostream>
 	"Fecha.h"
 

@@ -10,5 +10,7 @@ int main()
     bool algo = f1>=f2;
 		cout<<endl<<algo;
 		algo = f1>f2;
-		cout<<endl<<algo;
+		cout<<endl<<algo<<endl;
+		cout << --f1--<<endl;
+		cout << f1;
 }

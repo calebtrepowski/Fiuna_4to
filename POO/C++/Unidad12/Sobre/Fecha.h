@@ -36,7 +36,7 @@ class Fecha
         bool operator ==(const Fecha &f) const;
 
         friend istream& operator>>(istream &is,Fecha& f);
-        friend ostream& operator<<(ostream &os,Fecha& f);
+        friend ostream& operator<<(ostream &os,Fecha f);
 
         ///TAREA///
         ///Imprementar los siguientes operadores en la clase fecha
