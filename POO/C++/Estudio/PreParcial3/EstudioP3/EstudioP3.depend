@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1601351709 source:c:\caleb\fiuna\4to semestre\poo\c++\estudio\preparcial3\estudiop3\main.cpp
+	<iostream>
+	<fstream>
+

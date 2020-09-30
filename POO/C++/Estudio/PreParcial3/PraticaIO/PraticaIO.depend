@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1399658562 source:c:\users\claudio\google drive\_poo_ing\fuentes\praticaio\main.cpp
+	<iostream>
+	<fstream>
+	"Vendedor.h"
+
+1401407031 c:\users\claudio\google drive\_poo_ing\fuentes\praticaio\vendedor.h
+	<string>
+	<iostream>
+	<fstream>
+
+1399658172 source:c:\users\claudio\google drive\_poo_ing\fuentes\praticaio\vendedor.cpp
+	"Vendedor.h"
+
+1401406525 c:\users\claudio\google drive\_poo_ing\fuentes\praticaio\include\vendedor.h
+
+1405629395 source:c:\users\claudio\google drive\fiuna\poo\practicas2014\praticaio\main.cpp
+	<iostream>
+	<fstream>
+	"Vendedor.h"
+
+1405629287 c:\users\claudio\google drive\fiuna\poo\practicas2014\praticaio\vendedor.h
+	<stdlib.h>
+	<time.h>
+	<iostream>
+
+1405628149 source:c:\users\claudio\google drive\fiuna\poo\practicas2014\praticaio\vendedor.cpp
+	"Vendedor.h"
+

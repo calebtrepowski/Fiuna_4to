@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1430839367 source:c:\users\claudio\google drive\fiuna\fuentes\lecturaarchivos\main.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"Persona.h"
+
+1430836591 c:\users\claudio\google drive\fiuna\fuentes\lecturaarchivos\persona.h
+	<iostream>
+	<string>
+	<sstream>
+
+1530541148 source:c:\users\claudio\google drive\fiuna\poo\practicas2014\lecturaarchivos\main.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"Persona.h"
+
+1530539277 c:\users\claudio\google drive\fiuna\poo\practicas2014\lecturaarchivos\persona.h
+	<iostream>
+	<string>
+	<sstream>
+
