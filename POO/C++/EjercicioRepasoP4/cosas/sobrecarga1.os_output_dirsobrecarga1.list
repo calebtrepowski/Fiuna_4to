@@ -1,0 +1,98 @@
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccfganCk.s 			page 1
+
+
+   1              		.file	"sobrecarga1.cpp"
+   2              	.lcomm __ZStL8__ioinit,1,1
+   4              		.text
+   5              		.globl	_main
+   7              	_main:
+   8 0000 8D4C2404 		leal	4(%esp), %ecx
+   9 0004 83E4F0   		andl	$-16, %esp
+  10 0007 FF71FC   		pushl	-4(%ecx)
+  11 000a 55       		pushl	%ebp
+  12 000b 89E5     		movl	%esp, %ebp
+  13 000d 51       		pushl	%ecx
+  14 000e 83EC14   		subl	$20, %esp
+  15 0011 E8000000 		call	___main
+  15      00
+  16 0016 C7042408 		movl	$8, (%esp)
+  16      000000
+  17 001d B9000000 		movl	$__ZSt4cout, %ecx
+  17      00
+  18 0022 E8000000 		call	__ZNSolsEj
+  18      00
+  19 0027 83EC04   		subl	$4, %esp
+  20 002a B8000000 		movl	$0, %eax
+  20      00
+  21 002f 8B4DFC   		movl	-4(%ebp), %ecx
+  22 0032 C9       		leave
+  23 0033 8D61FC   		leal	-4(%ecx), %esp
+  24 0036 C3       		ret
+  26              	___tcf_0:
+  27 0037 55       		pushl	%ebp
+  28 0038 89E5     		movl	%esp, %ebp
+  29 003a 83EC08   		subl	$8, %esp
+  30 003d B9000000 		movl	$__ZStL8__ioinit, %ecx
+  30      00
+  31 0042 E8000000 		call	__ZNSt8ios_base4InitD1Ev
+  31      00
+  32 0047 C9       		leave
+  33 0048 C3       		ret
+  35              	__Z41__static_initialization_and_destruction_0ii:
+  36 0049 55       		pushl	%ebp
+  37 004a 89E5     		movl	%esp, %ebp
+  38 004c 83EC18   		subl	$24, %esp
+  39 004f 837D0801 		cmpl	$1, 8(%ebp)
+  40 0053 751F     		jne	L6
+  41 0055 817D0CFF 		cmpl	$65535, 12(%ebp)
+  41      FF0000
+  42 005c 7516     		jne	L6
+  43 005e B9000000 		movl	$__ZStL8__ioinit, %ecx
+  43      00
+  44 0063 E8000000 		call	__ZNSt8ios_base4InitC1Ev
+  44      00
+  45 0068 C7042437 		movl	$___tcf_0, (%esp)
+  45      000000
+  46 006f E8000000 		call	_atexit
+  46      00
+  47              	L6:
+  48 0074 90       		nop
+  49 0075 C9       		leave
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccfganCk.s 			page 2
+
+
+  50 0076 C3       		ret
+  52              	__GLOBAL__sub_I_main:
+  53 0077 55       		pushl	%ebp
+  54 0078 89E5     		movl	%esp, %ebp
+  55 007a 83EC18   		subl	$24, %esp
+  56 007d C7442404 		movl	$65535, 4(%esp)
+  56      FFFF0000 
+  57 0085 C7042401 		movl	$1, (%esp)
+  57      000000
+  58 008c E8B8FFFF 		call	__Z41__static_initialization_and_destruction_0ii
+  58      FF
+  59 0091 C9       		leave
+  60 0092 C3       		ret
+  61 0093 90       		.section	.ctors,"w"
+  62              		.align 4
+  63 0000 77000000 		.long	__GLOBAL__sub_I_main
+  64              		.ident	"GCC: (tdm-1) 5.1.0"
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccfganCk.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 sobrecarga1.cpp
+                             .bss:00000000 __ZStL8__ioinit
+C:\Users\USER\AppData\Local\Temp\ccfganCk.s:7      .text:00000000 _main
+C:\Users\USER\AppData\Local\Temp\ccfganCk.s:26     .text:00000037 ___tcf_0
+C:\Users\USER\AppData\Local\Temp\ccfganCk.s:35     .text:00000049 __Z41__static_initialization_and_destruction_0ii
+C:\Users\USER\AppData\Local\Temp\ccfganCk.s:52     .text:00000077 __GLOBAL__sub_I_main
+
+UNDEFINED SYMBOLS
+___main
+__ZSt4cout
+__ZNSolsEj
+__ZNSt8ios_base4InitD1Ev
+__ZNSt8ios_base4InitC1Ev
+_atexit

@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1604185117 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\main.cpp
+	<iostream>
+	"Fecha.h"
+	"Persona.h"
+	"NumeroTelefonico.h"
+
+1604185089 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\fecha.cpp
+	"Fecha.h"
+
+1604166390 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\fecha.h
+	<iostream>
+
+1604184425 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\numerotelefonico.cpp
+	"NumeroTelefonico.h"
+
+1604184425 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\numerotelefonico.h
+	<iostream>
+
+1604186029 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\cuota.cpp
+	"Cuota.h"
+
+1604185776 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\cuota.h
+	"Fecha.h"
+	<ctime>
+
+1604184358 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\persona.cpp
+	"Persona.h"
+
+1604186527 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\persona.h
+	<iostream>
+	<ctime>
+	"Fecha.h"
+	"NumeroTelefonico.h"
+
+1604184732 source:c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\prestamo.cpp
+	"Prestamo.h"
+
+1604184691 c:\caleb\fiuna\4to semestre\poo\c++\ejerciciorepasop4\prestamo.h
+	<vector>
+	"Persona.h"
+	"Cuota.h"
+
