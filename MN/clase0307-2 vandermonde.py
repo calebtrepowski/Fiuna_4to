@@ -29,3 +29,5 @@ plt.plot(x,y)
 plt.scatter(X,Y) ## scatter sirve para plotear puntos
 plt.grid()
 plt.show()
+
+print(coef,VDM)
