@@ -1,0 +1,24 @@
+Maleta
+Codigo: 1
+Descripcion: Permite guardar cosas para ir de viaje
+Precio de Compra: 165000
+Capacidad: 3.5
+
+Maleta
+Codigo: 32
+Descripcion: Permite guardar cosas para ir de viaje por mas tiempo
+Precio de Compra: 200000
+Capacidad: 7.8
+
+Mochila
+Codigo: 45
+Descripcion: Mochila con porta Notebook
+Precio de Compra: 150000
+Color: Rojo
+
+Mochila
+Codigo: 52
+Descripcion: Mochila con porta Notebook y porta Botellas
+Precio de Compra: 170000
+Color: Verde
+

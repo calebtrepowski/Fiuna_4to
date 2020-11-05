@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1604351253 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\main.cpp
+	<iostream>
+	"Articulo.h"
+	"Tienda.h"
+	"Mochila.h"
+	"Maleta.h"
+
+1604344511 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\articulo.cpp
+	"Articulo.h"
+
+1604344511 c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\articulo.h
+	<iostream>
+	<sstream>
+
+1604345678 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\maleta.cpp
+	"Maleta.h"
+
+1604343901 c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\maleta.h
+	"Articulo.h"
+
+1604345663 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\mochila.cpp
+	"Mochila.h"
+
+1604343901 c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\mochila.h
+	"Articulo.h"
+
+1604351253 source:c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\tienda.cpp
+	"Tienda.h"
+
+1604347228 c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\tienda.h
+	<vector>
+	<fstream>
+	"Articulo.h"
+	"CodigoNoEncontrado.h"
+	"PosicionNoValida.h"
+
+1604343901 c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\codigonoencontrado.h
+	<exception>
+
+1604344511 c:\caleb\fiuna\4to semestre\poo\c++\parcial4\practicap4\posicionnovalida.h
+	<exception>
+

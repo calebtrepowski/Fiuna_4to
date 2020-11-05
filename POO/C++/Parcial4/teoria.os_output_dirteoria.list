@@ -1,0 +1,111 @@
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccgZhUhF.s 			page 1
+
+
+   1              		.file	"teoria.cpp"
+   2              	.lcomm __ZStL8__ioinit,1,1
+   4              		.text
+   5              		.globl	_main
+   7              	_main:
+   8 0000 8D4C2404 		leal	4(%esp), %ecx
+   9 0004 83E4F0   		andl	$-16, %esp
+  10 0007 FF71FC   		pushl	-4(%ecx)
+  11 000a 55       		pushl	%ebp
+  12 000b 89E5     		movl	%esp, %ebp
+  13 000d 51       		pushl	%ecx
+  14 000e 83EC24   		subl	$36, %esp
+  15 0011 E8000000 		call	___main
+  15      00
+  16 0016 C745F40A 		movl	$10, -12(%ebp)
+  16      000000
+  17 001d C745F00F 		movl	$15, -16(%ebp)
+  17      000000
+  18 0024 8B45F4   		movl	-12(%ebp), %eax
+  19 0027 3B45F0   		cmpl	-16(%ebp), %eax
+  20 002a 7E05     		jle	L2
+  21 002c 8B45F4   		movl	-12(%ebp), %eax
+  22 002f EB03     		jmp	L3
+  23              	L2:
+  24 0031 8B45F0   		movl	-16(%ebp), %eax
+  25              	L3:
+  26 0034 8945EC   		movl	%eax, -20(%ebp)
+  27 0037 8B45EC   		movl	-20(%ebp), %eax
+  28 003a 890424   		movl	%eax, (%esp)
+  29 003d B9000000 		movl	$__ZSt4cout, %ecx
+  29      00
+  30 0042 E8000000 		call	__ZNSolsEi
+  30      00
+  31 0047 83EC04   		subl	$4, %esp
+  32 004a B8000000 		movl	$0, %eax
+  32      00
+  33 004f 8B4DFC   		movl	-4(%ebp), %ecx
+  34 0052 C9       		leave
+  35 0053 8D61FC   		leal	-4(%ecx), %esp
+  36 0056 C3       		ret
+  38              	___tcf_0:
+  39 0057 55       		pushl	%ebp
+  40 0058 89E5     		movl	%esp, %ebp
+  41 005a 83EC08   		subl	$8, %esp
+  42 005d B9000000 		movl	$__ZStL8__ioinit, %ecx
+  42      00
+  43 0062 E8000000 		call	__ZNSt8ios_base4InitD1Ev
+  43      00
+  44 0067 C9       		leave
+  45 0068 C3       		ret
+  47              	__Z41__static_initialization_and_destruction_0ii:
+  48 0069 55       		pushl	%ebp
+  49 006a 89E5     		movl	%esp, %ebp
+  50 006c 83EC18   		subl	$24, %esp
+  51 006f 837D0801 		cmpl	$1, 8(%ebp)
+  52 0073 751F     		jne	L8
+  53 0075 817D0CFF 		cmpl	$65535, 12(%ebp)
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccgZhUhF.s 			page 2
+
+
+  53      FF0000
+  54 007c 7516     		jne	L8
+  55 007e B9000000 		movl	$__ZStL8__ioinit, %ecx
+  55      00
+  56 0083 E8000000 		call	__ZNSt8ios_base4InitC1Ev
+  56      00
+  57 0088 C7042457 		movl	$___tcf_0, (%esp)
+  57      000000
+  58 008f E8000000 		call	_atexit
+  58      00
+  59              	L8:
+  60 0094 90       		nop
+  61 0095 C9       		leave
+  62 0096 C3       		ret
+  64              	__GLOBAL__sub_I_main:
+  65 0097 55       		pushl	%ebp
+  66 0098 89E5     		movl	%esp, %ebp
+  67 009a 83EC18   		subl	$24, %esp
+  68 009d C7442404 		movl	$65535, 4(%esp)
+  68      FFFF0000 
+  69 00a5 C7042401 		movl	$1, (%esp)
+  69      000000
+  70 00ac E8B8FFFF 		call	__Z41__static_initialization_and_destruction_0ii
+  70      FF
+  71 00b1 C9       		leave
+  72 00b2 C3       		ret
+  73 00b3 90       		.section	.ctors,"w"
+  74              		.align 4
+  75 0000 97000000 		.long	__GLOBAL__sub_I_main
+  76              		.ident	"GCC: (tdm-1) 5.1.0"
+GAS LISTING C:\Users\USER\AppData\Local\Temp\ccgZhUhF.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 teoria.cpp
+                             .bss:00000000 __ZStL8__ioinit
+C:\Users\USER\AppData\Local\Temp\ccgZhUhF.s:7      .text:00000000 _main
+C:\Users\USER\AppData\Local\Temp\ccgZhUhF.s:38     .text:00000057 ___tcf_0
+C:\Users\USER\AppData\Local\Temp\ccgZhUhF.s:47     .text:00000069 __Z41__static_initialization_and_destruction_0ii
+C:\Users\USER\AppData\Local\Temp\ccgZhUhF.s:64     .text:00000097 __GLOBAL__sub_I_main
+
+UNDEFINED SYMBOLS
+___main
+__ZSt4cout
+__ZNSolsEi
+__ZNSt8ios_base4InitD1Ev
+__ZNSt8ios_base4InitC1Ev
+_atexit
