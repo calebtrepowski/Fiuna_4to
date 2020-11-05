@@ -33,3 +33,11 @@ POO/C++/EjercicioSumativoUn11/Clase Cola, Templates y clase friend, C++, mar 08_
 POO/Puntajes.xlsx
 POO/Java/Java POO_2020
 POO/Java/parcial3test
+*.swp
+*.save
+*.pyc
+*.exe
+*.layout
+*.depend
+obj/
+bin/

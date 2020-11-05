@@ -14,3 +14,18 @@
 1599661807 c:\users\sscav\desktop\sobre\fechanovalida.h
 	<exception>
 
+1599676973 source:c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobrecarga\sobre\fecha.cpp
+	"Fecha.h"
+
+1599676940 c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobrecarga\sobre\fecha.h
+	<iostream>
+	<sstream>
+	"FechaNoValida.h"
+
+1599665407 c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobrecarga\sobre\fechanovalida.h
+	<exception>
+
+1599677437 source:c:\caleb\fiuna\4to semestre\poo\c++\unidad12\sobrecarga\sobre\main.cpp
+	<iostream>
+	"Fecha.h"
+
